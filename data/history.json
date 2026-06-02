@@ -1693,7 +1693,7 @@
     // 然后从 world-ancient-2 继续到 world-ancient-19
     // 不要重复 world-ancient-0 和 world-ancient-1！
   ]
-}
+},
     {
   "id": "world-modern",
   "title": "🌍 世界近代史",
