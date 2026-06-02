@@ -5,30 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes, viewport-fit=cover">
     <title>东东题库 - 材料大题</title>
     <style>
-        :root {
-            --bg: #f3f8fc;
-            --card: #ffffff;
-            --border: #d0e4f5;
-            --accent: #5b9bd5;
-            --accent-light: #7db9e8;
-            --accent-dark: #3d7ab8;
-            --correct: #2d8a4e;
-            --wrong: #e74c3c;
-            --tag-bg: #e8f2fa;
-            --shadow: 0 2px 12px rgba(60, 100, 160, 0.07);
-            --radius: 14px;
-            --font-main: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
-            --font-serif: 'Noto Serif SC', 'STSong', 'SimSun', 'KaiTi', serif;
-        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: var(--font-main);
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
             background: linear-gradient(180deg, #eef5fb 0%, #e3eff9 30%, #f5f9fd 100%);
             min-height: 100vh;
             padding-bottom: 20px;
             color: #2c3e50;
             line-height: 1.7;
-            -webkit-tap-highlight-color: transparent;
         }
         .app-header {
             background: linear-gradient(135deg, #5b9bd5 0%, #4a8bc2 40%, #3d7ab8 100%);
@@ -38,33 +22,10 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 3px 16px rgba(60, 100, 160, 0.2);
-            border-bottom: 2px solid #7db9e8;
             border-radius: 0 0 16px 16px;
         }
-        .app-header h1 {
-            font-family: var(--font-serif);
-            font-size: 1.5rem;
-            letter-spacing: 2px;
-            font-weight: 700;
-            margin: 0;
-        }
-        .app-header .subtitle {
-            font-size: 0.8rem;
-            opacity: 0.9;
-            letter-spacing: 1px;
-            margin-top: 2px;
-        }
-        .header-emoji {
-            font-size: 1.7rem;
-            display: block;
-            margin-bottom: 2px;
-            animation: float 3s ease-in-out infinite;
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-5px); }
-        }
+        .app-header h1 { font-size: 1.5rem; margin: 0; }
+        .app-header .subtitle { font-size: 0.8rem; opacity: 0.9; }
         .back-home-link {
             display: inline-block;
             margin-top: 0.3rem;
@@ -73,12 +34,7 @@
             cursor: pointer;
             text-decoration: underline;
         }
-        .back-home-link:hover { color: #fff; }
-        .main-content {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 0.7rem 0.8rem 0.5rem;
-        }
+        .main-content { max-width: 600px; margin: 0 auto; padding: 0.7rem 0.8rem; }
         .btn {
             background: #5b9bd5;
             color: #fff;
@@ -86,50 +42,26 @@
             padding: 0.6rem 1.3rem;
             border-radius: 22px;
             font-weight: 700;
-            font-size: 0.88rem;
             cursor: pointer;
-            letter-spacing: 0.5px;
-            transition: all 0.2s;
-            min-height: 42px;
-            box-shadow: 0 2px 8px rgba(91,155,213,0.2);
-            white-space: nowrap;
         }
-        .btn:active { transform: scale(0.94); }
         .btn-outline {
             background: #fff;
             border: 2px solid #5b9bd5;
             color: #5b9bd5;
-            box-shadow: none;
-        }
-        .btn-print {
-            background: #fff;
-            border: 2px solid #6a9ab8;
-            color: #6a9ab8;
-            padding: 0.4rem 1rem;
-            border-radius: 18px;
-            font-weight: 600;
-            font-size: 0.78rem;
-            cursor: pointer;
         }
         .question-card {
             background: #fff;
             border: 1.5px solid #dceaf5;
-            border-radius: var(--radius);
-            padding: 0.9rem 0.9rem;
+            border-radius: 14px;
+            padding: 0.9rem;
             margin-bottom: 1rem;
-            transition: all 0.25s;
-            box-shadow: var(--shadow);
         }
         .material-box {
             background: #f8fbfe;
             border-left: 4px solid #5b9bd5;
-            padding: 0.8rem 0.9rem;
-            margin: 0.5rem 0 0.7rem;
-            border-radius: 0 10px 10px 0;
-            font-family: var(--font-serif);
+            padding: 0.8rem;
+            margin: 0.5rem 0;
             font-size: 0.88rem;
-            white-space: pre-line;
-            color: #2c3e50;
             line-height: 1.8;
         }
         .fill-blank-input {
@@ -140,134 +72,31 @@
             width: 140px;
             text-align: center;
             background: #fafcfe;
-            border-radius: 4px 4px 0 0;
-            transition: all 0.2s;
-            font-family: var(--font-serif);
         }
-        .fill-blank-input:focus {
-            outline: none;
-            border-bottom-color: #3d7ab8;
-            background: #f0f7fd;
-            width: 170px;
-        }
-        .fill-blank-input:disabled { opacity: 1; color: #2c3e50; }
         .fill-blank-input.correct-fill { border-bottom-color: #2d8a4e; background: #f4faf6; color: #2d8a4e; }
         .fill-blank-input.wrong-fill { border-bottom-color: #e74c3c; background: #fef8f7; color: #e74c3c; }
         .fill-hint { font-size: 0.7rem; color: #8aabc8; margin-left: 0.3rem; }
-        .nav-buttons { display: flex; gap: 0.5rem; justify-content: flex-start; flex-wrap: wrap; margin: 0.5rem 0; }
-        .stats-panel { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.6rem 0; justify-content: center; }
-        .stat-tag {
-            background: #e8f2fa;
-            padding: 0.3rem 0.7rem;
-            border-radius: 12px;
-            font-size: 0.72rem;
-            color: #3d7ab8;
-            font-weight: 500;
-            border: 1px solid #d0e4f5;
-        }
-        .stat-tag.streak-tag { background: #fff3e0; color: #e65100; border-color: #ffcc80; }
+        .nav-buttons { display: flex; gap: 0.5rem; margin: 0.5rem 0; }
         .collapse-header {
             background: #f0f7fd;
-            padding: 0.7rem 0.9rem;
+            padding: 0.7rem;
             border-radius: 10px;
             cursor: pointer;
             font-weight: 700;
-            font-size: 0.85rem;
-            color: #3d7ab8;
             display: flex;
             justify-content: space-between;
-            align-items: center;
             margin-top: 0.5rem;
-            user-select: none;
-            border: 1px solid #d0e4f5;
         }
-        .collapse-header .collapse-arrow { transition: transform 0.3s; }
-        .collapse-header.open .collapse-arrow { transform: rotate(180deg); }
-        .collapse-body {
-            display: none;
-            padding: 0.6rem 0.8rem;
-            background: #fafcfe;
-            border-radius: 0 0 10px 10px;
-            border: 1px solid #e0edf8;
-            border-top: none;
-            font-size: 0.82rem;
-            line-height: 1.7;
-            color: #3d4f5f;
-        }
-        .review-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 0.4rem 0;
-            font-size: 0.78rem;
-        }
-        .review-table td {
-            padding: 0.35rem 0.5rem;
-            border-bottom: 1px solid #e0edf8;
-            vertical-align: top;
-        }
-        .review-table .step-label { font-weight: 700; color: #3d7ab8; white-space: nowrap; width: 30%; }
-        .review-table .correct-mark { color: #2d8a4e; font-weight: 700; }
-        .review-table .wrong-mark { color: #e74c3c; font-weight: 700; }
-        .streak-toast {
-            position: fixed;
-            top: 90px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: linear-gradient(135deg, #ff6b6b, #ff8c00);
-            color: #fff;
-            padding: 0.5rem 1.2rem;
-            border-radius: 20px;
-            font-weight: 700;
-            font-size: 0.9rem;
-            z-index: 300;
-            animation: streakPopIn 0.4s ease, streakFadeOut 0.3s ease 1.8s forwards;
-            box-shadow: 0 4px 16px rgba(255, 107, 107, 0.4);
-            pointer-events: none;
-        }
-        @keyframes streakPopIn {
-            0% { transform: translateX(-50%) scale(0.3); opacity: 0; }
-            60% { transform: translateX(-50%) scale(1.15); }
-            100% { transform: translateX(-50%) scale(1); opacity: 1; }
-        }
-        @keyframes streakFadeOut {
-            to { opacity: 0; transform: translateX(-50%) translateY(-15px); }
-        }
-        .celebrate-overlay {
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(30,50,80,0.7);
-            z-index: 200;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .celebrate-card {
-            background: #fff;
-            border-radius: 20px;
-            padding: 1.8rem 1.3rem;
-            text-align: center;
-            max-width: 320px;
-            width: 88%;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.25);
-            animation: popIn 0.4s ease;
-        }
-        @keyframes popIn {
-            0% { transform: scale(0.7); opacity: 0; }
-            70% { transform: scale(1.05); }
-            100% { transform: scale(1); opacity: 1; }
-        }
-        .print-header, .print-footer { display: none; }
-        @media print {
-            @page { size: A4; margin: 15mm; }
-            body { background: white !important; -webkit-print-color-adjust: exact; }
-            .app-header, .btn, .btn-outline, .btn-print, .nav-buttons, .back-home-link, .no-print { display: none !important; }
-            .app-header { display: block !important; background: white !important; color: #333 !important; border-bottom: 2px solid #333 !important; }
-            .question-card { break-inside: avoid; border: 1px solid #ccc !important; }
-            .fill-blank-input { border: none !important; border-bottom: 1px solid #333 !important; background: transparent !important; }
-            .print-header { display: block !important; text-align: center; margin-bottom: 0.8rem; }
-            .print-footer { display: block !important; text-align: center; margin-top: 0.8rem; font-size: 0.7rem; }
-        }
-        h3 { color: #3d7ab8; margin-bottom: 0.5rem; text-align: center; }
+        .collapse-body { display: none; padding: 0.6rem; background: #fafcfe; font-size: 0.82rem; }
+        .review-table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+        .review-table td { padding: 0.35rem 0.5rem; border-bottom: 1px solid #e0edf8; }
+        .correct-mark { color: #2d8a4e; font-weight: 700; }
+        .wrong-mark { color: #e74c3c; font-weight: 700; }
+        .stats-panel { display: flex; gap: 0.4rem; margin: 0.6rem 0; justify-content: center; }
+        .stat-tag { background: #e8f2fa; padding: 0.3rem 0.7rem; border-radius: 12px; font-size: 0.72rem; }
+        .streak-tag { background: #fff3e0; color: #e65100; }
+        h3 { color: #3d7ab8; text-align: center; margin-bottom: 0.5rem; }
+        .score-detail { font-size: 0.7rem; color: #6a9ab8; margin-left: 0.5rem; }
     </style>
 </head>
 <body>
@@ -275,7 +104,7 @@
 <div class="app-header">
     <span class="header-emoji">📜</span>
     <h1 id="header-title">东东题库 · 材料大题</h1>
-    <div class="subtitle" id="header-subtitle">加载中...</div>
+    <div class="subtitle" id="header-subtitle">智能评分 · 中考标准</div>
     <a class="back-home-link" href="./">← 返回首页</a>
 </div>
 
@@ -287,7 +116,6 @@
 (function() {
     const params = new URLSearchParams(window.location.search);
     const subject = params.get('subject') || 'history';
-    // ✅ 材料题：加载 data/material-history.json
     const dataUrl = `data/material-${subject}.json`;
 
     let materialQuestions = [];
@@ -297,10 +125,10 @@
     let bestStreak = parseInt(localStorage.getItem(`material-${subject}-bestStreak`) || '0');
 
     const encourageMessages = {
-        correct: ['答对了！👏', '太棒了！💪', '优秀！🎯', '继续前进！📚'],
-        wrong: ['别灰心，加油！💪', '再试试看～', '记住这个知识点！📝'],
-        complete: ['完美通关！🏆', '太厉害了！🎉', '材料题全对！👑'],
-        streak: { 3: '🔥 三连击！', 5: '💯 五连击！', 10: '🏆 十连击！' }
+        correct: ['答对了！👏', '太棒了！💪', '优秀！🎯'],
+        wrong: ['别灰心，加油！💪', '再试试看～'],
+        complete: ['完美通关！🏆', '太厉害了！🎉'],
+        streak: { 3: '🔥 三连击！', 5: '💯 五连击！' }
     };
 
     function randomPick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
@@ -313,6 +141,7 @@
         const toast = document.createElement('div');
         toast.className = 'streak-toast';
         toast.textContent = message;
+        toast.style.cssText = 'position:fixed;top:90px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#ff6b6b,#ff8c00);color:#fff;padding:0.5rem 1.2rem;border-radius:20px;font-weight:700;z-index:300;';
         document.body.appendChild(toast);
         setTimeout(() => toast.remove(), 2200);
     }
@@ -334,38 +163,143 @@
         });
     }
 
-    function checkBlankAnswer(blank, userAnswer) {
-        if (!userAnswer || userAnswer.trim() === '') return false;
-        return blank.answers.some(ans => userAnswer.trim().toLowerCase() === ans.toLowerCase());
+    // ==================== 智能评分核心函数 ====================
+    
+    /**
+     * 基础关键词匹配（支持包含匹配）
+     */
+    function keywordMatch(userAnswer, keyword, synonyms = []) {
+        const allKeywords = [keyword.toLowerCase(), ...synonyms.map(s => s.toLowerCase())];
+        const userLower = userAnswer.toLowerCase();
+        return allKeywords.some(kw => userLower.includes(kw));
     }
 
-    function showCelebrate() {
-        const overlay = document.createElement('div');
-        overlay.className = 'celebrate-overlay';
-        overlay.innerHTML = `<div class="celebrate-card"><div class="celebrate-emoji" style="font-size:3rem;">🎉</div><div class="celebrate-text">${randomPick(encourageMessages.complete)}</div><div class="celebrate-sub">所有材料题已满分完成！</div><button class="btn" id="btn-celebrate-ok">👍 好的</button></div>`;
-        document.body.appendChild(overlay);
-        overlay.querySelector('#btn-celebrate-ok').addEventListener('click', () => overlay.remove());
-        overlay.addEventListener('click', function(e) { if (e.target === overlay) overlay.remove(); });
+    /**
+     * 多关键词组合评分（AND关系，必须全部包含）
+     */
+    function scoreByMultiKeywordAnd(userAnswer, config) {
+        const { requiredKeywords, maxScore = 1 } = config;
+        let allMatched = true;
+        for (let req of requiredKeywords) {
+            if (!keywordMatch(userAnswer, req.keyword, req.synonyms || [])) {
+                allMatched = false;
+                break;
+            }
+        }
+        return allMatched ? maxScore : 0;
+    }
+
+    /**
+     * 多关键词组合评分（OR关系，包含任意一个即得分）
+     */
+    function scoreByMultiKeywordOr(userAnswer, config) {
+        const { requiredKeywords, maxScore = 1 } = config;
+        for (let req of requiredKeywords) {
+            if (keywordMatch(userAnswer, req.keyword, req.synonyms || [])) {
+                return maxScore;
+            }
+        }
+        return 0;
+    }
+
+    /**
+     * 多要点评分（每个关键词独立给分，可部分得分）
+     */
+    function scoreByMultiPoint(userAnswer, config) {
+        const { points, maxScore } = config;
+        let earned = 0;
+        for (let point of points) {
+            if (keywordMatch(userAnswer, point.keyword, point.synonyms || [])) {
+                earned += point.score;
+            }
+        }
+        return Math.min(earned, maxScore);
+    }
+
+    /**
+     * 开放性试题评分（基于关键词库，言之成理即可）
+     */
+    function scoreByOpenEnded(userAnswer, config) {
+        const { expectedConcepts, maxScore = 2, flexibleMode = true } = config;
+        let earned = 0;
+        
+        // 预定义同义词库
+        const conceptSynonyms = {
+            '民族独立': ['独立', '主权', '自主', '民族解放', '摆脱殖民'],
+            '国情': ['国情', '实际情况', '本国', '自身特点', '具体国情'],
+            '解放思想': ['思想解放', '思想', '观念更新', '破除迷信'],
+            '与时俱进': ['与时俱进', '发展', '进步', '创新', '变革'],
+            '改革开放': ['改革', '开放', '创新', '发展'],
+            '学习西方': ['学习西方', '师夷长技', '向西方学习', '引进技术'],
+            '制度变革': ['制度', '变革', '改革', '变法', '维新']
+        };
+        
+        for (let concept of expectedConcepts) {
+            const keywords = conceptSynonyms[concept] || [concept];
+            if (keywords.some(kw => userAnswer.toLowerCase().includes(kw.toLowerCase()))) {
+                earned += Math.floor(maxScore / expectedConcepts.length);
+                if (earned >= maxScore) break;
+            }
+        }
+        
+        // 宽松模式：只要不是空话就给基础分
+        if (flexibleMode && earned === 0 && userAnswer.length > 5) {
+            earned = 1;
+        }
+        
+        return Math.min(earned, maxScore);
+    }
+
+    /**
+     * 主评分函数：根据配置类型调用对应评分器
+     */
+    function scoreByRules(userAnswer, scoringRules) {
+        if (!scoringRules) {
+            // 兼容旧格式：使用传统匹配
+            return 0;
+        }
+        
+        const { type, config } = scoringRules;
+        
+        switch (type) {
+            case 'multi_keyword_and':
+                return scoreByMultiKeywordAnd(userAnswer, config);
+            case 'multi_keyword_or':
+                return scoreByMultiKeywordOr(userAnswer, config);
+            case 'multi_point':
+                return scoreByMultiPoint(userAnswer, config);
+            case 'open_ended':
+                return scoreByOpenEnded(userAnswer, config);
+            default:
+                return 0;
+        }
+    }
+
+    /**
+     * 获取某空的理论最高分
+     */
+    function getBlankMaxScore(blank) {
+        if (blank.scoringRules) {
+            const { config } = blank.scoringRules;
+            return config.maxScore || blank.score || 1;
+        }
+        return blank.score || 1;
     }
 
     function renderMaterialView() {
         const container = document.getElementById('main-content');
         let allCompleted = true;
-        let html = '<h3>📜 材料解析大题</h3>';
-        html += '<div class="no-print" style="text-align:center;margin-bottom:0.6rem;">';
-        html += `<button class="btn-print" onclick="window.print()">🖨️ 打印全部材料题</button>`;
-        html += `</div>`;
-        html += '<div class="print-header"><h2>📝 东东题库 · 材料大题汇编</h2><div class="print-date">打印日期：' + new Date().toLocaleDateString('zh-CN') + '</div></div>';
+        let html = '<h3>📜 材料解析大题 <span style="font-size:0.7rem;">智能评分·中考标准</span></h3>';
         
         if (materialQuestions.length === 0) {
             html += '<div style="text-align:center;padding:2rem;color:#8aabc8;">暂无材料题数据，请检查 data/material-' + subject + '.json 文件</div>';
         }
         
         materialQuestions.forEach(mat => {
-            if (!materialStates[mat.id]) materialStates[mat.id] = { submitted: false, userAnswers: {}, score: null };
+            if (!materialStates[mat.id]) materialStates[mat.id] = { submitted: false, userAnswers: {}, scoreDetails: {} };
             const state = materialStates[mat.id];
             const isSubmitted = state.submitted;
-            const totalScore = mat.totalScore || mat.blanks.reduce((sum, b) => sum + (b.score || 1), 0);
+            const totalScore = mat.totalScore || mat.blanks.reduce((sum, b) => sum + getBlankMaxScore(b), 0);
             
             if (!isSubmitted) allCompleted = false;
             
@@ -377,29 +311,35 @@
             
             mat.blanks.forEach(blank => {
                 const userVal = state.userAnswers[blank.id] || '';
+                const maxScore = getBlankMaxScore(blank);
                 let inputClass = '';
+                let earnedScore = 0;
+                
                 if (isSubmitted) {
-                    const isCorrect = checkBlankAnswer(blank, userVal);
-                    inputClass = isCorrect ? 'correct-fill' : 'wrong-fill';
+                    earnedScore = state.scoreDetails[blank.id] || 0;
+                    const isFullScore = earnedScore === maxScore;
+                    inputClass = isFullScore ? 'correct-fill' : (earnedScore > 0 ? 'correct-fill' : 'wrong-fill');
                 }
+                
                 html += `<div style="margin:0.6rem 0;display:flex;align-items:center;flex-wrap:wrap;gap:0.3rem;">
                     <span style="font-weight:700;color:#3d7ab8;min-width:45px;">${blank.label || blank.id}</span>
                     <input type="text" class="fill-blank-input ${inputClass}" data-matid="${mat.id}" data-blank-id="${blank.id}" 
                         value="${escapeHtml(userVal)}" placeholder="${blank.hint || '请输入'}" ${isSubmitted ? 'disabled' : ''}
                         style="flex:1;min-width:120px;">
                     ${!isSubmitted ? `<span class="fill-hint">💡 ${blank.hint || ''}</span>` : ''}
+                    ${isSubmitted && earnedScore < maxScore ? `<span class="score-detail">得分：${earnedScore}/${maxScore}</span>` : ''}
                 </div>`;
             });
             html += `</div>`;
             
             if (!isSubmitted) {
                 html += `<div class="nav-buttons">
-                    <button class="btn" data-mat-submit="${mat.id}">✅ 提交答案（统一批改）</button>
+                    <button class="btn" data-mat-submit="${mat.id}">✅ 提交答案（智能批改）</button>
                 </div>`;
             } else {
                 const earnedScore = state.score || 0;
                 html += `<div style="margin:0.6rem 0;padding:0.5rem;background:#e8f2fa;border-radius:10px;">
-                    <span style="font-weight:700;">📊 得分：${earnedScore} / ${totalScore} 分</span>
+                    <span style="font-weight:700;">📊 总分：${earnedScore} / ${totalScore} 分</span>
                     <button class="btn-outline" style="margin-left:0.8rem;padding:0.2rem 0.8rem;font-size:0.75rem;" data-mat-reset="${mat.id}">🔄 重做</button>
                 </div>`;
             }
@@ -412,27 +352,39 @@
             
             mat.blanks.forEach(blank => {
                 const userVal = state.userAnswers[blank.id] || '未作答';
-                const isCorrect = isSubmitted ? checkBlankAnswer(blank, userVal) : false;
-                const correctStr = blank.answers.slice(0, 3).join('、');
-                html += `<table><td class="step-label">${blank.label || blank.id}</td>
-                    <td>你的答案：${escapeHtml(userVal)}<br>正确答案：${escapeHtml(correctStr)}<br>
+                const maxScore = getBlankMaxScore(blank);
+                const earnedScore = isSubmitted ? (state.scoreDetails[blank.id] || 0) : 0;
+                const isFullScore = earnedScore === maxScore;
+                
+                // 获取正确答案展示（从scoringRules或传统answers）
+                let correctDisplay = '';
+                if (blank.scoringRules) {
+                    const { type, config } = blank.scoringRules;
+                    if (type === 'multi_point' && config.points) {
+                        correctDisplay = config.points.map(p => p.keyword).join('、');
+                    } else if (type === 'multi_keyword_and' && config.requiredKeywords) {
+                        correctDisplay = config.requiredKeywords.map(p => p.keyword).join(' + ');
+                    } else if (type === 'open_ended' && config.expectedConcepts) {
+                        correctDisplay = config.expectedConcepts.join('、') + '（言之成理即可）';
+                    } else {
+                        correctDisplay = '参考答案解析';
+                    }
+                } else {
+                    correctDisplay = blank.answers ? blank.answers.slice(0, 3).join('、') : '参考答案解析';
+                }
+                
+                html += `<tr><td class="step-label">${blank.label || blank.id}（${maxScore}分）</td>
+                    <td>你的答案：${escapeHtml(userVal)}<br>评分标准：${escapeHtml(correctDisplay)}<br>
                     <span style="font-size:0.75rem;color:#6a9ab8;">💡 ${blank.explanation || ''}</span>
-                    ${isSubmitted ? (isCorrect ? '<span class="correct-mark"> ✓ 得分</span>' : '<span class="wrong-mark"> ✗ 失分</span>') : ''}
-                    </td>
-                </tr>`;
+                    ${isSubmitted ? (isFullScore ? '<span class="correct-mark"> ✓ 满分</span>' : `<span class="wrong-mark"> ✗ 得${earnedScore}分</span>`) : ''}
+                    <\/td>
+                <\/tr>`;
             });
-            html += `</table><strong>📌 题型总结：</strong>${mat.reviewSummary}<br><br>
-                <strong>📝 完整参考答案：</strong>${mat.fullAnswer}
-            </div>
-            <div class="print-footer" style="margin-top:0.5rem;">—— 以上为《${mat.title}》——</div>
-            </div>`;
+            html += `<\/table><strong>📌 题型总结：<\/strong>${mat.reviewSummary}<br><br>
+                <strong>📝 完整参考答案：<\/strong>${mat.fullAnswer}
+            <\/div>
+            <\/div>`;
         });
-        
-        html += '<div class="print-footer">东东题库 · 广东中考专项突破 · 材料大题</div>';
-        
-        if (allCompleted && materialQuestions.length > 0) {
-            html += `<div style="text-align:center;margin-top:1rem;"><button class="btn" id="btn-celebrate" style="background:#2d8a4e;">🎉 查看通关庆祝</button></div>`;
-        }
         
         html += `<div class="stats-panel">
             ${currentStreak > 0 ? `<span class="stat-tag streak-tag">🔥 当前连击：${currentStreak}</span>` : ''}
@@ -467,9 +419,6 @@
                 if (body) { body.style.display = body.style.display === 'none' ? 'block' : 'none'; }
             });
         });
-        
-        const celeBtn = document.getElementById('btn-celebrate');
-        if (celeBtn) celeBtn.addEventListener('click', showCelebrate);
     }
 
     function handleMaterialSubmit(matId) {
@@ -479,17 +428,35 @@
         if (state.submitted) { alert('本题已经提交过了！如需重做请点击"重做"按钮。'); return; }
         
         let totalEarned = 0;
-        const totalScore = mat.totalScore || mat.blanks.reduce((sum, b) => sum + (b.score || 1), 0);
+        const scoreDetails = {};
         
         mat.blanks.forEach(blank => {
             const userVal = state.userAnswers[blank.id] || '';
-            if (checkBlankAnswer(blank, userVal)) { totalEarned += (blank.score || 1); }
+            let earned = 0;
+            
+            if (blank.scoringRules) {
+                // 使用智能评分
+                earned = scoreByRules(userVal, blank.scoringRules);
+            } else if (blank.answers) {
+                // 兼容旧格式：使用传统匹配
+                const matchResult = blank.answers.some(ans => 
+                    userVal.trim().toLowerCase() === ans.toLowerCase() ||
+                    userVal.trim().toLowerCase().includes(ans.toLowerCase())
+                );
+                earned = matchResult ? (blank.score || 1) : 0;
+            }
+            
+            scoreDetails[blank.id] = earned;
+            totalEarned += earned;
         });
         
         state.submitted = true;
         state.score = totalEarned;
+        state.scoreDetails = scoreDetails;
         
-        if (totalEarned === totalScore) {
+        const totalMaxScore = mat.totalScore || mat.blanks.reduce((sum, b) => sum + getBlankMaxScore(b), 0);
+        
+        if (totalEarned === totalMaxScore) {
             currentStreak++;
             if (currentStreak > bestStreak) { bestStreak = currentStreak; saveStreak(); }
             checkStreakEncourage();
@@ -503,7 +470,7 @@
 
     function resetMaterialQuestion(matId) {
         if (confirm('确定要重做本题吗？之前的答案将被清空。')) {
-            materialStates[matId] = { submitted: false, userAnswers: {}, score: null };
+            materialStates[matId] = { submitted: false, userAnswers: {}, score: null, scoreDetails: {} };
             renderMaterialView();
         }
     }
@@ -516,10 +483,10 @@
             materialQuestions = data.materialQuestions || [];
             subjectName = data.subjectName || '历史';
             document.getElementById('header-title').textContent = `东东题库 · ${subjectName}材料大题`;
-            document.getElementById('header-subtitle').textContent = '6道精选题 · 四步解题法 · 逐空批改';
+            document.getElementById('header-subtitle').textContent = '智能评分 · 中考标准 · 多关键词匹配';
             document.title = `东东的${subjectName}材料大题`;
             renderMaterialView();
-            console.log('📜 材料题已就绪！共 ' + materialQuestions.length + ' 道大题');
+            console.log('📜 材料题已就绪！共 ' + materialQuestions.length + ' 道大题 | 智能评分引擎已启用');
         } catch (err) {
             console.error('材料题加载错误:', err);
             document.getElementById('main-content').innerHTML = `<div style="text-align:center;padding:3rem;color:#e74c3c;">
