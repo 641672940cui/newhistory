@@ -24,7 +24,6 @@
             color: #2c3e50;
             line-height: 1.7;
             -webkit-tap-highlight-color: transparent;
-            -webkit-font-smoothing: antialiased;
         }
         .app-header {
             background: linear-gradient(135deg, #5b9bd5 0%, #4a8bc2 40%, #3d7ab8 100%);
@@ -134,6 +133,15 @@
             border-radius: 10px;
             white-space: nowrap;
         }
+        .badge-new {
+            background: #e74c3c;
+            color: #fff;
+            font-size: 0.65rem;
+            padding: 0.15rem 0.5rem;
+            border-radius: 12px;
+            margin-left: 0.5rem;
+            font-weight: 600;
+        }
         .footer {
             text-align: center;
             padding: 2rem 1rem 1.5rem;
@@ -162,17 +170,34 @@
     </div>
 
     <div class="main-content">
-        <div class="section-title">📖 已上线科目</div>
         
+        <!-- 历史科目：选择题 + 材料题 双入口 -->
+        <div class="section-title">📖 历史</div>
+        
+        <!-- 选择题入口 -->
         <div class="subject-card" onclick="location.href='quiz-engine.html?subject=history'">
+            <div class="subject-icon">✅</div>
+            <div class="subject-info">
+                <div class="subject-name">选择题 · 8个分区</div>
+                <div class="subject-desc">中国古代史 · 近代史 · 现代史 · 世界史</div>
+                <div class="subject-stats">
+                    <span class="stat-item">160道选择题</span>
+                    <span class="stat-item">分区练习</span>
+                    <span class="stat-item">错题本</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 材料题入口 -->
+        <div class="subject-card" onclick="location.href='material-engine.html?subject=history'">
             <div class="subject-icon">📜</div>
             <div class="subject-info">
-                <div class="subject-name">历史</div>
-                <div class="subject-desc">中国古代史·近代史·现代史·世界史·材料大题</div>
+                <div class="subject-name">材料大题 · 6道精选题 <span class="badge-new">NEW</span></div>
+                <div class="subject-desc">概括类 · 原因背景类 · 影响意义类 · 变化趋势类 · 比较类 · 启示认识类</div>
                 <div class="subject-stats">
-                    <span class="stat-item">选择题 160题</span>
-                    <span class="stat-item">材料题 6题</span>
-                    <span class="stat-item">8个分区</span>
+                    <span class="stat-item">6道大题</span>
+                    <span class="stat-item">四步解题法</span>
+                    <span class="stat-item">逐空批改</span>
                 </div>
             </div>
         </div>
@@ -206,7 +231,7 @@
 
     <div class="footer">
         🚀 题库持续更新中 · 程序与数据完全分离 · AI可安全生成题库<br>
-        <a href="https://github.com/YOUR_USERNAME/history-quiz" target="_blank">GitHub 开源</a>
+        <a href="#" target="_blank">GitHub 开源</a>
     </div>
 
 </body>
