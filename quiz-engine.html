@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes, viewport-fit=cover">
-    <title>东东题库 - 答题</title>
+    <title>东东题库 - 材料大题</title>
     <style>
         :root {
             --bg: #f3f8fc;
@@ -25,11 +25,10 @@
             font-family: var(--font-main);
             background: linear-gradient(180deg, #eef5fb 0%, #e3eff9 30%, #f5f9fd 100%);
             min-height: 100vh;
-            padding-bottom: 72px;
+            padding-bottom: 20px;
             color: #2c3e50;
             line-height: 1.7;
             -webkit-tap-highlight-color: transparent;
-            -webkit-font-smoothing: antialiased;
         }
         .app-header {
             background: linear-gradient(135deg, #5b9bd5 0%, #4a8bc2 40%, #3d7ab8 100%);
@@ -75,261 +74,11 @@
             text-decoration: underline;
         }
         .back-home-link:hover { color: #fff; }
-        .bottom-nav {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: #fff;
-            border-top: 2px solid #d0e4f5;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 58px;
-            z-index: 100;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.03);
-            border-radius: 14px 14px 0 0;
-        }
-        .nav-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 2px;
-            font-size: 0.72rem;
-            color: #8aabc8;
-            cursor: pointer;
-            padding: 0.3rem 0.6rem;
-            border-radius: 18px;
-            transition: all 0.2s;
-            min-width: 52px;
-            position: relative;
-            font-weight: 500;
-            user-select: none;
-        }
-        .nav-item.active {
-            color: #3d7ab8;
-            font-weight: 700;
-            background: #e8f2fa;
-            transform: translateY(-2px);
-        }
-        .nav-item .icon { font-size: 1.3rem; transition: transform 0.2s; }
-        .nav-item.active .icon { transform: scale(1.1); }
-        .badge-count {
-            position: absolute;
-            top: -1px;
-            right: 0px;
-            background: #e74c3c;
-            color: #fff;
-            font-size: 0.65rem;
-            min-width: 17px;
-            height: 17px;
-            border-radius: 9px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            padding: 0 3px;
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.15); }
-        }
         .main-content {
-            max-width: 500px;
+            max-width: 600px;
             margin: 0 auto;
             padding: 0.7rem 0.8rem 0.5rem;
         }
-        .view { display: none; }
-        .view.active { display: block; animation: fadeInUp 0.3s ease; }
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(12px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .home-cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 0.6rem;
-            margin-bottom: 0.8rem;
-        }
-        .home-card {
-            background: #fff;
-            border-radius: var(--radius);
-            padding: 1rem 0.4rem;
-            text-align: center;
-            cursor: pointer;
-            border: 2px solid #d0e4f5;
-            transition: all 0.2s;
-            user-select: none;
-            box-shadow: var(--shadow);
-        }
-        .home-card:active {
-            transform: scale(0.95);
-            border-color: #5b9bd5;
-            background: #f0f7fd;
-        }
-        .home-card .card-icon { font-size: 2rem; display: block; margin-bottom: 0.3rem; }
-        .home-card .card-label { font-weight: 700; font-size: 0.88rem; color: #3d7ab8; letter-spacing: 0.5px; }
-        .home-card .card-sub { font-size: 0.68rem; color: #8aabc8; margin-top: 2px; }
-        .section-list-title {
-            font-weight: 700;
-            font-size: 0.95rem;
-            color: #3d7ab8;
-            margin-bottom: 0.55rem;
-            padding-left: 0.3rem;
-            letter-spacing: 1px;
-        }
-        .section-entry {
-            background: #fff;
-            border-radius: var(--radius);
-            padding: 0.8rem 0.95rem;
-            margin-bottom: 0.5rem;
-            cursor: pointer;
-            border: 1.5px solid #e0edf8;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: all 0.15s;
-            user-select: none;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
-        }
-        .section-entry:active {
-            background: #f0f7fd;
-            border-color: #5b9bd5;
-            transform: scale(0.98);
-        }
-        .section-entry .entry-left {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-weight: 600;
-            font-size: 0.9rem;
-            color: #2c3e50;
-        }
-        .section-entry .entry-right {
-            font-size: 0.7rem;
-            color: #8aabc8;
-            display: flex;
-            align-items: center;
-            gap: 0.3rem;
-        }
-        .progress-mini {
-            width: 45px;
-            height: 6px;
-            background: #e0edf8;
-            border-radius: 3px;
-            overflow: hidden;
-        }
-        .progress-mini-fill {
-            height: 100%;
-            background: #5b9bd5;
-            border-radius: 3px;
-            transition: width 0.3s;
-        }
-        .quiz-header {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 0.7rem;
-            padding: 0 0.2rem;
-        }
-        .btn-back {
-            background: #fff;
-            border: 1.5px solid #d0e4f5;
-            color: #3d7ab8;
-            padding: 0.5rem 0.9rem;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 0.82rem;
-            cursor: pointer;
-            white-space: nowrap;
-            min-height: 36px;
-            display: flex;
-            align-items: center;
-            gap: 0.2rem;
-        }
-        .btn-back:active { background: #f0f7fd; }
-        .quiz-progress {
-            flex: 1;
-            font-size: 0.78rem;
-            color: #6a9ab8;
-            font-weight: 500;
-            text-align: center;
-        }
-        .progress-bar-wrap {
-            flex: 1;
-            height: 7px;
-            background: #e0edf8;
-            border-radius: 4px;
-            overflow: hidden;
-            margin: 0 0.3rem;
-        }
-        .progress-bar-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #5b9bd5, #7db9e8);
-            border-radius: 4px;
-            transition: width 0.3s;
-        }
-        .question-card {
-            background: #fff;
-            border: 1.5px solid #dceaf5;
-            border-radius: var(--radius);
-            padding: 0.9rem 0.9rem;
-            margin-bottom: 0.7rem;
-            transition: all 0.25s;
-            box-shadow: var(--shadow);
-        }
-        .question-card.correct-card { border-color: #2d8a4e; background: #f4faf6; }
-        .question-card.wrong-card { border-color: #e74c3c; background: #fef8f7; }
-        .q-text {
-            font-weight: 600;
-            font-size: 1.05rem;
-            margin-bottom: 0.6rem;
-            color: #1a2d3d;
-            font-family: var(--font-serif);
-            line-height: 1.6;
-        }
-        .option-label {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.5rem;
-            padding: 0.6rem 0.6rem;
-            margin: 0.25rem 0;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.12s;
-            border: 1.5px solid transparent;
-            font-size: 0.92rem;
-            user-select: none;
-            -webkit-tap-highlight-color: transparent;
-            background: #fafcfe;
-            min-height: 44px;
-            line-height: 1.5;
-        }
-        .option-label:active { background: #eef6fc; border-color: #b0d4f0; }
-        .option-label input { margin-top: 3px; accent-color: #5b9bd5; min-width: 17px; height: 17px; pointer-events: none; flex-shrink: 0; }
-        .option-label.selected { background: #e8f2fa; border-color: #7db9e8; font-weight: 600; }
-        .option-label.correct-answer { background: #daf2e2; border-color: #2d8a4e; color: #1a4d28; font-weight: 700; }
-        .option-label.wrong-answer { background: #fde4e0; border-color: #e74c3c; color: #7a1a1a; font-weight: 600; }
-        .feedback-msg {
-            margin-top: 0.6rem;
-            padding: 0.6rem 0.7rem;
-            border-radius: 10px;
-            font-size: 0.85rem;
-            display: none;
-            animation: fadeIn 0.25s;
-            line-height: 1.6;
-        }
-        .feedback-msg.show { display: block; }
-        .feedback-msg.correct-fb { background: #e8f7ed; color: #1a4d28; border: 1px solid #c3e6d1; }
-        .feedback-msg.wrong-fb { background: #fef2f0; color: #7a1a1a; border: 1px solid #f5c8c0; }
-        .encourage { font-weight: 700; font-size: 0.9rem; display: inline-block; margin-right: 0.2rem; }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-3px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .nav-buttons { display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; }
         .btn {
             background: #5b9bd5;
             color: #fff;
@@ -341,14 +90,17 @@
             cursor: pointer;
             letter-spacing: 0.5px;
             transition: all 0.2s;
-            -webkit-tap-highlight-color: transparent;
             min-height: 42px;
             box-shadow: 0 2px 8px rgba(91,155,213,0.2);
             white-space: nowrap;
         }
-        .btn:active { transform: scale(0.94); box-shadow: 0 1px 4px rgba(91,155,213,0.3); }
-        .btn-outline { background: #fff; border: 2px solid #5b9bd5; color: #5b9bd5; box-shadow: none; }
-        .btn:disabled { opacity: 0.4; pointer-events: none; }
+        .btn:active { transform: scale(0.94); }
+        .btn-outline {
+            background: #fff;
+            border: 2px solid #5b9bd5;
+            color: #5b9bd5;
+            box-shadow: none;
+        }
         .btn-print {
             background: #fff;
             border: 2px solid #6a9ab8;
@@ -358,41 +110,16 @@
             font-weight: 600;
             font-size: 0.78rem;
             cursor: pointer;
-            transition: all 0.2s;
         }
-        .btn-print:active { background: #f0f7fd; border-color: #3d7ab8; }
-        .celebrate-overlay {
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(30,50,80,0.7);
-            z-index: 200;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            animation: fadeIn 0.3s;
-        }
-        .celebrate-card {
+        .question-card {
             background: #fff;
-            border-radius: 20px;
-            padding: 1.8rem 1.3rem;
-            text-align: center;
-            max-width: 320px;
-            width: 88%;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.25);
-            animation: popIn 0.4s ease;
+            border: 1.5px solid #dceaf5;
+            border-radius: var(--radius);
+            padding: 0.9rem 0.9rem;
+            margin-bottom: 1rem;
+            transition: all 0.25s;
+            box-shadow: var(--shadow);
         }
-        @keyframes popIn {
-            0% { transform: scale(0.7); opacity: 0; }
-            70% { transform: scale(1.05); }
-            100% { transform: scale(1); opacity: 1; }
-        }
-        .celebrate-emoji { font-size: 3.5rem; animation: bounce 0.6s ease infinite alternate; }
-        @keyframes bounce {
-            from { transform: translateY(0); }
-            to { transform: translateY(-15px); }
-        }
-        .celebrate-text { font-size: 1.2rem; font-weight: 700; color: #3d7ab8; margin: 0.6rem 0; }
-        .celebrate-sub { font-size: 0.85rem; color: #6a9ab8; margin-bottom: 0.9rem; }
         .material-box {
             background: #f8fbfe;
             border-left: 4px solid #5b9bd5;
@@ -405,18 +132,30 @@
             color: #2c3e50;
             line-height: 1.8;
         }
-        .step-badge {
-            display: inline-block;
-            background: #e8f2fa;
-            color: #3d7ab8;
-            padding: 0.3rem 0.8rem;
-            border-radius: 14px;
-            font-weight: 700;
-            font-size: 0.78rem;
-            margin: 0.4rem 0;
-            border: 1px solid #c8ddf0;
+        .fill-blank-input {
+            border: none;
+            border-bottom: 2px solid #5b9bd5;
+            padding: 0.2rem 0.5rem;
+            font-size: 1rem;
+            width: 140px;
+            text-align: center;
+            background: #fafcfe;
+            border-radius: 4px 4px 0 0;
+            transition: all 0.2s;
+            font-family: var(--font-serif);
         }
-        .stats-panel { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.6rem 0; }
+        .fill-blank-input:focus {
+            outline: none;
+            border-bottom-color: #3d7ab8;
+            background: #f0f7fd;
+            width: 170px;
+        }
+        .fill-blank-input:disabled { opacity: 1; color: #2c3e50; }
+        .fill-blank-input.correct-fill { border-bottom-color: #2d8a4e; background: #f4faf6; color: #2d8a4e; }
+        .fill-blank-input.wrong-fill { border-bottom-color: #e74c3c; background: #fef8f7; color: #e74c3c; }
+        .fill-hint { font-size: 0.7rem; color: #8aabc8; margin-left: 0.3rem; }
+        .nav-buttons { display: flex; gap: 0.5rem; justify-content: flex-start; flex-wrap: wrap; margin: 0.5rem 0; }
+        .stats-panel { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.6rem 0; justify-content: center; }
         .stat-tag {
             background: #e8f2fa;
             padding: 0.3rem 0.7rem;
@@ -426,10 +165,7 @@
             font-weight: 500;
             border: 1px solid #d0e4f5;
         }
-        .stat-tag.has-error { background: #fef0ef; color: #c0392b; font-weight: 700; border-color: #e74c3c; }
-        .stat-tag.total-tag { background: #5b9bd5; color: #fff; border-color: #5b9bd5; font-weight: 700; }
         .stat-tag.streak-tag { background: #fff3e0; color: #e65100; border-color: #ffcc80; }
-        h3 { color: #3d7ab8; font-size: 1.1rem; margin-bottom: 0.5rem; font-family: var(--font-serif); text-align: center; }
         .collapse-header {
             background: #f0f7fd;
             padding: 0.7rem 0.9rem;
@@ -458,7 +194,6 @@
             line-height: 1.7;
             color: #3d4f5f;
         }
-        .collapse-body.show { display: block; }
         .review-table {
             width: 100%;
             border-collapse: collapse;
@@ -473,32 +208,6 @@
         .review-table .step-label { font-weight: 700; color: #3d7ab8; white-space: nowrap; width: 30%; }
         .review-table .correct-mark { color: #2d8a4e; font-weight: 700; }
         .review-table .wrong-mark { color: #e74c3c; font-weight: 700; }
-
-        /* 🆕 填空题输入框样式 */
-        .fill-blank-input {
-            border: none;
-            border-bottom: 2px solid #5b9bd5;
-            padding: 0.2rem 0.5rem;
-            font-size: 1rem;
-            width: 130px;
-            text-align: center;
-            background: #fafcfe;
-            border-radius: 4px 4px 0 0;
-            transition: all 0.2s;
-            font-family: var(--font-serif);
-        }
-        .fill-blank-input:focus {
-            outline: none;
-            border-bottom-color: #3d7ab8;
-            background: #f0f7fd;
-            width: 160px;
-        }
-        .fill-blank-input:disabled { opacity: 1; color: #2c3e50; }
-        .fill-blank-input.correct-fill { border-bottom-color: #2d8a4e; background: #f4faf6; color: #2d8a4e; }
-        .fill-blank-input.wrong-fill { border-bottom-color: #e74c3c; background: #fef8f7; color: #e74c3c; }
-        .fill-hint { font-size: 0.7rem; color: #8aabc8; margin-left: 0.3rem; }
-
-        /* 🆕 连击提示 */
         .streak-toast {
             position: fixed;
             top: 90px;
@@ -523,616 +232,305 @@
         @keyframes streakFadeOut {
             to { opacity: 0; transform: translateX(-50%) translateY(-15px); }
         }
-
-        /* 🆕 打印样式 */
+        .celebrate-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(30,50,80,0.7);
+            z-index: 200;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .celebrate-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 1.8rem 1.3rem;
+            text-align: center;
+            max-width: 320px;
+            width: 88%;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+            animation: popIn 0.4s ease;
+        }
+        @keyframes popIn {
+            0% { transform: scale(0.7); opacity: 0; }
+            70% { transform: scale(1.05); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .print-header, .print-footer { display: none; }
         @media print {
             @page { size: A4; margin: 15mm; }
-            body { background: white !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-            .app-header, .bottom-nav, .btn, .btn-outline, .btn-print, .nav-buttons, .quiz-header,
-            .back-home-link, .home-cards, .section-list-title, .section-entry, .progress-mini,
-            .stats-panel, .no-print { display: none !important; }
-            .app-header {
-                position: static !important;
-                background: white !important;
-                color: #333 !important;
-                box-shadow: none !important;
-                border-bottom: 2px solid #333 !important;
-                border-radius: 0 !important;
-                display: block !important;
-                padding: 0.5rem !important;
-            }
-            .app-header h1 { font-size: 1.2rem !important; color: #333 !important; }
-            .app-header .subtitle, .app-header .header-emoji { display: none !important; }
-            .main-content { max-width: 100% !important; padding: 0 !important; }
-            .question-card {
-                break-inside: avoid;
-                border: 1px solid #ccc !important;
-                box-shadow: none !important;
-                margin-bottom: 0.4rem !important;
-                padding: 0.5rem !important;
-                page-break-inside: avoid;
-            }
-            .question-card.correct-card { border-color: #2d8a4e !important; background: #f4faf6 !important; }
-            .question-card.wrong-card { border-color: #e74c3c !important; background: #fef8f7 !important; }
-            .option-label.correct-answer {
-                background: #daf2e2 !important;
-                border: 2px solid #2d8a4e !important;
-                font-weight: 700 !important;
-            }
-            .option-label.wrong-answer {
-                background: #fde4e0 !important;
-                border: 2px solid #e74c3c !important;
-                text-decoration: line-through;
-            }
-            .feedback-msg { display: block !important; font-size: 0.72rem !important; padding: 0.25rem !important; margin-top: 0.25rem !important; }
-            .feedback-msg.correct-fb { background: #e8f7ed !important; border: 1px solid #c3e6d1 !important; }
-            .feedback-msg.wrong-fb { background: #fef2f0 !important; border: 1px solid #f5c8c0 !important; }
-            .print-header { display: block !important; text-align: center; margin-bottom: 0.8rem; padding-bottom: 0.4rem; border-bottom: 2px solid #333; }
-            .print-header h2 { font-size: 1.2rem; margin: 0; }
-            .print-header .print-date { font-size: 0.75rem; color: #666; }
-            .print-footer { display: block !important; text-align: center; margin-top: 0.8rem; padding-top: 0.4rem; border-top: 1px solid #ccc; font-size: 0.7rem; color: #999; }
-            .fill-blank-input { border: none !important; border-bottom: 1px solid #333 !important; background: transparent !important; width: 100px !important; }
-            .fill-blank-input.correct-fill { border-bottom-color: #2d8a4e !important; color: #2d8a4e !important; }
-            .fill-blank-input.wrong-fill { border-bottom-color: #e74c3c !important; color: #e74c3c !important; }
+            body { background: white !important; -webkit-print-color-adjust: exact; }
+            .app-header, .btn, .btn-outline, .btn-print, .nav-buttons, .back-home-link, .no-print { display: none !important; }
+            .app-header { display: block !important; background: white !important; color: #333 !important; border-bottom: 2px solid #333 !important; }
+            .question-card { break-inside: avoid; border: 1px solid #ccc !important; }
+            .fill-blank-input { border: none !important; border-bottom: 1px solid #333 !important; background: transparent !important; }
+            .print-header { display: block !important; text-align: center; margin-bottom: 0.8rem; }
+            .print-footer { display: block !important; text-align: center; margin-top: 0.8rem; font-size: 0.7rem; }
         }
-        .print-header { display: none; }
-        .print-footer { display: none; }
-
-        @media (max-width: 360px) {
-            .home-cards { gap: 0.4rem; }
-            .home-card { padding: 0.8rem 0.2rem; }
-            .home-card .card-icon { font-size: 1.6rem; }
-            .home-card .card-label { font-size: 0.78rem; }
-            .q-text { font-size: 0.95rem; }
-            .option-label { font-size: 0.82rem; padding: 0.5rem 0.5rem; min-height: 40px; }
-            .btn { padding: 0.5rem 1rem; font-size: 0.8rem; min-height: 38px; }
-            .section-entry { padding: 0.65rem 0.75rem; }
-            .section-entry .entry-left { font-size: 0.82rem; }
-            .fill-blank-input { width: 100px; }
-        }
+        h3 { color: #3d7ab8; margin-bottom: 0.5rem; text-align: center; }
     </style>
 </head>
 <body>
 
-    <div class="app-header">
-        <span class="header-emoji">📜</span>
-        <h1 id="header-title">东东题库</h1>
-        <div class="subtitle" id="header-subtitle">加载中...</div>
-        <a class="back-home-link" href="index.html">← 返回首页</a>
-    </div>
+<div class="app-header">
+    <span class="header-emoji">📜</span>
+    <h1 id="header-title">东东题库 · 材料大题</h1>
+    <div class="subtitle" id="header-subtitle">加载中...</div>
+    <a class="back-home-link" href="index.html">← 返回首页</a>
+</div>
 
-    <div class="main-content">
-        <div id="view-home" class="view active"></div>
-        <div id="view-quiz-section" class="view"></div>
-        <div id="view-material" class="view"></div>
-        <div id="view-errors" class="view"></div>
-    </div>
+<div class="main-content" id="main-content">
+    <div style="text-align:center;padding:2rem;">加载中...</div>
+</div>
 
-    <div class="bottom-nav">
-        <div class="nav-item active" data-view="home"><span class="icon">🏠</span>首页</div>
-        <div class="nav-item" data-view="material"><span class="icon">📜</span>材料题</div>
-        <div class="nav-item" data-view="errors"><span class="icon">📝</span>错题本<span class="badge-count" id="error-badge" style="display:none;">0</span></div>
-    </div>
+<script>
+(function() {
+    const params = new URLSearchParams(window.location.search);
+    const subject = params.get('subject') || 'history';
+    const dataUrl = `data/material-${subject}.json`;
 
-    <script>
-        (function() {
-            // ==================== 动态加载题库 ====================
-            const params = new URLSearchParams(window.location.search);
-            const subject = params.get('subject') || 'history';
-            const dataUrl = `data/${subject}.json`;
+    let materialQuestions = [];
+    let subjectName = '历史';
+    let materialStates = {};
+    let currentStreak = parseInt(localStorage.getItem(`material-${subject}-streak`) || '0');
+    let bestStreak = parseInt(localStorage.getItem(`material-${subject}-bestStreak`) || '0');
 
-            let quizData = [];
-            let materialQuestions = [];
-            let subjectName = '历史';
-            let encourageMessages = {
-                correct: ['答对了！👏', '太棒了！💪'],
-                wrong: ['别灰心，加油！💪'],
-                complete: ['完美通关！🏆'],
-                clearErrors: ['错题清零！✨'],
-                streak: {}
-            };
+    const encourageMessages = {
+        correct: ['答对了！👏', '太棒了！💪', '优秀！🎯', '继续前进！📚'],
+        wrong: ['别灰心，加油！💪', '再试试看～', '记住这个知识点！📝'],
+        complete: ['完美通关！🏆', '太厉害了！🎉', '材料题全对！👑'],
+        streak: { 3: '🔥 三连击！', 5: '💯 五连击！', 10: '🏆 十连击！' }
+    };
 
-            // ==================== 状态管理 ====================
-            let currentView = 'home';
-            let currentSectionId = null;
-            let currentQuestionIndex = 0;
-            let userAnswers = {};
-            let questionResults = {};
-            let errorSet = new Set(JSON.parse(localStorage.getItem(`${subject}-errors`) || '[]'));
-            let materialStates = {};
-            let currentStreak = 0;
-            let bestStreak = parseInt(localStorage.getItem(`${subject}-bestStreak`) || '0');
+    function randomPick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+    function saveStreak() { 
+        localStorage.setItem(`material-${subject}-streak`, currentStreak);
+        localStorage.setItem(`material-${subject}-bestStreak`, bestStreak);
+    }
 
-            function randomPick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
-            function saveErrors() { localStorage.setItem(`${subject}-errors`, JSON.stringify([...errorSet])); updateErrorBadge(); }
+    function showStreakToast(message) {
+        const toast = document.createElement('div');
+        toast.className = 'streak-toast';
+        toast.textContent = message;
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 2200);
+    }
 
-            function updateErrorBadge() {
-                const badge = document.getElementById('error-badge');
-                if (badge) {
-                    if (errorSet.size > 0) { badge.style.display = 'flex'; badge.textContent = errorSet.size > 99 ? '99+' : errorSet.size; }
-                    else { badge.style.display = 'none'; }
+    function checkStreakEncourage() {
+        const streaks = Object.keys(encourageMessages.streak).map(Number).sort((a,b)=>b-a);
+        for (let threshold of streaks) {
+            if (currentStreak === threshold) { showStreakToast(encourageMessages.streak[threshold]); break; }
+        }
+    }
+
+    function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        });
+    }
+
+    function checkBlankAnswer(blank, userAnswer) {
+        if (!userAnswer || userAnswer.trim() === '') return false;
+        return blank.answers.some(ans => userAnswer.trim().toLowerCase() === ans.toLowerCase());
+    }
+
+    function showCelebrate() {
+        const overlay = document.createElement('div');
+        overlay.className = 'celebrate-overlay';
+        overlay.innerHTML = `<div class="celebrate-card"><div class="celebrate-emoji" style="font-size:3rem;">🎉</div><div class="celebrate-text">${randomPick(encourageMessages.complete)}</div><div class="celebrate-sub">所有材料题已满分完成！</div><button class="btn" id="btn-celebrate-ok">👍 好的</button></div>`;
+        document.body.appendChild(overlay);
+        overlay.querySelector('#btn-celebrate-ok').addEventListener('click', () => overlay.remove());
+        overlay.addEventListener('click', function(e) { if (e.target === overlay) overlay.remove(); });
+    }
+
+    function renderMaterialView() {
+        const container = document.getElementById('main-content');
+        let allCompleted = true;
+        let html = '<h3>📜 材料解析大题</h3>';
+        html += '<div class="no-print" style="text-align:center;margin-bottom:0.6rem;">';
+        html += `<button class="btn-print" onclick="window.print()">🖨️ 打印全部材料题</button>`;
+        html += `</div>`;
+        html += '<div class="print-header"><h2>📝 东东题库 · 材料大题汇编</h2><div class="print-date">打印日期：' + new Date().toLocaleDateString('zh-CN') + '</div></div>';
+        
+        if (materialQuestions.length === 0) {
+            html += '<div style="text-align:center;padding:2rem;color:#8aabc8;">暂无材料题数据，请检查 data/material-' + subject + '.json 文件</div>';
+        }
+        
+        materialQuestions.forEach(mat => {
+            if (!materialStates[mat.id]) materialStates[mat.id] = { submitted: false, userAnswers: {}, score: null };
+            const state = materialStates[mat.id];
+            const isSubmitted = state.submitted;
+            const totalScore = mat.totalScore || mat.blanks.reduce((sum, b) => sum + (b.score || 1), 0);
+            
+            if (!isSubmitted) allCompleted = false;
+            
+            html += `<div class="question-card" data-matid="${mat.id}">
+                <div style="font-weight:700;color:#3d7ab8;margin-bottom:0.5rem;font-size:1.1rem;">${mat.title}</div>
+                <div class="material-box">${mat.material.replace(/\n/g,'<br>')}</div>
+                <div style="font-size:0.95rem;color:#4a5f70;margin:0.5rem 0;background:#f0f7fd;padding:0.5rem;border-radius:8px;">📋 ${mat.question}</div>
+                <div class="fill-blanks-area" style="margin:0.8rem 0;">`;
+            
+            mat.blanks.forEach(blank => {
+                const userVal = state.userAnswers[blank.id] || '';
+                let inputClass = '';
+                if (isSubmitted) {
+                    const isCorrect = checkBlankAnswer(blank, userVal);
+                    inputClass = isCorrect ? 'correct-fill' : 'wrong-fill';
                 }
-            }
-
-            function findQuestionById(qId) {
-                for (const s of quizData) { const q = s.questions.find(q => q.id === qId); if (q) return q; }
-                return null;
-            }
-            function getSectionById(id) { return quizData.find(s => s.id === id); }
-
-            function switchView(view, sectionId = null) {
-                currentView = view;
-                if (view === 'quiz-section' && sectionId) { currentSectionId = sectionId; currentQuestionIndex = 0; }
-                document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
-                const tv = document.getElementById(`view-${view}`);
-                if (tv) tv.classList.add('active');
-                document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-                const navMap = { 'home': 'home', 'quiz-section': 'home', 'material': 'material', 'errors': 'errors' };
-                const nav = document.querySelector(`[data-view="${navMap[view]}"]`);
-                if (nav) nav.classList.add('active');
-                renderCurrentView();
-                updateErrorBadge();
-            }
-
-            function renderCurrentView() {
-                if (currentView === 'home') renderHomeView();
-                if (currentView === 'quiz-section') renderQuizSectionView();
-                if (currentView === 'material') renderMaterialView();
-                if (currentView === 'errors') renderErrorView();
-            }
-
-            // ==================== 首页 ====================
-            function renderHomeView() {
-                const container = document.getElementById('view-home');
-                let html = `<div class="home-cards">
-              <div class="home-card" data-action="go-quiz-list"><span class="card-icon">📚</span><span class="card-label">选择题库</span><span class="card-sub">分区练习</span></div>
-              <div class="home-card" data-action="go-material"><span class="card-icon">📜</span><span class="card-label">材料大题</span><span class="card-sub">四步解题法</span></div>
-              <div class="home-card" data-action="go-errors"><span class="card-icon">📝</span><span class="card-label">错题本</span><span class="card-sub">${errorSet.size}题待复习</span></div>
-            </div>`;
-                if (currentStreak > 0 || bestStreak > 0) {
-                    html += `<div class="stats-panel" style="justify-content:center;">
-                ${currentStreak > 0 ? `<span class="stat-tag streak-tag">🔥 当前连击：${currentStreak}</span>` : ''}
-                ${bestStreak > 0 ? `<span class="stat-tag">🏆 最佳连击：${bestStreak}</span>` : ''}
-              </div>`;
-                }
-                html += '<div class="section-list-title">📖 选择题分区（点击进入）</div>';
-                quizData.forEach(s => {
-                    const total = s.questions.length;
-                    let answered = 0, correct = 0;
-                    s.questions.forEach(q => {
-                        if (questionResults[q.id]) { answered++; if (questionResults[q.id] === 'correct') correct++; }
-                    });
-                    const pct = total > 0 ? Math.round((answered / total) * 100) : 0;
-                    html += `<div class="section-entry" data-action="enter-section" data-section="${s.id}"><span class="entry-left">${s.title}</span><span class="entry-right"><span>${answered}/${total}</span><div class="progress-mini"><div class="progress-mini-fill" style="width:${pct}%"></div></div></span></div>`;
-                });
-                container.innerHTML = html;
-                container.querySelectorAll('[data-action="go-quiz-list"]').forEach(el => el.addEventListener('click', () => {
-                    document.querySelector('.section-list-title').scrollIntoView({ behavior: 'smooth' });
-                }));
-                container.querySelectorAll('[data-action="go-material"]').forEach(el => el.addEventListener('click', () => switchView('material')));
-                container.querySelectorAll('[data-action="go-errors"]').forEach(el => el.addEventListener('click', () => switchView('errors')));
-                container.querySelectorAll('[data-action="enter-section"]').forEach(el => el.addEventListener('click', function() {
-                    switchView('quiz-section', this.dataset.section);
-                }));
-            }
-
-            // ==================== 选择题答题页 ====================
-            function renderQuizSectionView() {
-                const section = getSectionById(currentSectionId);
-                if (!section) { switchView('home'); return; }
-                const total = section.questions.length;
-                if (currentQuestionIndex >= total) currentQuestionIndex = total - 1;
-                if (currentQuestionIndex < 0) currentQuestionIndex = 0;
-                const q = section.questions[currentQuestionIndex];
-                const result = questionResults[q.id];
-                const selected = userAnswers[q.id];
-                const isLast = currentQuestionIndex >= total - 1;
-                const allDone = section.questions.every(qq => questionResults[qq.id]);
-                const pct = Math.round(((currentQuestionIndex + 1) / total) * 100);
-                let cardClass = result === 'correct' ? 'correct-card' : (result === 'wrong' ? 'wrong-card' : '');
-                const container = document.getElementById('view-quiz-section');
-
-                let cardHtml = '';
-                if (q.type === 'fill_blank') {
-                    cardHtml = renderFillBlankCard(q, result);
-                } else {
-                    cardHtml = renderChoiceCard(q, result, selected);
-                }
-
-                let feedbackHtml = '';
-                if (result === 'correct') feedbackHtml = `<div class="feedback-msg correct-fb show"><span class="encourage">${randomPick(encourageMessages.correct)}</span> ${q.explanation || ''}</div>`;
-                if (result === 'wrong') feedbackHtml = `<div class="feedback-msg wrong-fb show"><span class="encourage">${randomPick(encourageMessages.wrong)}</span> ${q.type==='fill_blank' ? '正确答案：'+q.blanks.map(b=>b.answers[0]).join('、') : '正确答案：'+q.options[q.correct].charAt(0)}。${q.explanation || ''}</div>`;
-
-                container.innerHTML = `<div class="quiz-header"><button class="btn-back" id="btn-back-section">← 返回</button><span class="quiz-progress">${currentQuestionIndex+1}/${total}</span><div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:${pct}%"></div></div></div>
-            <div class="question-card ${cardClass}">${cardHtml}${feedbackHtml}</div>
-            <div class="nav-buttons"><button class="btn btn-outline" id="btn-prev" ${currentQuestionIndex===0?'disabled':''}>◀ 上一题</button>
-            ${q.type === 'fill_blank' && !result ? '<button class="btn" id="btn-fill-submit">✅ 提交答案</button>' : ''}
-            <button class="btn" id="btn-next" ${!result?'disabled':''}>${isLast?'完成':'下一题 ▶'}</button></div>`;
-                if (allDone) container.innerHTML += '<div style="text-align:center;color:#2d8a4e;font-weight:700;margin-top:0.4rem;font-size:0.9rem;">🎉 本分区已全部完成！</div>';
-
-                // 选择题选项绑定
-                container.querySelectorAll('.option-label').forEach(label => {
-                    label.addEventListener('click', function() {
-                        if (result || q.type === 'fill_blank') return;
-                        handleQuizAnswer(q.id, parseInt(this.dataset.optindex));
-                    });
-                });
-                // 填空题提交按钮
-                const fillBtn = container.querySelector('#btn-fill-submit');
-                if (fillBtn) {
-                    fillBtn.addEventListener('click', () => handleFillBlankSubmit(q.id));
-                }
-                container.querySelector('#btn-back-section').addEventListener('click', () => switchView('home'));
-                container.querySelector('#btn-prev').addEventListener('click', () => { if (currentQuestionIndex > 0) { currentQuestionIndex--; renderQuizSectionView(); } });
-                container.querySelector('#btn-next').addEventListener('click', () => { if (!result) return; if (isLast) { if (allDone) showCelebrateOverlay(section); } else { currentQuestionIndex++; renderQuizSectionView(); } });
-            }
-
-            function renderChoiceCard(q, result, selected) {
-                return `<div class="q-text">${q.text}</div>${q.options.map((opt, i) => {
-                    let optClass = '';
-                    if (result && i === q.correct) optClass = 'correct-answer';
-                    if (result === 'wrong' && i === selected && i !== q.correct) optClass = 'wrong-answer';
-                    if (!result && i === selected) optClass = 'selected';
-                    return `<label class="option-label ${optClass}" data-optindex="${i}"><input type="radio" name="q${q.id}" value="${i}" ${i===selected?'checked':''} ${result?'disabled':''}> ${opt}</label>`;
-                }).join('')}`;
-            }
-
-            function renderFillBlankCard(q, result) {
-                let textHtml = q.text;
-                q.blanks.forEach(blank => {
-                    const userAns = userAnswers[`${q.id}_${blank.id}`] || '';
-                    let inputClass = '';
-                    if (result) {
-                        const isCorrect = checkBlankAnswer(blank, userAns);
-                        inputClass = isCorrect ? 'correct-fill' : 'wrong-fill';
-                    }
-                    const inputHtml = `<input type="text" class="fill-blank-input ${inputClass}" data-blank-id="${blank.id}" value="${userAns}" placeholder="${blank.hint || '请输入'}" ${result?'disabled':''}>`;
-                    textHtml = textHtml.replace(`{{${blank.id}}}`, inputHtml);
-                });
-                return `<div class="q-text">${textHtml}</div>`;
-            }
-
-            function checkBlankAnswer(blank, userAnswer) {
-                if (!userAnswer) return false;
-                return blank.answers.some(ans => {
-                    if (blank.caseSensitive === false) {
-                        return userAnswer.trim().toLowerCase() === ans.toLowerCase();
-                    }
-                    return userAnswer.trim() === ans;
-                });
-            }
-
-            function handleFillBlankSubmit(qId) {
-                const question = findQuestionById(qId);
-                if (!question || questionResults[qId]) return;
-                
-                // 收集所有填空答案
-                let allCorrect = true;
-                question.blanks.forEach(blank => {
-                    const input = document.querySelector(`[data-blank-id="${blank.id}"]`);
-                    if (input) {
-                        const userAns = input.value;
-                        userAnswers[`${qId}_${blank.id}`] = userAns;
-                        if (!checkBlankAnswer(blank, userAns)) allCorrect = false;
-                    }
-                });
-                
-                if (allCorrect) {
-                    questionResults[qId] = 'correct';
-                    currentStreak++;
-                    if (currentStreak > bestStreak) {
-                        bestStreak = currentStreak;
-                        localStorage.setItem(`${subject}-bestStreak`, bestStreak);
-                    }
-                    checkStreakEncourage();
-                } else {
-                    questionResults[qId] = 'wrong';
-                    currentStreak = 0;
-                    errorSet.add(qId);
-                    saveErrors();
-                }
-                renderQuizSectionView();
-                updateErrorBadge();
-            }
-
-            function handleQuizAnswer(qId, optIndex) {
-                const question = findQuestionById(qId);
-                if (!question || questionResults[qId]) return;
-                userAnswers[qId] = optIndex;
-                if (optIndex === question.correct) {
-                    questionResults[qId] = 'correct';
-                    currentStreak++;
-                    if (currentStreak > bestStreak) {
-                        bestStreak = currentStreak;
-                        localStorage.setItem(`${subject}-bestStreak`, bestStreak);
-                    }
-                    checkStreakEncourage();
-                } else {
-                    questionResults[qId] = 'wrong';
-                    currentStreak = 0;
-                    errorSet.add(qId);
-                    saveErrors();
-                }
-                renderQuizSectionView();
-                updateErrorBadge();
-            }
-
-            function checkStreakEncourage() {
-                if (!encourageMessages.streak || Object.keys(encourageMessages.streak).length === 0) return;
-                const streaks = Object.keys(encourageMessages.streak).map(Number).sort((a, b) => b - a);
-                for (let threshold of streaks) {
-                    if (currentStreak === threshold) {
-                        showStreakToast(encourageMessages.streak[threshold]);
-                        break;
-                    }
-                }
-            }
-
-            function showStreakToast(message) {
-                const toast = document.createElement('div');
-                toast.className = 'streak-toast';
-                toast.textContent = message;
-                document.body.appendChild(toast);
-                setTimeout(() => toast.remove(), 2200);
-            }
-
-            function showCelebrateOverlay(section) {
-                const overlay = document.createElement('div');
-                overlay.className = 'celebrate-overlay';
-                overlay.innerHTML = `<div class="celebrate-card"><div class="celebrate-emoji">🎉</div><div class="celebrate-text">${randomPick(encourageMessages.complete)}</div><div class="celebrate-sub">${section.title} · 全部完成！</div><button class="btn" id="btn-celebrate-ok">👍 好的</button></div>`;
-                document.body.appendChild(overlay);
-                overlay.querySelector('#btn-celebrate-ok').addEventListener('click', () => { overlay.remove(); switchView('home'); });
-                overlay.addEventListener('click', function(e) { if (e.target === overlay) { overlay.remove(); switchView('home'); } });
-            }
-
-            // ==================== 材料题视图 ====================
-            function renderMaterialView() {
-                const container = document.getElementById('view-material');
-                let html = '<h3>📜 材料解析大题（四步解题法）</h3>';
-                if (materialQuestions.length === 0) {
-                    html += '<div style="text-align:center;padding:2rem;color:#8aabc8;">暂无材料题数据</div>';
-                }
-                materialQuestions.forEach(mat => {
-                    const state = materialStates[mat.id] || { currentStep: 0, stepAnswers: {}, completed: false };
-                    materialStates[mat.id] = state;
-                    const step = mat.steps[state.currentStep];
-                    const isCompleted = state.completed;
-                    html += `<div class="question-card" style="margin-bottom:0.8rem;">
-              <div style="font-weight:700;color:#3d7ab8;margin-bottom:0.3rem;font-size:1rem;">${mat.title}</div>
-              <div class="material-box">${mat.material.replace(/\n/g,'<br>')}</div>
-              <div style="font-size:0.9rem;color:#4a5f70;margin:0.4rem 0;">📋 ${mat.question}</div>`;
-                    if (isCompleted) {
-                        html += '<div style="color:#2d8a4e;font-weight:700;text-align:center;font-size:0.95rem;margin:0.5rem 0;">🎉 本题已完成！点击下方展开查看答案与解析</div>';
-                        html += renderMaterialReview(mat, state);
-                    } else if (step) {
-                        const stepAns = state.stepAnswers[state.currentStep] || [];
-                        html += `<div class="step-badge">${step.label}（${step.type==='multi'?'多选':'单选'}）</div>
-                  <div class="q-text">${step.question}</div>
-                  <div class="step-options" data-matid="${mat.id}" data-step="${state.currentStep}">`;
-                        step.options.forEach((opt, i) => {
-                            const isChecked = stepAns.includes(i);
-                            html += `<label class="option-label ${isChecked?'selected':''}" data-matid="${mat.id}" data-step="${state.currentStep}" data-optindex="${i}" data-type="${step.type}"><input type="${step.type==='multi'?'checkbox':'radio'}" name="mat_${mat.id}_step${state.currentStep}" value="${i}" ${isChecked?'checked':''} data-type="${step.type}"> ${opt}</label>`;
-                        });
-                        html += `</div><button class="btn" data-mat-submit="${mat.id}" style="margin-top:0.5rem;">✅ 提交本环节</button><div class="feedback-msg" id="mat-fb-${mat.id}"></div>`;
-                    }
-                    html += '</div>';
-                });
-                container.innerHTML = html;
-                container.querySelectorAll('.step-options .option-label').forEach(label => {
-                    label.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        const matId = this.dataset.matid;
-                        const stepIdx = parseInt(this.dataset.step);
-                        const optIndex = parseInt(this.dataset.optindex);
-                        const type = this.dataset.type;
-                        const state = materialStates[matId];
-                        if (!state || state.completed) return;
-                        if (!state.stepAnswers[stepIdx]) state.stepAnswers[stepIdx] = [];
-                        if (type === 'single') {
-                            state.stepAnswers[stepIdx] = [optIndex];
-                            const parent = this.parentElement;
-                            parent.querySelectorAll('.option-label').forEach(l => l.classList.remove('selected'));
-                            parent.querySelectorAll('input').forEach(inp => inp.checked = false);
-                            this.classList.add('selected');
-                            this.querySelector('input').checked = true;
-                        } else {
-                            const idx = state.stepAnswers[stepIdx].indexOf(optIndex);
-                            if (idx > -1) { state.stepAnswers[stepIdx].splice(idx, 1); this.classList.remove('selected'); this.querySelector('input').checked = false; }
-                            else { state.stepAnswers[stepIdx].push(optIndex); this.classList.add('selected'); this.querySelector('input').checked = true; }
-                        }
-                    });
-                });
-                container.querySelectorAll('[data-mat-submit]').forEach(btn => {
-                    btn.addEventListener('click', function() { handleMaterialSubmit(this.dataset.matSubmit); });
-                });
-                container.querySelectorAll('.collapse-header').forEach(header => {
-                    header.addEventListener('click', function() { this.classList.toggle('open'); const body = this.nextElementSibling; if (body) body.classList.toggle('show'); });
-                });
-            }
-
-            function renderMaterialReview(mat, state) {
-                let html = '<div class="collapse-header">📋 查看答题回顾与解析 <span class="collapse-arrow">▼</span></div>';
-                html += '<div class="collapse-body">';
-                html += '<strong>📋 答题回顾：</strong><table class="review-table">';
-                mat.steps.forEach((step, i) => {
-                    const userAns = state.stepAnswers[i] || [];
-                    const correctAns = step.correct;
-                    const isCorrect = [...userAns].sort().join(',') === [...correctAns].sort().join(',');
-                    const userStr = userAns.length > 0 ? userAns.map(j => step.options[j].charAt(0)).join('、') : '未作答';
-                    const correctStr = correctAns.map(j => step.options[j].charAt(0)).join('、');
-                    html += `<tr><td class="step-label">${step.label.split('（')[0]}</td><td>你的答案：${userStr} | 正确答案：${correctStr} <span class="${isCorrect?'correct-mark':'wrong-mark'}">${isCorrect?'✓':'✗'}</span></td></tr>`;
-                });
-                html += '</table>';
-                html += `<strong>💡 解题思路：</strong>${mat.reviewSummary}<br><br>`;
-                html += `<strong>📝 完整参考答案：</strong>${mat.fullAnswer}`;
-                html += '</div>';
-                return html;
-            }
-
-            function handleMaterialSubmit(matId) {
-                const mat = materialQuestions.find(m => m.id === matId);
-                const state = materialStates[matId];
-                if (!mat || !state || state.completed) return;
-                const step = mat.steps[state.currentStep];
-                const userAns = state.stepAnswers[state.currentStep] || [];
-                if (userAns.length === 0) { alert('请先选择答案！📝'); return; }
-                const correctAns = [...step.correct].sort().join(',');
-                const userAnsSorted = [...userAns].sort().join(',');
-                const isCorrect = (correctAns === userAnsSorted);
-                const fbDiv = document.getElementById(`mat-fb-${matId}`);
-                if (fbDiv) {
-                    fbDiv.className = 'feedback-msg ' + (isCorrect ? 'correct-fb' : 'wrong-fb') + ' show';
-                    fbDiv.innerHTML = isCorrect
-                        ? `<span class="encourage">${randomPick(encourageMessages.correct)}</span> ${step.explanation}`
-                        : `<span class="encourage">${randomPick(encourageMessages.wrong)}</span> 正确答案涉及：${step.correct.map(i=>step.options[i].charAt(0)).join('、')}。${step.explanation}`;
-                }
-                if (state.currentStep < mat.steps.length - 1) {
-                    state.currentStep++;
-                    setTimeout(() => renderMaterialView(), 800);
-                } else {
-                    state.completed = true;
-                    setTimeout(() => renderMaterialView(), 800);
-                }
-            }
-
-            // ==================== 错题本 ====================
-            function renderErrorView() {
-                const container = document.getElementById('view-errors');
-                const errorIds = [...errorSet];
-                const statsMap = {};
-                quizData.forEach(s => { statsMap[s.id] = { title: s.title, count: 0 }; });
-                errorIds.forEach(qId => {
-                    const q = findQuestionById(qId);
-                    if (q) {
-                        const sec = quizData.find(s => s.questions.some(qq => qq.id === qId));
-                        if (sec && statsMap[sec.id]) statsMap[sec.id].count++;
-                    }
-                });
-                let html = '<h3>📝 错题本（答对自动移除）</h3>';
-                html += `<div class="no-print" style="text-align:center;margin-bottom:0.6rem;display:flex;gap:0.5rem;justify-content:center;flex-wrap:wrap;">
-              ${errorIds.length > 0 ? '<button class="btn-print" onclick="window.print()">🖨️ 打印错题本</button>' : ''}
-              ${currentStreak > 0 ? `<span class="stat-tag streak-tag">🔥 当前连击：${currentStreak}</span>` : ''}
-              ${bestStreak > 0 ? `<span class="stat-tag">🏆 最佳连击：${bestStreak}</span>` : ''}
-            </div>`;
-                html += `<div class="print-header"><h2>📝 东东题库 · ${subjectName}错题本</h2><div class="print-date">打印日期：${new Date().toLocaleDateString('zh-CN')} | 共 ${errorIds.length} 题 | 最佳连击：${bestStreak}</div></div>`;
-                html += '<div class="stats-panel">';
-                for (const [k, v] of Object.entries(statsMap)) {
-                    if (v.count > 0 || errorIds.length === 0) html += `<span class="stat-tag ${v.count>0?'has-error':''}">${v.title}：${v.count}题</span>`;
-                }
-                html += `<span class="stat-tag total-tag">总计：${errorIds.length}题</span></div>`;
-                if (errorIds.length === 0) {
-                    html += '<div style="text-align:center;padding:2rem;color:#2d8a4e;font-weight:700;font-size:1.05rem;">🎉 错题本已清空！<br>' + randomPick(encourageMessages.clearErrors) + '</div>';
-                } else {
-                    errorIds.forEach(qId => {
-                        const q = findQuestionById(qId);
-                        if (q) {
-                            if (q.type === 'fill_blank') {
-                                html += renderErrorFillBlankCard(q);
-                            } else {
-                                html += `<div class="question-card" data-qid="${q.id}"><div class="q-text">${q.text}</div>${q.options.map((opt,i)=>`<label class="option-label error-opt" data-qid="${q.id}" data-optindex="${i}"><input type="radio" name="err${q.id}" value="${i}"> ${opt}</label>`).join('')}<div class="feedback-msg" id="err-fb-${q.id}"></div></div>`;
-                            }
-                        }
-                    });
-                }
-                html += '<div class="print-footer">东东题库 · 广东中考专项突破 · 错题本</div>';
-                container.innerHTML = html;
-                container.querySelectorAll('.error-opt').forEach(label => {
-                    label.addEventListener('click', function() {
-                        handleErrorAnswer(this.dataset.qid, parseInt(this.dataset.optindex), this.closest('.question-card'));
-                    });
-                });
-                container.querySelectorAll('.error-fill-submit').forEach(btn => {
-                    btn.addEventListener('click', function() {
-                        handleErrorFillSubmit(this.dataset.qid, this.closest('.question-card'));
-                    });
-                });
-            }
-
-            function renderErrorFillBlankCard(q) {
-                let textHtml = q.text;
-                q.blanks.forEach(blank => {
-                    textHtml = textHtml.replace(`{{${blank.id}}}`, `<input type="text" class="fill-blank-input error-fill-input" data-blank-id="${blank.id}" placeholder="${blank.hint||'请输入'}">`);
-                });
-                return `<div class="question-card" data-qid="${q.id}"><div class="q-text">${textHtml}</div><button class="btn error-fill-submit" data-qid="${q.id}" style="margin-top:0.5rem;">✅ 提交答案</button><div class="feedback-msg" id="err-fb-${q.id}"></div></div>`;
-            }
-
-            function handleErrorAnswer(qId, optIndex, card) {
-                const q = findQuestionById(qId);
-                if (!q) return;
-                const fbDiv = document.getElementById(`err-fb-${qId}`);
-                if (optIndex === q.correct) {
-                    errorSet.delete(qId);
-                    saveErrors();
-                    if (fbDiv) { fbDiv.className = 'feedback-msg correct-fb show'; fbDiv.innerHTML = `<span class="encourage">${randomPick(encourageMessages.correct)}</span> 已移除！${q.explanation||''}`; }
-                    card.querySelectorAll('.option-label').forEach(l => { if (parseInt(l.dataset.optindex) === q.correct) l.classList.add('correct-answer'); });
-                    card.querySelectorAll('input').forEach(inp => inp.disabled = true);
-                    setTimeout(() => renderErrorView(), 1000);
-                } else {
-                    if (fbDiv) { fbDiv.className = 'feedback-msg wrong-fb show'; fbDiv.innerHTML = `<span class="encourage">${randomPick(encourageMessages.wrong)}</span> 正确答案：${q.options[q.correct].charAt(0)}。${q.explanation||''}`; }
-                    card.querySelectorAll('.option-label').forEach(l => { if (parseInt(l.dataset.optindex) === q.correct) l.classList.add('correct-answer'); if (parseInt(l.dataset.optindex) === optIndex && optIndex !== q.correct) l.classList.add('wrong-answer'); });
-                    card.querySelectorAll('input').forEach(inp => inp.disabled = true);
-                }
-                updateErrorBadge();
-            }
-
-            function handleErrorFillSubmit(qId, card) {
-                const q = findQuestionById(qId);
-                if (!q) return;
-                let allCorrect = true;
-                q.blanks.forEach(blank => {
-                    const input = card.querySelector(`[data-blank-id="${blank.id}"]`);
-                    if (input && !checkBlankAnswer(blank, input.value)) allCorrect = false;
-                });
-                const fbDiv = document.getElementById(`err-fb-${qId}`);
-                if (allCorrect) {
-                    errorSet.delete(qId);
-                    saveErrors();
-                    if (fbDiv) { fbDiv.className = 'feedback-msg correct-fb show'; fbDiv.innerHTML = `<span class="encourage">${randomPick(encourageMessages.correct)}</span> 已移除！`; }
-                    card.querySelectorAll('.fill-blank-input').forEach(inp => { inp.classList.add('correct-fill'); inp.disabled = true; });
-                    setTimeout(() => renderErrorView(), 1000);
-                } else {
-                    if (fbDiv) { fbDiv.className = 'feedback-msg wrong-fb show'; fbDiv.innerHTML = `<span class="encourage">${randomPick(encourageMessages.wrong)}</span> 正确答案：${q.blanks.map(b=>b.answers[0]).join('、')}。${q.explanation||''}`; }
-                    q.blanks.forEach(blank => {
-                        const input = card.querySelector(`[data-blank-id="${blank.id}"]`);
-                        if (input) { input.classList.add(checkBlankAnswer(blank, input.value) ? 'correct-fill' : 'wrong-fill'); input.disabled = true; }
-                    });
-                }
-                updateErrorBadge();
-            }
-
-            // ==================== 导航事件 ====================
-            document.querySelectorAll('.nav-item').forEach(item => {
-                item.addEventListener('click', function() {
-                    const v = this.dataset.view;
-                    switchView(v === 'home' ? 'home' : v);
-                });
+                html += `<div style="margin:0.6rem 0;display:flex;align-items:center;flex-wrap:wrap;gap:0.3rem;">
+                    <span style="font-weight:700;color:#3d7ab8;min-width:45px;">${blank.label || blank.id}</span>
+                    <input type="text" class="fill-blank-input ${inputClass}" data-matid="${mat.id}" data-blank-id="${blank.id}" 
+                        value="${escapeHtml(userVal)}" placeholder="${blank.hint || '请输入'}" ${isSubmitted ? 'disabled' : ''}
+                        style="flex:1;min-width:120px;">
+                    ${!isSubmitted ? `<span class="fill-hint">💡 ${blank.hint || ''}</span>` : ''}
+                </div>`;
             });
-
-            // ==================== 初始化 ====================
-            async function init() {
-                try {
-                    const response = await fetch(dataUrl);
-                    if (!response.ok) throw new Error('题库加载失败: ' + response.status);
-                    const data = await response.json();
-                    quizData = data.quizData || [];
-                    materialQuestions = data.materialQuestions || [];
-                    subjectName = data.subjectName || '历史';
-                    if (data.encourageMessages) {
-                        encourageMessages = { ...encourageMessages, ...data.encourageMessages };
-                    }
-                    document.getElementById('header-title').textContent = '东东的' + subjectName + '题库';
-                    document.getElementById('header-subtitle').textContent = '广东中考 · 专项突破 · 材料映射法';
-                    document.title = '东东的' + subjectName + '题库';
-                    updateErrorBadge();
-                    switchView('home');
-                    console.log('📜 ' + subjectName + '题库已就绪！共' + quizData.length + '个分区');
-                } catch (err) {
-                    console.error('题库加载错误:', err);
-                    document.getElementById('view-home').innerHTML = '<div style="text-align:center;padding:3rem;color:#e74c3c;"><h3>⚠️ 题库加载失败</h3><p>请检查 data/' + subject + '.json 文件是否存在</p><p style="font-size:0.8rem;color:#8aabc8;">错误信息：' + err.message + '</p><a href="index.html" style="color:#3d7ab8;">← 返回首页</a></div>';
-                }
+            html += `</div>`;
+            
+            if (!isSubmitted) {
+                html += `<div class="nav-buttons">
+                    <button class="btn" data-mat-submit="${mat.id}">✅ 提交答案（统一批改）</button>
+                </div>`;
+            } else {
+                const earnedScore = state.score || 0;
+                html += `<div style="margin:0.6rem 0;padding:0.5rem;background:#e8f2fa;border-radius:10px;">
+                    <span style="font-weight:700;">📊 得分：${earnedScore} / ${totalScore} 分</span>
+                    <button class="btn-outline" style="margin-left:0.8rem;padding:0.2rem 0.8rem;font-size:0.75rem;" data-mat-reset="${mat.id}">🔄 重做</button>
+                </div>`;
             }
-            init();
-        })();
-    </script>
+            
+            html += `<div class="collapse-header" data-mat-collapse="${mat.id}">
+                📖 查看答案解析 <span class="collapse-arrow">▼</span>
+            </div>
+            <div class="collapse-body" data-mat-body="${mat.id}" style="display:none;">
+                <strong>📝 逐空解析：</strong><table class="review-table">`;
+            
+            mat.blanks.forEach(blank => {
+                const userVal = state.userAnswers[blank.id] || '未作答';
+                const isCorrect = isSubmitted ? checkBlankAnswer(blank, userVal) : false;
+                const correctStr = blank.answers.slice(0, 3).join('、');
+                html += `<tr><td class="step-label">${blank.label || blank.id}</td>
+                    <td>你的答案：${escapeHtml(userVal)}<br>正确答案：${escapeHtml(correctStr)}<br>
+                    <span style="font-size:0.75rem;color:#6a9ab8;">💡 ${blank.explanation || ''}</span>
+                    ${isSubmitted ? (isCorrect ? '<span class="correct-mark"> ✓ 得分</span>' : '<span class="wrong-mark"> ✗ 失分</span>') : ''}
+                    </td>
+                </tr>`;
+            });
+            html += `</table><strong>📌 题型总结：</strong>${mat.reviewSummary}<br><br>
+                <strong>📝 完整参考答案：</strong>${mat.fullAnswer}
+            </div>
+            <div class="print-footer" style="margin-top:0.5rem;">—— 以上为《${mat.title}》——</div>
+            </div>`;
+        });
+        
+        html += '<div class="print-footer">东东题库 · 广东中考专项突破 · 材料大题</div>';
+        
+        if (allCompleted && materialQuestions.length > 0) {
+            html += `<div style="text-align:center;margin-top:1rem;"><button class="btn" id="btn-celebrate" style="background:#2d8a4e;">🎉 查看通关庆祝</button></div>`;
+        }
+        
+        html += `<div class="stats-panel">
+            ${currentStreak > 0 ? `<span class="stat-tag streak-tag">🔥 当前连击：${currentStreak}</span>` : ''}
+            ${bestStreak > 0 ? `<span class="stat-tag">🏆 最佳连击：${bestStreak}</span>` : ''}
+        </div>`;
+        
+        container.innerHTML = html;
+        
+        container.querySelectorAll('.fill-blank-input:not([disabled])').forEach(input => {
+            input.addEventListener('change', function() {
+                const matId = this.dataset.matid;
+                const blankId = this.dataset.blankId;
+                if (!materialStates[matId]) materialStates[matId] = { submitted: false, userAnswers: {} };
+                if (!materialStates[matId].submitted) {
+                    materialStates[matId].userAnswers[blankId] = this.value;
+                }
+            });
+        });
+        
+        container.querySelectorAll('[data-mat-submit]').forEach(btn => {
+            btn.addEventListener('click', function() { handleMaterialSubmit(this.dataset.matSubmit); });
+        });
+        
+        container.querySelectorAll('[data-mat-reset]').forEach(btn => {
+            btn.addEventListener('click', function() { resetMaterialQuestion(this.dataset.matReset); });
+        });
+        
+        container.querySelectorAll('.collapse-header').forEach(header => {
+            header.addEventListener('click', function() {
+                this.classList.toggle('open');
+                const body = document.querySelector(`[data-mat-body="${this.dataset.matCollapse}"]`);
+                if (body) { body.style.display = body.style.display === 'none' ? 'block' : 'none'; }
+            });
+        });
+        
+        const celeBtn = document.getElementById('btn-celebrate');
+        if (celeBtn) celeBtn.addEventListener('click', showCelebrate);
+    }
+
+    function handleMaterialSubmit(matId) {
+        const mat = materialQuestions.find(m => m.id === matId);
+        const state = materialStates[matId];
+        if (!mat || !state) return;
+        if (state.submitted) { alert('本题已经提交过了！如需重做请点击"重做"按钮。'); return; }
+        
+        let totalEarned = 0;
+        const totalScore = mat.totalScore || mat.blanks.reduce((sum, b) => sum + (b.score || 1), 0);
+        
+        mat.blanks.forEach(blank => {
+            const userVal = state.userAnswers[blank.id] || '';
+            if (checkBlankAnswer(blank, userVal)) { totalEarned += (blank.score || 1); }
+        });
+        
+        state.submitted = true;
+        state.score = totalEarned;
+        
+        if (totalEarned === totalScore) {
+            currentStreak++;
+            if (currentStreak > bestStreak) { bestStreak = currentStreak; saveStreak(); }
+            checkStreakEncourage();
+        } else {
+            currentStreak = 0;
+            saveStreak();
+        }
+        
+        renderMaterialView();
+    }
+
+    function resetMaterialQuestion(matId) {
+        if (confirm('确定要重做本题吗？之前的答案将被清空。')) {
+            materialStates[matId] = { submitted: false, userAnswers: {}, score: null };
+            renderMaterialView();
+        }
+    }
+
+    async function init() {
+        try {
+            const response = await fetch(dataUrl);
+            if (!response.ok) throw new Error('材料题加载失败: ' + response.status);
+            const data = await response.json();
+            materialQuestions = data.materialQuestions || [];
+            subjectName = data.subjectName || '历史';
+            document.getElementById('header-title').textContent = `东东题库 · ${subjectName}材料大题`;
+            document.getElementById('header-subtitle').textContent = '6道精选题 · 四步解题法 · 逐空批改';
+            document.title = `东东的${subjectName}材料大题`;
+            renderMaterialView();
+            console.log('📜 材料题已就绪！共 ' + materialQuestions.length + ' 道大题');
+        } catch (err) {
+            console.error('材料题加载错误:', err);
+            document.getElementById('main-content').innerHTML = `<div style="text-align:center;padding:3rem;color:#e74c3c;">
+                <h3>⚠️ 材料题加载失败</h3>
+                <p>请检查 data/material-${subject}.json 文件是否存在</p>
+                <p style="font-size:0.8rem;color:#8aabc8;">错误信息：${err.message}</p>
+                <a href="index.html" style="color:#3d7ab8;">← 返回首页</a>
+            </div>`;
+        }
+    }
+    init();
+})();
+</script>
 </body>
 </html>
