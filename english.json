@@ -1,0 +1,1081 @@
+{
+  "subject": "英语",
+  "description": "广东中考英语 · 语法专项训练",
+  "modules": [
+    {
+      "id": "M1",
+      "title": "代词（主格/宾格/形物/名物）",
+      "knowledge": "动词前用主（I），动词/介词后用宾（me）；有名则形（my book），无名则名（It is mine）。",
+      "parts": [
+        {
+          "type": "语法选择",
+          "instructions": "从A、B、C三个选项中选出可以填入空白处的最佳选项。",
+          "questions": [
+            {
+              "id": "M1_G1",
+              "stem": "My English teacher is very kind. We all like <span class='keyword'>___</span> very much.",
+              "options": [
+                {"label": "A", "text": "she"},
+                {"label": "B", "text": "her"},
+                {"label": "C", "text": "hers"}
+              ],
+              "answer": "B",
+              "analysis": "横线在动词 <span class='keyword'>like</span> 后面，动词/介词后用<strong>宾格</strong>。she的宾格是her，故选B。<br>🔑 <strong>技巧</strong>：看到横线在动词后面，立刻找宾格（me/her/him/them）。"
+            },
+            {
+              "id": "M1_G2",
+              "stem": "<span class='keyword'>___</span> is a hero. He saved a little girl from the fire yesterday.",
+              "options": [
+                {"label": "A", "text": "He"},
+                {"label": "B", "text": "Him"},
+                {"label": "C", "text": "His"}
+              ],
+              "answer": "A",
+              "analysis": "横线在句子<span class='keyword'>开头</span>，后面紧跟动词 <span class='keyword'>is</span>，说明缺少<strong>主语</strong>，用主格He，故选A。<br>🔑 <strong>技巧</strong>：句子开头+动词前 = 主格（I/He/She/We/They）。"
+            },
+            {
+              "id": "M1_G3",
+              "stem": "This is not my schoolbag. <span class='keyword'>___</span> is blue.",
+              "options": [
+                {"label": "A", "text": "My"},
+                {"label": "B", "text": "Me"},
+                {"label": "C", "text": "Mine"}
+              ],
+              "answer": "C",
+              "analysis": "横线在句子开头作主语，且<strong>后面没有名词</strong>，表示“我的（书包）”，用<strong>名词性物主代词</strong>Mine，故选C。<br>🔑 <strong>技巧</strong>：有名则形（my book），无名则名（It is mine）。横线后面没有名词，大胆选mine/yours/his/hers。"
+            },
+            {
+              "id": "M1_G4",
+              "stem": "My sister loves music. <span class='keyword'>___</span> often plays the piano in the evening.",
+              "options": [
+                {"label": "A", "text": "She"},
+                {"label": "B", "text": "Her"},
+                {"label": "C", "text": "Hers"}
+              ],
+              "answer": "A",
+              "analysis": "横线在句子开头，后面是动词 <span class='keyword'>plays</span>，缺少<strong>主语</strong>，用主格She，故选A。<br>🔑 <strong>技巧</strong>：前一句提到My sister（女性），代词要前后一致，用She指代。"
+            }
+          ]
+        },
+        {
+          "type": "短文填空",
+          "instructions": "用括号内单词的正确形式填空。",
+          "questions": [
+            {
+              "id": "M1_T1",
+              "stem": "My name is Li Hua. <span class='keyword'>___</span> (I) have a good friend.",
+              "answer": "I",
+              "analysis": "横线在动词<span class='keyword'>have</span>前面，作主语，用<strong>主格</strong>I。<br>🔑 <strong>技巧</strong>：动词前找主格（I/you/he/she/we/they）。"
+            },
+            {
+              "id": "M1_T2",
+              "stem": "<span class='keyword'>___</span> (he) name is Zhang Wei. He is my classmate.",
+              "answer": "His",
+              "analysis": "横线后面有名词<span class='keyword'>name</span>，需要用<strong>形容词性物主代词</strong>。he的形物代是His。<br>🔑 <strong>技巧</strong>：横线+名词=形物代（my/your/his/her/our/their），有名则形。"
+            },
+            {
+              "id": "M1_T3",
+              "stem": "Zhang Wei took many photos and showed <span class='keyword'>___</span> (they) to me.",
+              "answer": "them",
+              "analysis": "横线在动词<span class='keyword'>showed</span>后面，作宾语，用<strong>宾格</strong>。they的宾格是them。<br>🔑 <strong>技巧</strong>：动词后用宾格（me/him/her/us/them）。"
+            },
+            {
+              "id": "M1_T4",
+              "stem": "The red hat on the grass is <span class='keyword'>___</span> (he). He bought it yesterday.",
+              "answer": "his",
+              "analysis": "横线在句末，后面<strong>没有名词</strong>，表示“他的（帽子）”，用<strong>名词性物主代词</strong>his。注意：his的形物代和名物代同形。<br>🔑 <strong>技巧</strong>：无名则名，his既是形物代也是名物代，但后面没名词时就是名物代。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M2",
+      "title": "名词复数（不规则变化）",
+      "knowledge": "变元音：man→men, woman→women, foot→feet, tooth→teeth；单复数同形：sheep, deer, Chinese；特殊：child→children, mouse→mice。",
+      "parts": [
+        {
+          "type": "语法选择",
+          "instructions": "从A、B、C三个选项中选出可以填入空白处的最佳选项。",
+          "questions": [
+            {
+              "id": "M2_G1",
+              "stem": "There are many <span class='keyword'>___</span> on the farm. They are so lovely.",
+              "options": [
+                {"label": "A", "text": "sheeps"},
+                {"label": "B", "text": "sheep"},
+                {"label": "C", "text": "sheepes"}
+              ],
+              "answer": "B",
+              "analysis": "many后面用复数，但<span class='keyword'>sheep</span>是<strong>单复数同形</strong>，不能加s，故选B。<br>🔑 <strong>技巧</strong>：sheep、deer、Chinese这三个词单复数长一样，广东中考高频陷阱题。"
+            },
+            {
+              "id": "M2_G2",
+              "stem": "Look at the two <span class='keyword'>___</span> over there. They are talking happily.",
+              "options": [
+                {"label": "A", "text": "woman"},
+                {"label": "B", "text": "women"},
+                {"label": "C", "text": "womens"}
+              ],
+              "answer": "B",
+              "analysis": "two后面用复数，<span class='keyword'>woman</span>的复数是<strong>不规则变化women</strong>（a变e），故选B。<br>🔑 <strong>技巧</strong>：man→men，woman→women，都是把a变成e。"
+            },
+            {
+              "id": "M2_G3",
+              "stem": "The two <span class='keyword'>___</span> are playing games in the park now.",
+              "options": [
+                {"label": "A", "text": "child"},
+                {"label": "B", "text": "childs"},
+                {"label": "C", "text": "children"}
+              ],
+              "answer": "C",
+              "analysis": "two后面用复数，<span class='keyword'>child</span>的复数是<strong>不规则变化children</strong>，不能直接加s或ren，故选C。<br>🔑 <strong>技巧</strong>：child→children是广东中考必背不规则变化，和mouse→mice并列高频考点。"
+            },
+            {
+              "id": "M2_G4",
+              "stem": "Brush your <span class='keyword'>___</span> every morning and evening.",
+              "options": [
+                {"label": "A", "text": "tooth"},
+                {"label": "B", "text": "tooths"},
+                {"label": "C", "text": "teeth"}
+              ],
+              "answer": "C",
+              "analysis": "牙刷的不止一颗牙，用复数。<span class='keyword'>tooth</span>的复数是<strong>不规则变化teeth</strong>（oo变ee），故选C。<br>🔑 <strong>技巧</strong>：tooth→teeth，foot→feet，都是oo变ee。"
+            }
+          ]
+        },
+        {
+          "type": "短文填空",
+          "instructions": "用括号内单词的正确形式填空。",
+          "questions": [
+            {
+              "id": "M2_T1",
+              "stem": "There are many <span class='keyword'>___</span> (child) playing games in the park now.",
+              "answer": "children",
+              "analysis": "many后面加名词复数，<span class='keyword'>child</span>变复数是不规则的<strong>children</strong>。<br>🔑 <strong>技巧</strong>：看到many/some/数字，立刻想名词变复数，child→children必背。"
+            },
+            {
+              "id": "M2_T2",
+              "stem": "In the old days, some <span class='keyword'>___</span> (man) worked in the fields all day.",
+              "answer": "men",
+              "analysis": "some后面加复数，<span class='keyword'>man</span>变复数把a变e，变成<strong>men</strong>。<br>🔑 <strong>技巧</strong>：man→men，woman→women，记住a变e。"
+            },
+            {
+              "id": "M2_T3",
+              "stem": "Look! Those <span class='keyword'>___</span> (sheep) are eating grass on the hill.",
+              "answer": "sheep",
+              "analysis": "Those后面用复数，但<span class='keyword'>sheep</span>是<strong>单复数同形</strong>，不用加s。<br>🔑 <strong>技巧</strong>：sheep不管前面有没有many/some/those，永远长这样。"
+            },
+            {
+              "id": "M2_T4",
+              "stem": "There are two <span class='keyword'>___</span> (mouse) in the corner. The cat is chasing them.",
+              "answer": "mice",
+              "analysis": "two后面用复数，<span class='keyword'>mouse</span>的复数是<strong>不规则变化mice</strong>。<br>🔑 <strong>技巧</strong>：mouse→mice是中考高频不规则变化，和child→children并列必背。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M3",
+      "title": "一般现在时 & 一般过去时",
+      "knowledge": "现在时标志词：always, usually, often, sometimes, every day。过去时标志词：yesterday, ...ago, last..., in 2022。三单加-s/-es，过去式规则加-ed，不规则需背诵。",
+      "parts": [
+        {
+          "type": "语法选择",
+          "instructions": "从A、B、C三个选项中选出可以填入空白处的最佳选项。",
+          "questions": [
+            {
+              "id": "M3_G1",
+              "stem": "My father <span class='keyword'>___</span> a newspaper <span class='keyword'>every morning</span> after breakfast.",
+              "options": [
+                {"label": "A", "text": "read"},
+                {"label": "B", "text": "reads"},
+                {"label": "C", "text": "is reading"}
+              ],
+              "answer": "B",
+              "analysis": "<span class='keyword'>every morning</span>是<strong>一般现在时</strong>标志。主语My father是单数（三单），动词要加s，read变成reads，故选B。<br>🔑 <strong>技巧</strong>：看到every day/morning，用现在时；主语是三单（he/she/it/人名），动词加s。"
+            },
+            {
+              "id": "M3_G2",
+              "stem": "I <span class='keyword'>___</span> to the library with my friends <span class='keyword'>last Sunday</span> afternoon.",
+              "options": [
+                {"label": "A", "text": "go"},
+                {"label": "B", "text": "goes"},
+                {"label": "C", "text": "went"}
+              ],
+              "answer": "C",
+              "analysis": "<span class='keyword'>last Sunday</span>是<strong>过去时</strong>标志。go的过去式是<strong>不规则变化went</strong>，故选C。<br>🔑 <strong>技巧</strong>：go→went是中考最高频的不规则动词之一，必背。"
+            },
+            {
+              "id": "M3_G3",
+              "stem": "— What did you do <span class='keyword'>last night</span>?<br>— I <span class='keyword'>___</span> for the English test.",
+              "options": [
+                {"label": "A", "text": "study"},
+                {"label": "B", "text": "studied"},
+                {"label": "C", "text": "am studying"}
+              ],
+              "answer": "B",
+              "analysis": "问句用did开头，且有<span class='keyword'>last night</span>，确定是<strong>过去时</strong>。study的过去式是studied（y变i加ed），故选B。<br>🔑 <strong>技巧</strong>：看到last night/week/year，直接找动词过去式。"
+            },
+            {
+              "id": "M3_G4",
+              "stem": "He <span class='keyword'>___</span> football with his classmates <span class='keyword'>every weekend</span>.",
+              "options": [
+                {"label": "A", "text": "plays"},
+                {"label": "B", "text": "played"},
+                {"label": "C", "text": "will play"}
+              ],
+              "answer": "A",
+              "analysis": "<span class='keyword'>every weekend</span>是<strong>现在时</strong>标志。主语He是三单，play加s变成plays，故选A。<br>🔑 <strong>技巧</strong>：三单主语+every...=动词加s/es。"
+            },
+            {
+              "id": "M3_G5",
+              "stem": "Zhang Guimei <span class='keyword'>___</span> a free high school for girls <span class='keyword'>many years ago</span>.",
+              "options": [
+                {"label": "A", "text": "starts"},
+                {"label": "B", "text": "started"},
+                {"label": "C", "text": "has started"}
+              ],
+              "answer": "B",
+              "analysis": "<span class='keyword'>many years ago</span>是<strong>过去时</strong>标志。start是规则动词，直接加ed变成started，故选B。<br>🔑 <strong>技巧</strong>：看到...ago，一律用过去式。规则动词直接加ed。"
+            }
+          ]
+        },
+        {
+          "type": "短文填空",
+          "instructions": "用括号内单词的正确形式填空。",
+          "questions": [
+            {
+              "id": "M3_T1",
+              "stem": "Listen! Our teacher <span class='keyword'>often</span> <span class='keyword'>___</span> (tell) us funny stories in class.",
+              "answer": "tells",
+              "analysis": "<span class='keyword'>often</span>表示<strong>一般现在时</strong>。主语Our teacher是单数（一个人），动词加s，tell变成tells。<br>🔑 <strong>技巧</strong>：often=现在时，三单主语加s。注意：虽然开头有Listen!，但often才是决定时态的关键。"
+            },
+            {
+              "id": "M3_T2",
+              "stem": "We <span class='keyword'>___</span> (buy) some fresh fruit in the supermarket <span class='keyword'>yesterday</span>.",
+              "answer": "bought",
+              "analysis": "<span class='keyword'>yesterday</span>是<strong>过去时</strong>标志。buy的过去式是<strong>不规则变化bought</strong>。<br>🔑 <strong>技巧</strong>：buy→bought是中考高频不规则动词，和bring→brought一起记。"
+            },
+            {
+              "id": "M3_T3",
+              "stem": "She <span class='keyword'>___</span> (go) to Beijing <span class='keyword'>two days ago</span>.",
+              "answer": "went",
+              "analysis": "<span class='keyword'>two days ago</span>是<strong>过去时</strong>标志。go的过去式是<strong>不规则变化went</strong>。<br>🔑 <strong>技巧</strong>：ago = 过去时，go→went必背。"
+            },
+            {
+              "id": "M3_T4",
+              "stem": "My brother <span class='keyword'>always</span> <span class='keyword'>___</span> (do) his homework before dinner.",
+              "answer": "does",
+              "analysis": "<span class='keyword'>always</span>是<strong>一般现在时</strong>标志。主语My brother是三单，do变does。<br>🔑 <strong>技巧</strong>：always=现在时，三单do→does，have→has。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M4",
+      "title": "现在进行时 & 一般将来时",
+      "knowledge": "进行时：am/is/are + doing（标志词：now, Look!, Listen!, at the moment）。将来时：will + 动词原形 或 be going to + 动词原形（标志词：tomorrow, next..., soon, in the future）。",
+      "parts": [
+        {
+          "type": "语法选择",
+          "instructions": "从A、B、C三个选项中选出可以填入空白处的最佳选项。",
+          "questions": [
+            {
+              "id": "M4_G1",
+              "stem": "— Where is your sister?<br>— She <span class='keyword'>___</span> the piano in her bedroom <span class='keyword'>now</span>.",
+              "options": [
+                {"label": "A", "text": "plays"},
+                {"label": "B", "text": "is playing"},
+                {"label": "C", "text": "played"}
+              ],
+              "answer": "B",
+              "analysis": "<span class='keyword'>now</span>是<strong>现在进行时</strong>标志，结构为be + doing。主语She是单数，用is + playing，故选B。<br>🔑 <strong>技巧</strong>：看到now，立刻想be + doing，主语单数用is，复数用are。"
+            },
+            {
+              "id": "M4_G2",
+              "stem": "<span class='keyword'>Listen!</span> Some birds <span class='keyword'>___</span> in the trees outside.",
+              "options": [
+                {"label": "A", "text": "sing"},
+                {"label": "B", "text": "are singing"},
+                {"label": "C", "text": "will sing"}
+              ],
+              "answer": "B",
+              "analysis": "<span class='keyword'>Listen!</span>是<strong>现在进行时</strong>标志。Birds是复数，用are + singing，故选B。<br>🔑 <strong>技巧</strong>：Look! / Listen! = 进行时，be动词根据主语变（I用am，单数用is，复数用are）。"
+            },
+            {
+              "id": "M4_G3",
+              "stem": "We <span class='keyword'>___</span> a class meeting about safety <span class='keyword'>next Monday</span>.",
+              "options": [
+                {"label": "A", "text": "have"},
+                {"label": "B", "text": "had"},
+                {"label": "C", "text": "will have"}
+              ],
+              "answer": "C",
+              "analysis": "<span class='keyword'>next Monday</span>是<strong>一般将来时</strong>标志，用will + 动词原形，故选C。<br>🔑 <strong>技巧</strong>：看到next.../tomorrow，直接will + 原形，最稳妥。"
+            },
+            {
+              "id": "M4_G4",
+              "stem": "<span class='keyword'>Look!</span> The children <span class='keyword'>___</span> games happily on the playground.",
+              "options": [
+                {"label": "A", "text": "play"},
+                {"label": "B", "text": "played"},
+                {"label": "C", "text": "are playing"}
+              ],
+              "answer": "C",
+              "analysis": "<span class='keyword'>Look!</span>是<strong>现在进行时</strong>标志。children是复数，用are + playing，故选C。<br>🔑 <strong>技巧</strong>：Look! + 复数主语 = are doing。"
+            }
+          ]
+        },
+        {
+          "type": "短文填空",
+          "instructions": "用括号内单词的正确形式填空。",
+          "questions": [
+            {
+              "id": "M4_T1",
+              "stem": "Keep quiet! My baby brother <span class='keyword'>___</span> (sleep) in the room.",
+              "answer": "is sleeping",
+              "analysis": "\"保持安静\"暗示婴儿<span class='keyword'>正在睡觉</span>，用<strong>现在进行时</strong>。baby brother是单数，用is + sleeping。<br>🔑 <strong>技巧</strong>：语境暗示进行时，be动词不能漏，is sleeping缺一不可。"
+            },
+            {
+              "id": "M4_T2",
+              "stem": "I think there <span class='keyword'>___</span> (be) more robots in our homes <span class='keyword'>in the future</span>.",
+              "answer": "will be",
+              "analysis": "<span class='keyword'>in the future</span>是<strong>将来时</strong>标志，用will + 动词原形be。<br>🔑 <strong>技巧</strong>：will后面永远跟原形，不管主语是谁。"
+            },
+            {
+              "id": "M4_T3",
+              "stem": "My family <span class='keyword'>___</span> (visit) the Great Wall <span class='keyword'>next summer holiday</span>.",
+              "answer": "will visit",
+              "analysis": "<span class='keyword'>next summer holiday</span>是<strong>将来时</strong>标志，用will + visit。<br>🔑 <strong>技巧</strong>：也可填are going to visit，但will visit最简单稳妥，考试优先选will。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M5",
+      "title": "形容词/副词（比较级/最高级/变副词）",
+      "knowledge": "比较级标志词：than（加-er或more）；最高级标志词：the, in/of（加-est或most）；形容词变副词：加-ly（happy→happily）；不规则变化：good→better→best, bad→worse→worst, many→more→most。",
+      "parts": [
+        {
+          "type": "语法选择",
+          "instructions": "从A、B、C三个选项中选出可以填入空白处的最佳选项。",
+          "questions": [
+            {
+              "id": "M5_G1",
+              "stem": "This story is much <span class='keyword'>___</span> <span class='keyword'>than</span> that one. I like it very much.",
+              "options": [
+                {"label": "A", "text": "interesting"},
+                {"label": "B", "text": "more interesting"},
+                {"label": "C", "text": "most interesting"}
+              ],
+              "answer": "B",
+              "analysis": "看到<span class='keyword'>than</span>，立刻想到<strong>比较级</strong>。interesting是多音节长单词（≥3音节），不能直接加er，前面加<strong>more</strong>，故选B。<br>🔑 <strong>技巧</strong>：than=比较级；短词加-er（taller），长词前面加more（more beautiful）。"
+            },
+            {
+              "id": "M5_G2",
+              "stem": "Who is <span class='keyword'>___</span> student <span class='keyword'>in your class</span>?",
+              "options": [
+                {"label": "A", "text": "the tallest"},
+                {"label": "B", "text": "taller"},
+                {"label": "C", "text": "tall"}
+              ],
+              "answer": "A",
+              "analysis": "<span class='keyword'>in your class</span>表示在一个范围内比较，用<strong>最高级</strong>。最高级前必须加<strong>the</strong>，tall的最高级是tallest，故选A。<br>🔑 <strong>技巧</strong>：看到in/of表示范围，直接用最高级，前面加the。"
+            },
+            {
+              "id": "M5_G3",
+              "stem": "He ran <span class='keyword'>___</span> <span class='keyword'>than</span> his brother and won the race.",
+              "options": [
+                {"label": "A", "text": "fast"},
+                {"label": "B", "text": "faster"},
+                {"label": "C", "text": "fastest"}
+              ],
+              "answer": "B",
+              "analysis": "看到<span class='keyword'>than</span>，用<strong>比较级</strong>。fast是短单词，直接加er变成faster，故选B。<br>🔑 <strong>技巧</strong>：than + 短词 = 加-er。此处修饰ran（跑）这个动词，用副词的比较级。"
+            },
+            {
+              "id": "M5_G4",
+              "stem": "The weather today is even <span class='keyword'>___</span> <span class='keyword'>than</span> it was yesterday.",
+              "options": [
+                {"label": "A", "text": "bad"},
+                {"label": "B", "text": "worse"},
+                {"label": "C", "text": "worst"}
+              ],
+              "answer": "B",
+              "analysis": "看到<span class='keyword'>than</span>，用<strong>比较级</strong>。bad的比较级是<strong>不规则变化worse</strong>，故选B。<br>🔑 <strong>技巧</strong>：good→better, bad→worse, many→more是中考三大不规则比较级，必背。"
+            }
+          ]
+        },
+        {
+          "type": "短文填空",
+          "instructions": "用括号内单词的正确形式填空。",
+          "questions": [
+            {
+              "id": "M5_T1",
+              "stem": "Please read the instructions <span class='keyword'>___</span> (careful) before you use the machine.",
+              "answer": "carefully",
+              "analysis": "修饰动词<span class='keyword'>read</span>（读），要用<strong>副词</strong>。形容词careful变副词直接加ly，变成carefully。<br>🔑 <strong>技巧</strong>：动词后面用副词，形容词+ly变副词。注意：happy→happily（y变i加ly）。"
+            },
+            {
+              "id": "M5_T2",
+              "stem": "<span class='keyword'>Of all</span> the subjects, I think English is the <span class='keyword'>___</span> (useful) one.",
+              "answer": "most useful",
+              "analysis": "<span class='keyword'>Of all</span>表示在所有里面比，用<strong>最高级</strong>。useful是多音节长单词，前面加<strong>most</strong>。<br>🔑 <strong>技巧</strong>：Of all = 最高级，长词加most，短词加-est。"
+            },
+            {
+              "id": "M5_T3",
+              "stem": "He takes photos very <span class='keyword'>___</span> (good). Everyone likes his photos.",
+              "answer": "well",
+              "analysis": "修饰动词<span class='keyword'>takes</span>（拍照），要用<strong>副词</strong>。good的副词是<strong>不规则变化well</strong>，不是goodly。<br>🔑 <strong>技巧</strong>：good→well是必考特殊变化，形容词变副词不是都加ly。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M6",
+      "title": "介词（时间介词 at/on/in）",
+      "knowledge": "at用于具体时刻/小时间点（at 7:00, at noon, at night）；on用于具体某一天（on Monday, on June 1st, on a cold morning）；in用于年/月/季节/泛指上午下午晚上（in 2024, in May, in the morning）。口诀：at用点，on用天，in用大段年和月。",
+      "parts": [
+        {
+          "type": "语法选择",
+          "instructions": "从A、B、C三个选项中选出可以填入空白处的最佳选项。",
+          "questions": [
+            {
+              "id": "M6_G1",
+              "stem": "My school usually has a sports meeting <span class='keyword'>___</span> October.",
+              "options": [
+                {"label": "A", "text": "at"},
+                {"label": "B", "text": "on"},
+                {"label": "C", "text": "in"}
+              ],
+              "answer": "C",
+              "analysis": "<span class='keyword'>October</span>是月份，属于大时间，用<strong>in</strong>，故选C。<br>🔑 <strong>技巧</strong>：at点、on天、in年月。月份前永远用in。"
+            },
+            {
+              "id": "M6_G2",
+              "stem": "My mother is going to have a party <span class='keyword'>___</span> the evening <span class='keyword'>of May 4th</span>.",
+              "options": [
+                {"label": "A", "text": "in"},
+                {"label": "B", "text": "at"},
+                {"label": "C", "text": "on"}
+              ],
+              "answer": "C",
+              "analysis": "<strong>陷阱题！</strong>虽然有evening，但后面有具体日期<span class='keyword'>May 4th</span>，具体的某一天用<strong>on</strong>，故选C。<br>🔑 <strong>技巧</strong>：只要有具体日期（某月某号），哪怕是morning/evening/凌晨，一律用on。这是广东中考最经典的介词陷阱题。"
+            },
+            {
+              "id": "M6_G3",
+              "stem": "I usually get up <span class='keyword'>___</span> 6:30 in the morning.",
+              "options": [
+                {"label": "A", "text": "at"},
+                {"label": "B", "text": "on"},
+                {"label": "C", "text": "in"}
+              ],
+              "answer": "A",
+              "analysis": "<span class='keyword'>6:30</span>是具体时刻，用<strong>at</strong>，故选A。<br>🔑 <strong>技巧</strong>：at用于钟点时刻（at 7:00, at noon, at midnight）。"
+            },
+            {
+              "id": "M6_G4",
+              "stem": "People usually eat zongzi <span class='keyword'>___</span> Dragon Boat Festival.",
+              "options": [
+                {"label": "A", "text": "at"},
+                {"label": "B", "text": "on"},
+                {"label": "C", "text": "in"}
+              ],
+              "answer": "A",
+              "analysis": "<span class='keyword'>Dragon Boat Festival</span>是节日，节日名称前通常用<strong>at</strong>，故选A。<br>🔑 <strong>技巧</strong>：节日用at（at Spring Festival, at Christmas）。但如果是具体某一天的节日也可用on，考试中at更常见。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M7",
+      "title": "连词（and/but/or/so/because/although）",
+      "knowledge": "and：顺承并列；but：转折；or：选择/否定句中代替and；so：结果；because：原因；although/though：尽管（必考陷阱：although和but不能同时出现！because和so也不能同时出现！）",
+      "parts": [
+        {
+          "type": "语法选择",
+          "instructions": "从A、B、C三个选项中选出可以填入空白处的最佳选项。",
+          "questions": [
+            {
+              "id": "M7_G1",
+              "stem": "We were tired, <span class='keyword'>___</span> we were very happy after the long walk.",
+              "options": [
+                {"label": "A", "text": "and"},
+                {"label": "B", "text": "but"},
+                {"label": "C", "text": "or"}
+              ],
+              "answer": "B",
+              "analysis": "前面\"累\"，后面\"开心\"，是<strong>转折关系</strong>，用but，故选B。<br>🔑 <strong>技巧</strong>：翻译前后句，意思相反用but，因果用so，顺承用and。"
+            },
+            {
+              "id": "M7_G2",
+              "stem": "— Do you like tea <span class='keyword'>___</span> coffee?<br>— Tea, please.",
+              "options": [
+                {"label": "A", "text": "and"},
+                {"label": "B", "text": "or"},
+                {"label": "C", "text": "but"}
+              ],
+              "answer": "B",
+              "analysis": "问句里提供<strong>两个选择</strong>（茶还是咖啡），用or，故选B。<br>🔑 <strong>技巧</strong>：疑问句中提供选项用or，肯定句中列举多用and。"
+            },
+            {
+              "id": "M7_G3",
+              "stem": "<span class='keyword'>Although</span> it was raining hard, the football match still went on. (判断这个句子是否正确)",
+              "options": [
+                {"label": "A", "text": "正确"},
+                {"label": "B", "text": "错误，应去掉Although"},
+                {"label": "C", "text": "错误，应在match后加but"}
+              ],
+              "answer": "A",
+              "analysis": "这个句子是<strong>正确的</strong>。Although引导从句，主句直接跟上，不需要也不能加but。很多学生看到\"虽然\"就想在后面加\"但是\"，这是典型的中式思维错误。如果加了but才是错的。<br>🔑 <strong>技巧</strong>：Although和but在英语中<strong>只能二选一</strong>，不能同时出现。同理，because和so也不能连用。"
+            },
+            {
+              "id": "M7_G4",
+              "stem": "I didn't go to school yesterday <span class='keyword'>___</span> I had a bad cold.",
+              "options": [
+                {"label": "A", "text": "so"},
+                {"label": "B", "text": "because"},
+                {"label": "C", "text": "but"}
+              ],
+              "answer": "B",
+              "analysis": "后面\"感冒了\"是前面\"没去学校\"的<strong>原因</strong>，用because，故选B。<br>🔑 <strong>技巧</strong>：because后面跟原因，so后面跟结果。注意不要because和so同时用。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M8",
+      "title": "祈使句 & 感叹句",
+      "knowledge": "祈使句：肯定用动词原形开头（Be careful!），否定用Don't + 动词原形（Don't talk!）。感叹句：What + (a/an) + 形容词 + 名词 + (主语+谓语)!；How + 形容词/副词 + (主语+谓语)!。口诀：What名，How形。",
+      "parts": [
+        {
+          "type": "语法选择",
+          "instructions": "从A、B、C三个选项中选出可以填入空白处的最佳选项。",
+          "questions": [
+            {
+              "id": "M8_G1",
+              "stem": "— <span class='keyword'>___</span> delicious the mooncakes are!<br>— Yes. I'd like to have another one.",
+              "options": [
+                {"label": "A", "text": "What"},
+                {"label": "B", "text": "What a"},
+                {"label": "C", "text": "How"}
+              ],
+              "answer": "C",
+              "analysis": "<strong>断句法</strong>：划掉末尾的 the mooncakes are。剩下 <span class='keyword'>delicious</span>，是<strong>形容词，没有名词</strong>，用How，故选C。<br>🔑 <strong>技巧</strong>：What名，How形。把主语谓语遮住，剩下形容词用How，有名词用What。"
+            },
+            {
+              "id": "M8_G2",
+              "stem": "<span class='keyword'>___</span> talk to each other when you are having an exam.",
+              "options": [
+                {"label": "A", "text": "Not"},
+                {"label": "B", "text": "Don't"},
+                {"label": "C", "text": "Doesn't"}
+              ],
+              "answer": "B",
+              "analysis": "考查<strong>否定祈使句</strong>。开头用Don't + 动词原形，故选B。<br>🔑 <strong>技巧</strong>：禁止做某事，开头用Don't，后面动词用原形，不管主语是谁。"
+            },
+            {
+              "id": "M8_G3",
+              "stem": "<span class='keyword'>___</span> fine weather it is today! Let's go for a picnic.",
+              "options": [
+                {"label": "A", "text": "What"},
+                {"label": "B", "text": "What a"},
+                {"label": "C", "text": "How"}
+              ],
+              "answer": "A",
+              "analysis": "<strong>断句法</strong>：划掉 it is。剩下 fine <span class='keyword'>weather</span>。weather是<strong>不可数名词</strong>，不能加a，用What，故选A。<br>🔑 <strong>技巧</strong>：weather是不可数名词，永远不说a weather。这个坑广东中考经常出。"
+            }
+          ]
+        },
+        {
+          "type": "短文填空",
+          "instructions": "用括号内单词的正确形式填空。",
+          "questions": [
+            {
+              "id": "M8_T1",
+              "stem": "<span class='keyword'>___</span> (be) quiet! Your father is sleeping.",
+              "answer": "Be",
+              "analysis": "考查<strong>祈使句</strong>。祈使句用动词原形开头。quiet是形容词，需要加系动词Be。<br>🔑 <strong>技巧</strong>：祈使句=动词原形开头，形容词前加Be（Be careful! Be quiet!）。"
+            },
+            {
+              "id": "M8_T2",
+              "stem": "<span class='keyword'>___</span> (not run) in the hallway. It's dangerous.",
+              "answer": "Don't run",
+              "analysis": "考查<strong>否定祈使句</strong>。Don't + 动词原形。<br>🔑 <strong>技巧</strong>：Don't后面永远跟原形，不用考虑主语和三单。"
+            },
+            {
+              "id": "M8_T3",
+              "stem": "<span class='keyword'>___</span> helpful the boy is! (用What或How填空)",
+              "answer": "How",
+              "analysis": "<strong>断句法</strong>：划掉the boy is。剩下 <span class='keyword'>helpful</span>，是形容词，没有名词，用How。<br>🔑 <strong>技巧</strong>：What名How形，遮住主语谓语看剩下什么。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M9",
+      "title": "被动语态",
+      "knowledge": "被动语态 = be + 过去分词(done)。一般现在时：am/is/are + done；一般过去时：was/were + done；情态动词：can/must/should + be + done。主语是物且为动作承受者时用被动。",
+      "parts": [
+        {
+          "type": "语法选择",
+          "instructions": "从A、B、C三个选项中选出可以填入空白处的最佳选项。",
+          "questions": [
+            {
+              "id": "M9_G1",
+              "stem": "Rice <span class='keyword'>___</span> in the south of China.",
+              "options": [
+                {"label": "A", "text": "grows"},
+                {"label": "B", "text": "is grown"},
+                {"label": "C", "text": "is growing"}
+              ],
+              "answer": "B",
+              "analysis": "主语<span class='keyword'>Rice</span>是物，水稻是\"被种植\"的，用<strong>被动语态</strong>。一般现在时+Rice不可数，用is grown，故选B。<br>🔑 <strong>技巧</strong>：主语是物+动作是\"被做\"的=被动语态。be + done缺一不可。"
+            },
+            {
+              "id": "M9_G2",
+              "stem": "The Olympic Games <span class='keyword'>___</span> <span class='keyword'>every four years</span>.",
+              "options": [
+                {"label": "A", "text": "are held"},
+                {"label": "B", "text": "held"},
+                {"label": "C", "text": "was held"}
+              ],
+              "answer": "A",
+              "analysis": "奥运会是\"被举行\"的，用被动。<span class='keyword'>every four years</span>是频率，用<strong>一般现在时</strong>。Games是复数，用are held，故选A。<br>🔑 <strong>技巧</strong>：every...=现在时，复数主语用are+done。"
+            },
+            {
+              "id": "M9_G3",
+              "stem": "These computers <span class='keyword'>___</span> to a village school <span class='keyword'>last month</span>.",
+              "options": [
+                {"label": "A", "text": "gave"},
+                {"label": "B", "text": "are given"},
+                {"label": "C", "text": "were given"}
+              ],
+              "answer": "C",
+              "analysis": "电脑是\"被捐赠\"的，用被动。<span class='keyword'>last month</span>是<strong>过去时</strong>。computers是复数，用were given，故选C。<br>🔑 <strong>技巧</strong>：last...=过去时，复数用were+done。"
+            },
+            {
+              "id": "M9_G4",
+              "stem": "The homework <span class='keyword'>must</span> <span class='keyword'>___</span> on time.",
+              "options": [
+                {"label": "A", "text": "finish"},
+                {"label": "B", "text": "be finished"},
+                {"label": "C", "text": "be finish"}
+              ],
+              "answer": "B",
+              "analysis": "作业是\"被完成\"的，用被动。<span class='keyword'>must</span>是情态动词，后面接<strong>be + done</strong>。finish的过去分词是finished，故选B。<br>🔑 <strong>技巧</strong>：情态动词+be+done，done用过去分词，不能写原形。"
+            }
+          ]
+        },
+        {
+          "type": "短文填空",
+          "instructions": "用括号内单词的正确形式填空。",
+          "questions": [
+            {
+              "id": "M9_T1",
+              "stem": "Paper <span class='keyword'>___</span> (invent) by the Chinese <span class='keyword'>long ago</span>.",
+              "answer": "was invented",
+              "analysis": "纸是\"被发明\"的，用被动。<span class='keyword'>long ago</span>是过去时标志，Paper看作单数，用<strong>was invented</strong>。<br>🔑 <strong>技巧</strong>：ago=过去时，单数主语用was+done。"
+            },
+            {
+              "id": "M9_T2",
+              "stem": "Mobile phones <span class='keyword'>___</span> (use) by billions of people <span class='keyword'>today</span>.",
+              "answer": "are used",
+              "analysis": "手机是\"被使用\"的，用被动。<span class='keyword'>today</span>是现在时，phones是复数，用<strong>are used</strong>。<br>🔑 <strong>技巧</strong>：today=现在时，复数用are+done。"
+            },
+            {
+              "id": "M9_T3",
+              "stem": "Your room <span class='keyword'>should</span> <span class='keyword'>___</span> (clean) <span class='keyword'>every day</span>.",
+              "answer": "be cleaned",
+              "analysis": "房间是\"被打扫\"的，用被动。<span class='keyword'>should</span>是情态动词，后接<strong>be + done</strong>。clean的过去分词是cleaned。<br>🔑 <strong>技巧</strong>：should/can/must + be + 过去分词。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M10",
+      "title": "非谓语动词（to do / doing）",
+      "knowledge": "to do：want/decide/hope/choose/plan to do；doing：enjoy/finish/practice/keep/mind doing；介词后动词一律加-ing；look forward to的to是介词，后加doing（大坑！）。",
+      "parts": [
+        {
+          "type": "语法选择",
+          "instructions": "从A、B、C三个选项中选出可以填入空白处的最佳选项。",
+          "questions": [
+            {
+              "id": "M10_G1",
+              "stem": "My father <span class='keyword'>plans</span> <span class='keyword'>___</span> a new car next month.",
+              "options": [
+                {"label": "A", "text": "buy"},
+                {"label": "B", "text": "to buy"},
+                {"label": "C", "text": "buying"}
+              ],
+              "answer": "B",
+              "analysis": "<span class='keyword'>plan</span>后面跟<strong>to do</strong>，固定搭配plan to do sth.，故选B。<br>🔑 <strong>技巧</strong>：想要决定选to do（want/decide/hope/choose/plan to do）。"
+            },
+            {
+              "id": "M10_G2",
+              "stem": "You should <span class='keyword'>practice</span> <span class='keyword'>___</span> English every morning.",
+              "options": [
+                {"label": "A", "text": "speak"},
+                {"label": "B", "text": "to speak"},
+                {"label": "C", "text": "speaking"}
+              ],
+              "answer": "C",
+              "analysis": "<span class='keyword'>practice</span>后面跟<strong>doing</strong>，固定搭配practice doing sth.，故选C。<br>🔑 <strong>技巧</strong>：喜欢完成加doing（enjoy/finish/practice/keep/mind doing）。"
+            },
+            {
+              "id": "M10_G3",
+              "stem": "It's necessary for us <span class='keyword'>___</span> a plan before we start.",
+              "options": [
+                {"label": "A", "text": "make"},
+                {"label": "B", "text": "to make"},
+                {"label": "C", "text": "making"}
+              ],
+              "answer": "B",
+              "analysis": "经典句型：<strong>It's + adj. + for sb. + to do sth.</strong>，故选B。<br>🔑 <strong>技巧</strong>：看到It's + 形容词 + for sb.，后面必接to do。"
+            },
+            {
+              "id": "M10_G4",
+              "stem": "What <span class='keyword'>about</span> <span class='keyword'>___</span> some juice? I'm a bit thirsty.",
+              "options": [
+                {"label": "A", "text": "drink"},
+                {"label": "B", "text": "to drink"},
+                {"label": "C", "text": "drinking"}
+              ],
+              "answer": "C",
+              "analysis": "<span class='keyword'>about</span>是<strong>介词</strong>，介词后面动词一律加-ing，故选C。<br>🔑 <strong>技巧</strong>：介词（in/on/at/for/about/of/with）+ doing，这是铁律。"
+            },
+            {
+              "id": "M10_G5",
+              "stem": "I'm looking forward to <span class='keyword'>___</span> you soon.",
+              "options": [
+                {"label": "A", "text": "see"},
+                {"label": "B", "text": "seeing"},
+                {"label": "C", "text": "to see"}
+              ],
+              "answer": "B",
+              "analysis": "<strong>超级陷阱题！</strong><span class='keyword'>look forward to</span>中的to是<strong>介词</strong>，不是不定式符号，后面必须加doing，故选B。<br>🔑 <strong>技巧</strong>：look forward to + doing是广东中考最高频的陷阱之一，to在这里是介词！"
+            }
+          ]
+        },
+        {
+          "type": "短文填空",
+          "instructions": "用括号内单词的正确形式填空。",
+          "questions": [
+            {
+              "id": "M10_T1",
+              "stem": "He <span class='keyword'>finished</span> <span class='keyword'>___</span> (read) the book and went to bed.",
+              "answer": "reading",
+              "analysis": "<span class='keyword'>finish</span>后面跟<strong>doing</strong>，固定搭配finish doing sth.。<br>🔑 <strong>技巧</strong>：finish + doing，动词要变-ing形式。"
+            },
+            {
+              "id": "M10_T2",
+              "stem": "The best way <span class='keyword'>___</span> (learn) English is to speak it often.",
+              "answer": "to learn",
+              "analysis": "way后面跟<strong>to do</strong>作定语，表示\"做某事的方法\"。<br>🔑 <strong>技巧</strong>：way to do sth.是常见搭配，注意和介词+doing区分。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M11",
+      "title": "综合训练：完形填空",
+      "knowledge": "综合考查词汇辨析、逻辑推理、上下文理解。",
+      "parts": [
+        {
+          "type": "完形填空",
+          "instructions": "阅读下面短文，从A、B、C三个选项中选出可以填入空白处的最佳选项。",
+          "passage": "Last summer, I went to visit my grandparents in the countryside. They live in a small village <span class='keyword'>___1___</span> mountains. One morning, my grandfather asked me to help him <span class='keyword'>___2___</span> water from the well（水井）. At first, I thought it was <span class='keyword'>___3___</span>, but I was wrong. The bucket（桶）was very heavy, and I could <span class='keyword'>___4___</span> carry it. My grandfather smiled and said, \"Don't <span class='keyword'>___5___</span>. You'll get used to it.\" After a few days, I became stronger and could help him easily. This experience taught me that hard work <span class='keyword'>___6___</span> us grow.",
+          "questions": [
+            {
+              "id": "M11_W1",
+              "stem": "1.",
+              "options": [
+                {"label": "A", "text": "between"},
+                {"label": "B", "text": "among"},
+                {"label": "C", "text": "in"}
+              ],
+              "answer": "B",
+              "analysis": "村庄在群山<strong>之中</strong>（多座山之间），用<strong>among</strong>（三者及以上之间）。between用于两者之间。<br>🔑 <strong>技巧</strong>：between=两者之间，among=三者及以上之间。群山是多座，用among。"
+            },
+            {
+              "id": "M11_W2",
+              "stem": "2.",
+              "options": [
+                {"label": "A", "text": "carry"},
+                {"label": "B", "text": "carrying"},
+                {"label": "C", "text": "carried"}
+              ],
+              "answer": "A",
+              "analysis": "help sb. <strong>do</strong> sth.，固定搭配，用动词原形carry。<br>🔑 <strong>技巧</strong>：help后可接to do或do，考试中直接跟原形最常见。"
+            },
+            {
+              "id": "M11_W3",
+              "stem": "3.",
+              "options": [
+                {"label": "A", "text": "easy"},
+                {"label": "B", "text": "easily"},
+                {"label": "C", "text": "easier"}
+              ],
+              "answer": "A",
+              "analysis": "was后面用<strong>形容词</strong>作表语，easy是形容词。<br>🔑 <strong>技巧</strong>：系动词（be/get/become）后面用形容词，不用副词。"
+            },
+            {
+              "id": "M11_W4",
+              "stem": "4.",
+              "options": [
+                {"label": "A", "text": "often"},
+                {"label": "B", "text": "hardly"},
+                {"label": "C", "text": "always"}
+              ],
+              "answer": "B",
+              "analysis": "桶很重，我<strong>几乎不能</strong>搬动。hardly表示\"几乎不\"。<br>🔑 <strong>技巧</strong>：hardly=几乎不（否定含义），hard=努力地/硬的，两者意思完全不同。"
+            },
+            {
+              "id": "M11_W5",
+              "stem": "5.",
+              "options": [
+                {"label": "A", "text": "give up"},
+                {"label": "B", "text": "give away"},
+                {"label": "C", "text": "give out"}
+              ],
+              "answer": "A",
+              "analysis": "爷爷鼓励我\"不要<strong>放弃</strong>\"。give up=放弃；give away=赠送/泄露；give out=分发/耗尽。<br>🔑 <strong>技巧</strong>：give up是中考高频短语，意为\"放弃\"，后接doing。"
+            },
+            {
+              "id": "M11_W6",
+              "stem": "6.",
+              "options": [
+                {"label": "A", "text": "help"},
+                {"label": "B", "text": "helps"},
+                {"label": "C", "text": "helped"}
+              ],
+              "answer": "B",
+              "analysis": "hard work是<strong>不可数名词作主语</strong>，视为单数，动词用<strong>三单helps</strong>。全篇讲的是道理（一般现在时）。<br>🔑 <strong>技巧</strong>：不可数名词作主语=三单，动词加s。"
+            }
+          ]
+        },
+        {
+          "type": "完形填空",
+          "instructions": "阅读下面短文，从A、B、C三个选项中选出可以填入空白处的最佳选项。",
+          "passage": "Zhang Wei is a middle school student. He likes sports very much. Every morning, he <span class='keyword'>___1___</span> early and runs in the park. He thinks running is a good way to keep <span class='keyword'>___2___</span>. Last month, he took part in a school sports meeting. He ran very fast and <span class='keyword'>___3___</span> the first prize in the 800-meter race. His classmates were proud of <span class='keyword'>___4___</span>. Zhang Wei said, \"If you want to be successful, you must <span class='keyword'>___5___</span> practicing.\" He believes that nothing is impossible <span class='keyword'>___6___</span> you work hard.",
+          "questions": [
+            {
+              "id": "M11_W7",
+              "stem": "1.",
+              "options": [
+                {"label": "A", "text": "gets up"},
+                {"label": "B", "text": "got up"},
+                {"label": "C", "text": "will get up"}
+              ],
+              "answer": "A",
+              "analysis": "<span class='keyword'>Every morning</span>是<strong>一般现在时</strong>标志。主语he是三单，动词用gets up。<br>🔑 <strong>技巧</strong>：every...=现在时，三单加s。"
+            },
+            {
+              "id": "M11_W8",
+              "stem": "2.",
+              "options": [
+                {"label": "A", "text": "health"},
+                {"label": "B", "text": "healthy"},
+                {"label": "C", "text": "healthily"}
+              ],
+              "answer": "B",
+              "analysis": "keep + <strong>形容词</strong>，表示\"保持……状态\"。keep healthy=保持健康。<br>🔑 <strong>技巧</strong>：keep后面加形容词，不是名词。keep healthy / keep quiet。"
+            },
+            {
+              "id": "M11_W9",
+              "stem": "3.",
+              "options": [
+                {"label": "A", "text": "win"},
+                {"label": "B", "text": "wins"},
+                {"label": "C", "text": "won"}
+              ],
+              "answer": "C",
+              "analysis": "<span class='keyword'>Last month</span>是<strong>过去时</strong>标志。win的过去式是<strong>不规则变化won</strong>。<br>🔑 <strong>技巧</strong>：last...=过去时，win→won。"
+            },
+            {
+              "id": "M11_W10",
+              "stem": "4.",
+              "options": [
+                {"label": "A", "text": "he"},
+                {"label": "B", "text": "him"},
+                {"label": "C", "text": "his"}
+              ],
+              "answer": "B",
+              "analysis": "of是<strong>介词</strong>，介词后用<strong>宾格</strong>。he的宾格是him。<br>🔑 <strong>技巧</strong>：介词+宾格（me/him/her/them），这是铁律。"
+            },
+            {
+              "id": "M11_W11",
+              "stem": "5.",
+              "options": [
+                {"label": "A", "text": "keep"},
+                {"label": "B", "text": "to keep"},
+                {"label": "C", "text": "keeping"}
+              ],
+              "answer": "A",
+              "analysis": "must是情态动词，后面接<strong>动词原形</strong>。<br>🔑 <strong>技巧</strong>：情态动词（can/must/should/will）+ 原形，永远不变。"
+            },
+            {
+              "id": "M11_W12",
+              "stem": "6.",
+              "options": [
+                {"label": "A", "text": "if"},
+                {"label": "B", "text": "unless"},
+                {"label": "C", "text": "because"}
+              ],
+              "answer": "A",
+              "analysis": "\"如果你努力，没什么是不可能的\"，用<strong>if</strong>表示条件。<br>🔑 <strong>技巧</strong>：if=如果，unless=除非，because=因为。翻译上下文判断逻辑关系。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M12",
+      "title": "综合训练：阅读理解",
+      "knowledge": "综合考查信息提取、推理判断、主旨理解能力。",
+      "parts": [
+        {
+          "type": "阅读理解",
+          "instructions": "阅读下面短文，根据内容选择最佳答案。",
+          "passage": "Zhang Guimei is a teacher in Yunnan. In 2008, she started a free high school for girls in the mountains. Many girls there could not go to school because their families were poor. Zhang believed that education could change their lives. She visited many families and persuaded them to let their daughters study. Thanks to her efforts, more than 2,000 girls have entered universities. Zhang once said, \"As long as I have one breath, I will keep teaching.\" Her story has moved millions of people across China.",
+          "questions": [
+            {
+              "id": "M12_R1",
+              "stem": "What did Zhang Guimei do <span class='keyword'>in 2008</span>?",
+              "options": [
+                {"label": "A", "text": "She built a primary school."},
+                {"label": "B", "text": "She started a free high school."},
+                {"label": "C", "text": "She went to university."}
+              ],
+              "answer": "B",
+              "analysis": "原文第一句：\"In 2008, <strong>she started a free high school</strong> for girls in the mountains.\" 直接信息提取。<br>🔑 <strong>技巧</strong>：细节题找原文原句，注意时间状语in 2008定位。"
+            },
+            {
+              "id": "M12_R2",
+              "stem": "<span class='keyword'>Why</span> couldn't many girls in the mountains go to school?",
+              "options": [
+                {"label": "A", "text": "They didn't like studying."},
+                {"label": "B", "text": "Their families were poor."},
+                {"label": "C", "text": "The schools were too far."}
+              ],
+              "answer": "B",
+              "analysis": "原文：\"because <strong>their families were poor</strong>.\" 直接因果关系。<br>🔑 <strong>技巧</strong>：原因类题目找because/since/as引导的原因状语从句。"
+            },
+            {
+              "id": "M12_R3",
+              "stem": "How many girls have entered universities <span class='keyword'>thanks to Zhang</span>?",
+              "options": [
+                {"label": "A", "text": "Less than 1,000"},
+                {"label": "B", "text": "More than 2,000"},
+                {"label": "C", "text": "About 500"}
+              ],
+              "answer": "B",
+              "analysis": "原文：\"<strong>more than 2,000</strong> girls have entered universities.\" 数字细节题。<br>🔑 <strong>技巧</strong>：数字题直接回原文定位，注意more than（超过）和less than（少于）的区别。"
+            },
+            {
+              "id": "M12_R4",
+              "stem": "What can we <span class='keyword'>learn from</span> Zhang's story?",
+              "options": [
+                {"label": "A", "text": "Money is the most important."},
+                {"label": "B", "text": "Education can change lives."},
+                {"label": "C", "text": "Girls are smarter than boys."}
+              ],
+              "answer": "B",
+              "analysis": "推理题。原文Zhang believed that \"<strong>education could change their lives</strong>\"，这是文章主旨。<br>🔑 <strong>技巧</strong>：主旨推理题找文中反复出现的核心观点，不要选原文没有的比较或极端说法。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M13",
+      "title": "综合训练：回答问题",
+      "knowledge": "考查阅读理解 + 书面输出能力。回答时注意用完整句子，找准踩分点。",
+      "parts": [
+        {
+          "type": "回答问题",
+          "instructions": "阅读短文，根据内容回答问题。将答案写在输入框中，完成后对照参考答案和踩分点。",
+          "passage": "My name is Li Hua. Last weekend, my classmates and I went to clean up a park near our school. We arrived at 8 a.m. and started to work. Some picked up rubbish, some watered the plants, and others swept the paths. We worked for about three hours. Although we were tired, we felt very happy because the park became much cleaner. Our teacher said we did a good job. I think it's meaningful to help our community.",
+          "questions": [
+            {
+              "id": "M13_A1",
+              "stem": "<span class='keyword'>When</span> did they go to clean up the park?",
+              "referenceAnswer": "Last weekend. / They went to clean up the park last weekend.",
+              "scoringPoints": "时间：Last weekend（1分），用完整句子回答更佳。"
+            },
+            {
+              "id": "M13_A2",
+              "stem": "<span class='keyword'>How long</span> did they work?",
+              "referenceAnswer": "About three hours. / They worked for about three hours.",
+              "scoringPoints": "时长：About three hours（1分），注意回答要包含about。"
+            },
+            {
+              "id": "M13_A3",
+              "stem": "<span class='keyword'>Why</span> did they feel happy?",
+              "referenceAnswer": "Because the park became much cleaner. / They felt happy because the park became much cleaner.",
+              "scoringPoints": "原因：park became much cleaner（1分），用because回答最规范。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M14",
+      "title": "写作模板",
+      "knowledge": "广东中考英语写作万能模板，覆盖议论文、建议类、记叙文、书信/邮件四种常见体裁。",
+      "parts": [
+        {
+          "type": "写作模板",
+          "templates": [
+            {
+              "id": "T1",
+              "title": "模板一：议论文（观点对比 / 利弊分析）",
+              "suitable": "谈谈你对……的看法 / 是否应该…… / ……的利弊",
+              "structure": "<strong>【开头段】引出话题</strong><br>Nowadays, more and more people are paying attention to ______. Different people have different opinions about it.<br><br><strong>【主体段1】一方观点</strong><br>Some people think that ______. <span class='keyword'>First</span>, ______. <span class='keyword'>Second</span>, ______. <span class='keyword'>What's more</span>, ______.<br><br><strong>【主体段2】另一方观点</strong><br><span class='keyword'>However</span>, other people hold a different view. They believe that ______. <span class='keyword'>On the one hand</span>, ______. <span class='keyword'>On the other hand</span>, ______.<br><br><strong>【结尾段】我的观点</strong><br><span class='keyword'>In my opinion</span> / <span class='keyword'>As for me</span>, I agree with the first / second view. The reason is that ______. <span class='keyword'>All in all</span>, ______.",
+              "example": "<strong>范文：</strong>Nowadays, more and more people are paying attention to mobile phones. Different people have different opinions about them. Some people think that mobile phones are very useful. First, they make communication easier. Second, we can get information quickly. What's more, mobile phones provide us with lots of entertainment. However, other people hold a different view. They believe that mobile phones have some disadvantages. On the one hand, some students spend too much time on them. On the other hand, it's bad for our eyes. In my opinion, we should use mobile phones wisely. All in all, every coin has two sides."
+            },
+            {
+              "id": "T2",
+              "title": "模板二：建议类（给建议 / 解决问题）",
+              "suitable": "给某人提建议 / 如何解决某个问题 / 如何学好……",
+              "structure": "<strong>【开头段】说明写信目的</strong><br>I'm glad to hear from you. / I'm sorry to hear that you have trouble with ______. Here are some suggestions for you.<br><br><strong>【主体段】具体建议</strong><br><span class='keyword'>First of all</span>, you'd better ______. It is a good way to ______.<br><span class='keyword'>Secondly</span>, why not ______? By doing this, you can ______.<br><span class='keyword'>Thirdly</span>, it's important to ______. Remember that ______.<br><br><strong>【结尾段】鼓励与祝愿</strong><br>I hope these suggestions will be helpful to you. I'm sure you will make progress if you keep trying. Best wishes!",
+              "example": "<strong>范文：</strong>I'm sorry to hear that you have trouble with English learning. Here are some suggestions for you. First of all, you'd better read English every morning. It is a good way to improve your pronunciation. Secondly, why not listen to English songs? By doing this, you can learn new words easily. Thirdly, it's important to keep a diary in English. Remember that practice makes perfect. I hope these suggestions will be helpful to you. I'm sure you will make progress if you keep trying."
+            },
+            {
+              "id": "T3",
+              "title": "模板三：记叙文（一次经历 / 难忘的事）",
+              "suitable": "一次难忘的经历 / 我的假期 / 我的周末 / 我最喜欢的人/物",
+              "structure": "<strong>【开头段】引出事件</strong><br>I have experienced many things in my life, but ______ is the most unforgettable one. It happened on ______. At that time, I was ______.<br><br><strong>【主体段】事件经过</strong><br><span class='keyword'>At first</span>, ______. <span class='keyword'>Then</span>, ______. What surprised me most was that ______. I will never forget the moment when ______.<br><br><strong>【结尾段】感悟与收获</strong><br>From this experience, I learned that ______. It taught me the importance of ______. <span class='keyword'>All in all</span>, I will always remember this special experience.",
+              "example": "<strong>范文：</strong>I have experienced many things in my life, but the school sports meeting is the most unforgettable one. It happened on a sunny Friday. At that time, I was in Grade 8. At first, I was very nervous because I had to run the 800-meter race. Then, I told myself to calm down. What surprised me most was that I won the first prize! I will never forget the moment when my classmates cheered for me. From this experience, I learned that nothing is impossible if you try your best. It taught me the importance of confidence. All in all, I will always remember this special experience."
+            },
+            {
+              "id": "T4",
+              "title": "模板四：书信 / 邮件",
+              "suitable": "写一封邮件给朋友 / 邀请信 / 感谢信",
+              "structure": "<strong>【开头】</strong><br>Dear ______,<br><br>How are you doing recently? I'm writing to ______ (invite you / thank you / tell you about ...).<br><br><strong>【主体】</strong><br><span class='keyword'>First of all</span>, I want to tell you that ______.<br><span class='keyword'>Secondly</span>, ______ is also important. You should pay attention to ______.<br><span class='keyword'>By the way</span>, don't forget to ______.<br><br><strong>【结尾】</strong><br>I'm looking forward to your reply. If you have any questions, please let me know.<br><br>Yours,<br>Li Hua",
+              "example": "<strong>范文：</strong>Dear Tom, How are you doing recently? I'm writing to invite you to my birthday party. First of all, I want to tell you that the party will be held at my home this Saturday evening. Secondly, the time is also important. You should arrive before 7 p.m. By the way, don't forget to bring your favorite CD. I'm looking forward to your reply. If you have any questions, please let me know. Yours, Li Hua."
+            },
+            {
+              "id": "T5",
+              "title": "模板五：万能过渡词 & 句型汇总",
+              "suitable": "适用于所有写作题型",
+              "structure": "<table style='width:100%;border-collapse:collapse;text-align:left;'><tr style='background:#e8f2fa;'><th style='padding:8px;border:1px solid #d0e4f5;'>功能</th><th style='padding:8px;border:1px solid #d0e4f5;'>句型/词汇</th></tr><tr><td style='padding:8px;border:1px solid #d0e4f5;'>首先</td><td style='padding:8px;border:1px solid #d0e4f5;'><span class='keyword'>First</span> / <span class='keyword'>First of all</span> / <span class='keyword'>To begin with</span></td></tr><tr><td style='padding:8px;border:1px solid #d0e4f5;'>其次</td><td style='padding:8px;border:1px solid #d0e4f5;'><span class='keyword'>Second</span> / <span class='keyword'>Secondly</span> / <span class='keyword'>Besides</span> / <span class='keyword'>What's more</span></td></tr><tr><td style='padding:8px;border:1px solid #d0e4f5;'>最后</td><td style='padding:8px;border:1px solid #d0e4f5;'><span class='keyword'>Finally</span> / <span class='keyword'>Last but not least</span></td></tr><tr><td style='padding:8px;border:1px solid #d0e4f5;'>总结</td><td style='padding:8px;border:1px solid #d0e4f5;'><span class='keyword'>All in all</span> / <span class='keyword'>In a word</span> / <span class='keyword'>In short</span> / <span class='keyword'>Generally speaking</span></td></tr><tr><td style='padding:8px;border:1px solid #d0e4f5;'>对比</td><td style='padding:8px;border:1px solid #d0e4f5;'><span class='keyword'>On the one hand... On the other hand...</span> / <span class='keyword'>However</span> / <span class='keyword'>While</span></td></tr><tr><td style='padding:8px;border:1px solid #d0e4f5;'>因果</td><td style='padding:8px;border:1px solid #d0e4f5;'><span class='keyword'>because</span> / <span class='keyword'>so</span> / <span class='keyword'>As a result</span> / <span class='keyword'>The reason why... is that...</span></td></tr><tr><td style='padding:8px;border:1px solid #d0e4f5;'>举例</td><td style='padding:8px;border:1px solid #d0e4f5;'><span class='keyword'>For example</span> / <span class='keyword'>For instance</span> / <span class='keyword'>Such as</span></td></tr><tr><td style='padding:8px;border:1px solid #d0e4f5;'>个人观点</td><td style='padding:8px;border:1px solid #d0e4f5;'><span class='keyword'>In my opinion</span> / <span class='keyword'>As for me</span> / <span class='keyword'>Personally speaking</span></td></tr><tr><td style='padding:8px;border:1px solid #d0e4f5;'>建议</td><td style='padding:8px;border:1px solid #d0e4f5;'><span class='keyword'>You'd better...</span> / <span class='keyword'>Why not...?</span> / <span class='keyword'>It's a good idea to...</span></td></tr><tr><td style='padding:8px;border:1px solid #d0e4f5;'>表达感受</td><td style='padding:8px;border:1px solid #d0e4f5;'><span class='keyword'>I feel...</span> / <span class='keyword'>It makes me...</span> / <span class='keyword'>I was deeply moved by...</span></td></tr></table>",
+              "example": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
