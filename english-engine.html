@@ -177,19 +177,164 @@
             padding-left: 0.3rem;
         }
 
-        /* Passage for cloze/reading */
-        .passage-box {
-            background: #fafcfe;
-            border: 2px dashed #d0e4f5;
-            border-radius: 12px;
-            padding: 1rem;
+        /* ========== PASSAGE + STEP MODE (Cloze & Reading) ========== */
+        .step-container {
+            background: #fff;
+            border-radius: var(--radius);
+            border: 2px solid #d0e4f5;
+            box-shadow: var(--shadow);
+            overflow: hidden;
             margin-bottom: 1rem;
-            font-size: 0.9rem;
-            line-height: 2;
-            color: #2c3e50;
         }
 
-        /* Question Card */
+        /* Passage area */
+        .passage-area {
+            padding: 1rem 1.2rem;
+            border-bottom: 2px solid #e8f2fa;
+            max-height: 240px;
+            overflow-y: auto;
+            font-size: 0.9rem;
+            line-height: 2.1;
+            background: #fdfeff;
+            position: relative;
+        }
+        .passage-area .cloze-blank {
+            display: inline-block;
+            min-width: 60px;
+            padding: 0.1rem 0.6rem;
+            margin: 0 2px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+            background: #e8f2fa;
+            color: #5b9bd5;
+            border-bottom: 2px dashed #5b9bd5;
+            cursor: pointer;
+        }
+        .passage-area .cloze-blank.current {
+            background: #fff3cd;
+            color: #c79100;
+            border-bottom: 3px solid #f0c040;
+            animation: pulse 1.2s ease-in-out infinite;
+            box-shadow: 0 0 8px rgba(240,192,64,0.4);
+        }
+        .passage-area .cloze-blank.answered {
+            background: #d4efdf;
+            color: #1a6e3e;
+            border-bottom: 2px solid #27ae60;
+        }
+        .passage-area .cloze-blank.wrong-mark {
+            background: #fde0dc;
+            color: #a82020;
+            border-bottom: 2px solid #e74c3c;
+        }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 4px rgba(240,192,64,0.3); }
+            50% { box-shadow: 0 0 14px rgba(240,192,64,0.7); }
+        }
+
+        /* Step question area */
+        .step-question-area {
+            padding: 1rem 1.2rem;
+            min-height: 160px;
+        }
+        .step-progress {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 0.8rem;
+            color: #6a9ab8;
+            font-weight: 600;
+        }
+        .step-progress .progress-bar-outer {
+            flex: 1;
+            height: 6px;
+            background: #e8f2fa;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .step-progress .progress-bar-inner {
+            height: 100%;
+            background: #5b9bd5;
+            border-radius: 3px;
+            transition: width 0.3s;
+        }
+        .step-stem {
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+            line-height: 1.7;
+            padding: 0.5rem 0.7rem;
+            background: #fafcfe;
+            border-radius: 8px;
+            border-left: 3px solid #5b9bd5;
+        }
+        .step-options {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 0.8rem;
+        }
+        .step-option-btn {
+            display: block;
+            width: 100%;
+            padding: 0.7rem 1rem;
+            margin-bottom: 0.4rem;
+            border: 2px solid #e8f2fa;
+            border-radius: 10px;
+            background: #fafcfe;
+            cursor: pointer;
+            font-size: 0.9rem;
+            text-align: left;
+            font-family: var(--font-main);
+            transition: all 0.2s;
+            color: #2c3e50;
+        }
+        .step-option-btn:hover { border-color: #5b9bd5; background: #f0f7fd; }
+        .step-option-btn.selected { border-color: #5b9bd5; background: #e3f0fb; font-weight: 600; }
+        .step-option-btn.correct-show { border-color: var(--correct); background: #d4efdf; color: #1a6e3e; font-weight: 700; }
+        .step-option-btn.wrong-show { border-color: var(--wrong); background: #fde0dc; color: #a82020; }
+
+        /* Step navigation */
+        .step-nav {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            justify-content: center;
+        }
+        .step-nav-btn {
+            padding: 0.55rem 1.2rem;
+            border: 2px solid #d0e4f5;
+            border-radius: 20px;
+            background: #fff;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-family: var(--font-main);
+            font-weight: 600;
+            color: #5b9bd5;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        .step-nav-btn:hover { border-color: #5b9bd5; background: #f0f7fd; }
+        .step-nav-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+        .step-nav-btn.primary-nav { background: #5b9bd5; color: #fff; border-color: #5b9bd5; }
+        .step-nav-btn.primary-nav:hover { background: #4a8bc2; }
+
+        /* Step analysis */
+        .step-analysis {
+            margin-top: 0.6rem;
+            padding: 0.7rem 0.9rem;
+            background: #fdf6e3;
+            border-left: 4px solid #f0c040;
+            border-radius: 0 10px 10px 0;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            display: none;
+        }
+        .step-analysis.show { display: block; }
+
+        /* Standard Question Card (for 语法选择/短文填空/回答问题) */
         .question-card {
             background: #fff;
             border-radius: var(--radius);
@@ -221,7 +366,7 @@
             line-height: 1.8;
             display: inline;
         }
-        .question-stem .keyword, .passage-box .keyword, .keyword {
+        .keyword, .passage-area .keyword, .step-stem .keyword, .question-stem .keyword {
             color: #e74c3c !important;
             font-weight: 700 !important;
             background: #fff5f5;
@@ -280,7 +425,6 @@
             display: none;
         }
         .analysis-box.show { display: block; }
-        .analysis-box .tip-icon { font-size: 1rem; margin-right: 0.3rem; }
 
         /* Buttons */
         .btn-row {
@@ -372,6 +516,8 @@
         /* Table in template */
         .template-structure table {
             font-size: 0.85rem;
+            width: 100%;
+            border-collapse: collapse;
         }
         .template-structure th {
             background: #e8f2fa;
@@ -384,7 +530,7 @@
             border: 1px solid #d0e4f5;
         }
 
-        /* Answer ref */
+        /* Reference answer */
         .reference-answer {
             background: #f0faf5;
             border: 1px solid #d4efdf;
@@ -413,6 +559,9 @@
             .option-item { padding: 0.6rem 0.8rem; font-size: 0.85rem; }
             .module-selector { padding: 0.6rem 0.8rem; }
             .mode-btn { padding: 0.4rem 0.7rem; font-size: 0.78rem; }
+            .passage-area { max-height: 180px; font-size: 0.82rem; padding: 0.8rem; }
+            .step-question-area { padding: 0.8rem; }
+            .step-nav-btn { padding: 0.45rem 0.9rem; font-size: 0.8rem; }
         }
     </style>
 </head>
@@ -463,8 +612,9 @@
         // ==================== GLOBAL STATE ====================
         let allData = null;
         let currentModuleId = 'M1';
-        let currentMode = 'practice'; // 'practice' | 'review'
-        let userAnswers = {}; // { questionId: 'user answer' }
+        let currentMode = 'practice';
+        let userAnswers = {};  // { questionId: 'user answer' }
+        let stepStates = {};   // { partIndex: currentStepIndex }
 
         // ==================== INIT ====================
         async function init() {
@@ -472,7 +622,6 @@
                 const response = await fetch('english.json');
                 allData = await response.json();
                 populateModuleSelector();
-                // Check URL params
                 const params = new URLSearchParams(window.location.search);
                 const dayParam = params.get('day');
                 if (dayParam) {
@@ -484,7 +633,7 @@
                 document.getElementById('moduleSelect').value = currentModuleId;
                 renderModule(currentModuleId);
             } catch (e) {
-                document.getElementById('contentArea').innerHTML = 
+                document.getElementById('contentArea').innerHTML =
                     '<div class="question-card" style="text-align:center;padding:2rem;">⚠️ 题库数据加载失败，请检查 english.json 文件是否在同一目录下。<br><small>错误信息：' + e.message + '</small></div>';
                 document.getElementById('moduleSelect').innerHTML = '<option value="">加载失败</option>';
             }
@@ -514,7 +663,6 @@
             currentModuleId = document.getElementById('moduleSelect').value;
             resetAll();
             renderModule(currentModuleId);
-            // Scroll to top
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
@@ -525,7 +673,6 @@
 
             document.getElementById('headerTitle').textContent = mod.id + ' - ' + mod.title;
 
-            // Knowledge card
             const knowCard = document.getElementById('knowledgeCard');
             if (mod.knowledge) {
                 knowCard.style.display = 'block';
@@ -534,67 +681,318 @@
                 knowCard.style.display = 'none';
             }
 
-            // Render parts
             let html = '';
+            let partIndex = 0;
             mod.parts.forEach((part, pIdx) => {
-                html += '<div class="part-section">';
+                html += '<div class="part-section" id="part-' + pIdx + '">';
                 html += '<div class="part-title">📋 ' + part.type + '</div>';
                 if (part.instructions) {
                     html += '<div class="part-instructions">' + part.instructions + '</div>';
                 }
-                // Passage for cloze/reading/QA
-                if (part.passage) {
-                    html += '<div class="passage-box">' + applyKeywordStyles(part.passage) + '</div>';
-                }
-                // Questions
-                if (part.questions) {
-                    part.questions.forEach((q, qIdx) => {
-                        html += renderQuestion(q, part.type, pIdx, qIdx);
-                    });
-                }
-                // Templates
-                if (part.templates) {
-                    part.templates.forEach((tpl, tIdx) => {
-                        html += renderTemplate(tpl, tIdx);
-                    });
+
+                if (part.type === '完形填空' || part.type === '阅读理解') {
+                    // Step-by-step mode
+                    html += renderClozeReadingStep(part, pIdx);
+                } else if (part.type === '写作模板') {
+                    if (part.templates) {
+                        part.templates.forEach((tpl, tIdx) => {
+                            html += renderTemplate(tpl, tIdx);
+                        });
+                    }
+                } else {
+                    // Standard mode (语法选择、短文填空、回答问题)
+                    if (part.passage) {
+                        html += '<div class="passage-box" style="background:#fafcfe;border:2px dashed #d0e4f5;border-radius:12px;padding:1rem;margin-bottom:1rem;font-size:0.9rem;line-height:2;">' + part.passage + '</div>';
+                    }
+                    if (part.questions) {
+                        part.questions.forEach((q, qIdx) => {
+                            html += renderStandardQuestion(q, part.type, pIdx, qIdx);
+                        });
+                    }
                 }
                 html += '</div>';
+                partIndex++;
             });
 
-            document.getElementById('contentArea').innerHTML = html || '<div class="question-card">该模块暂无题目，敬请期待。</div>';
+            document.getElementById('contentArea').innerHTML = html;
 
-            // Show/hide action buttons
+            // Initialize step states for cloze/reading parts
+            stepStates = {};
+            mod.parts.forEach((part, pIdx) => {
+                if (part.type === '完形填空' || part.type === '阅读理解') {
+                    stepStates[pIdx] = 0;
+                    updateStepDisplay(pIdx);
+                }
+            });
+
             const hasQuestions = mod.parts.some(p => p.questions && p.questions.length > 0);
             document.getElementById('actionBtns').style.display = hasQuestions ? 'flex' : 'none';
 
-            // Reset user answers
             userAnswers = {};
             updateScoreBar();
             document.getElementById('scoreBar').classList.remove('show');
 
-            // If review mode, show all answers
             if (currentMode === 'review') {
                 revealAllAnswers();
             }
         }
 
-        function renderQuestion(q, type, pIdx, qIdx) {
+        // ==================== CLOZE / READING STEP MODE ====================
+        function renderClozeReadingStep(part, pIdx) {
+            const questions = part.questions || [];
+            const totalSteps = questions.length;
+            const partId = 'step-part-' + pIdx;
+
+            let html = '<div class="step-container" id="' + partId + '">';
+
+            // Passage area
+            html += '<div class="passage-area" id="passage-' + pIdx + '">';
+            html += generatePassageWithBlanks(part, pIdx, questions);
+            html += '</div>';
+
+            // Step question area
+            html += '<div class="step-question-area" id="step-area-' + pIdx + '">';
+            html += '<div class="step-progress">';
+            html += '<span>📌 第 <strong id="step-cur-' + pIdx + '">1</strong> / ' + totalSteps + ' 题</span>';
+            html += '<div class="progress-bar-outer"><div class="progress-bar-inner" id="step-bar-' + pIdx + '" style="width:0%"></div></div>';
+            html += '</div>';
+            html += '<div id="step-stem-' + pIdx + '" class="step-stem"></div>';
+            html += '<ul class="step-options" id="step-options-' + pIdx + '"></ul>';
+            html += '<div class="step-analysis" id="step-analysis-' + pIdx + '"></div>';
+            html += '<div class="step-nav">';
+            html += '<button class="step-nav-btn" id="step-prev-' + pIdx + '" onclick="stepNav(' + pIdx + ', -1)">◀ 上一题</button>';
+            html += '<button class="step-nav-btn primary-nav" id="step-next-' + pIdx + '" onclick="stepNav(' + pIdx + ', 1)">下一题 ▶</button>';
+            html += '</div>';
+            html += '</div>';
+
+            html += '</div>';
+            return html;
+        }
+
+        function generatePassageWithBlanks(part, pIdx, questions) {
+            let passage = part.passage || '';
+            // Replace ___1___, ___2___ etc with clickable spans
+            passage = passage.replace(/___(\d+)___/g, function(match, num) {
+                const qIdx = parseInt(num) - 1;
+                const qId = questions[qIdx] ? questions[qIdx].id : ('q' + num);
+                return '<span class="cloze-blank" id="blank-' + pIdx + '-' + qIdx + '" data-qidx="' + qIdx + '" onclick="jumpToStep(' + pIdx + ', ' + qIdx + ')">[' + num + ']</span>';
+            });
+            return passage;
+        }
+
+        function updateStepDisplay(pIdx) {
+            const mod = allData.modules.find(m => m.id === currentModuleId);
+            if (!mod) return;
+            const part = mod.parts[pIdx];
+            if (!part || !part.questions) return;
+
+            const questions = part.questions;
+            const currentStep = stepStates[pIdx] || 0;
+            const totalSteps = questions.length;
+            const q = questions[currentStep];
+            if (!q) return;
+
+            // Update progress
+            const curEl = document.getElementById('step-cur-' + pIdx);
+            const barEl = document.getElementById('step-bar-' + pIdx);
+            if (curEl) curEl.textContent = currentStep + 1;
+            if (barEl) barEl.style.width = ((currentStep + 1) / totalSteps * 100) + '%';
+
+            // Update stem
+            const stemEl = document.getElementById('step-stem-' + pIdx);
+            if (stemEl) stemEl.innerHTML = '<strong>' + (q.stem || ('第 ' + (currentStep + 1) + ' 空')) + '</strong>';
+
+            // Update options
+            const optionsEl = document.getElementById('step-options-' + pIdx);
+            if (optionsEl && q.options) {
+                optionsEl.innerHTML = '';
+                q.options.forEach(opt => {
+                    const btn = document.createElement('button');
+                    btn.className = 'step-option-btn';
+                    btn.textContent = opt.label + '. ' + opt.text;
+                    btn.setAttribute('data-value', opt.label);
+                    btn.onclick = function() { selectStepOption(pIdx, currentStep, opt.label, this); };
+                    // Restore previous selection
+                    const qId = q.id;
+                    if (userAnswers[qId] === opt.label) {
+                        btn.classList.add('selected');
+                    }
+                    // If review mode, show correct/wrong
+                    if (currentMode === 'review') {
+                        if (opt.label === q.answer) btn.classList.add('correct-show');
+                        if (userAnswers[qId] === opt.label && opt.label !== q.answer) btn.classList.add('wrong-show');
+                    }
+                    optionsEl.appendChild(btn);
+                });
+            }
+
+            // Update analysis
+            const analysisEl = document.getElementById('step-analysis-' + pIdx);
+            if (analysisEl && q.analysis) {
+                analysisEl.innerHTML = '<span class="tip-icon">💡</span>' + q.analysis;
+                const qId = q.id;
+                if (currentMode === 'review' || (userAnswers[qId] && userAnswers[qId] !== '')) {
+                    analysisEl.classList.add('show');
+                } else {
+                    analysisEl.classList.remove('show');
+                }
+            }
+
+            // Update navigation buttons
+            const prevBtn = document.getElementById('step-prev-' + pIdx);
+            const nextBtn = document.getElementById('step-next-' + pIdx);
+            if (prevBtn) prevBtn.disabled = (currentStep === 0);
+            if (nextBtn) {
+                if (currentStep >= totalSteps - 1) {
+                    nextBtn.textContent = '✅ 完成';
+                } else {
+                    nextBtn.textContent = '下一题 ▶';
+                }
+            }
+
+            // Update passage blanks highlighting
+            updateBlankHighlighting(pIdx, currentStep, questions);
+
+            // Scroll step area into view on mobile
+            const stepArea = document.getElementById('step-area-' + pIdx);
+            if (stepArea && window.innerWidth < 600) {
+                setTimeout(() => {
+                    stepArea.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 100);
+            }
+        }
+
+        function updateBlankHighlighting(pIdx, currentStep, questions) {
+            // Remove all highlights
+            const passageEl = document.getElementById('passage-' + pIdx);
+            if (!passageEl) return;
+            const blanks = passageEl.querySelectorAll('.cloze-blank');
+            blanks.forEach(blank => {
+                blank.classList.remove('current', 'answered', 'wrong-mark');
+            });
+
+            // Highlight current
+            const currentBlank = document.getElementById('blank-' + pIdx + '-' + currentStep);
+            if (currentBlank) {
+                currentBlank.classList.add('current');
+            }
+
+            // Mark answered blanks
+            questions.forEach((q, qIdx) => {
+                const blank = document.getElementById('blank-' + pIdx + '-' + qIdx);
+                if (!blank) return;
+                const ans = userAnswers[q.id];
+                if (ans && ans !== '') {
+                    if (currentMode === 'review' || ans.toLowerCase() === q.answer.toLowerCase()) {
+                        blank.classList.add('answered');
+                        blank.textContent = ans;
+                    } else {
+                        blank.classList.add('wrong-mark');
+                        blank.textContent = ans;
+                    }
+                } else {
+                    blank.textContent = '[' + (qIdx + 1) + ']';
+                }
+            });
+        }
+
+        function selectStepOption(pIdx, stepIdx, value, btnElement) {
+            if (currentMode === 'review') return;
+
+            const mod = allData.modules.find(m => m.id === currentModuleId);
+            if (!mod) return;
+            const q = mod.parts[pIdx].questions[stepIdx];
+            if (!q) return;
+
+            const qId = q.id;
+            userAnswers[qId] = value;
+
+            // Clear previous selection in this step
+            const optionsEl = document.getElementById('step-options-' + pIdx);
+            if (optionsEl) {
+                optionsEl.querySelectorAll('.step-option-btn').forEach(b => b.classList.remove('selected'));
+            }
+            btnElement.classList.add('selected');
+
+            // Auto-check
+            checkStepQuestion(pIdx, stepIdx, q);
+
+            // Update blank
+            updateBlankHighlighting(pIdx, stepIdx, mod.parts[pIdx].questions);
+            updateScoreBar();
+        }
+
+        function checkStepQuestion(pIdx, stepIdx, q) {
+            const userAnswer = userAnswers[q.id];
+            if (!userAnswer) return;
+
+            const isCorrect = (userAnswer.toLowerCase() === q.answer.toLowerCase());
+            const analysisEl = document.getElementById('step-analysis-' + pIdx);
+            if (analysisEl) analysisEl.classList.add('show');
+
+            // Highlight options
+            const optionsEl = document.getElementById('step-options-' + pIdx);
+            if (optionsEl) {
+                optionsEl.querySelectorAll('.step-option-btn').forEach(btn => {
+                    const val = btn.getAttribute('data-value');
+                    if (val === q.answer) btn.classList.add('correct-show');
+                    if (val === userAnswer && !isCorrect) btn.classList.add('wrong-show');
+                });
+            }
+
+            updateBlankHighlighting(pIdx, stepIdx, allData.modules.find(m => m.id === currentModuleId).parts[pIdx].questions);
+        }
+
+        function stepNav(pIdx, direction) {
+            const mod = allData.modules.find(m => m.id === currentModuleId);
+            if (!mod) return;
+            const questions = mod.parts[pIdx].questions;
+            const currentStep = stepStates[pIdx] || 0;
+            const newStep = currentStep + direction;
+
+            if (newStep < 0 || newStep >= questions.length) {
+                // If clicking "完成" on last step
+                if (direction > 0 && currentStep >= questions.length - 1) {
+                    updateScoreBar();
+                    document.getElementById('scoreBar').classList.add('show');
+                    document.getElementById('scoreBar').scrollIntoView({ behavior: 'smooth' });
+                }
+                return;
+            }
+
+            stepStates[pIdx] = newStep;
+            updateStepDisplay(pIdx);
+
+            // Scroll to top of step container
+            const container = document.getElementById('step-part-' + pIdx);
+            if (container && window.innerWidth < 600) {
+                container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        function jumpToStep(pIdx, stepIdx) {
+            stepStates[pIdx] = stepIdx;
+            updateStepDisplay(pIdx);
+            const stepArea = document.getElementById('step-area-' + pIdx);
+            if (stepArea) stepArea.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // ==================== STANDARD QUESTION RENDER ====================
+        function renderStandardQuestion(q, type, pIdx, qIdx) {
             const qId = q.id || (pIdx + '_' + qIdx);
             let html = '<div class="question-card" id="card-' + qId + '">';
             html += '<span class="question-num">' + ((qIdx || 0) + 1) + '</span>';
-            html += '<span class="question-stem">' + applyKeywordStyles(q.stem) + '</span>';
+            html += '<span class="question-stem">' + q.stem + '</span>';
 
-            if (type === '语法选择' || type === '完形填空' || type === '阅读理解') {
-                // Multiple choice
+            if (type === '语法选择') {
                 html += '<ul class="options-list">';
                 q.options.forEach(opt => {
-                    html += '<li><button class="option-item" data-qid="' + qId + '" data-value="' + opt.label + '" onclick="selectOption(this, \'' + qId + '\', \'' + opt.label + '\', \'' + type + '\')">' + opt.label + '. ' + opt.text + '</button></li>';
+                    html += '<li><button class="option-item" data-qid="' + qId + '" data-value="' + opt.label + '" onclick="selectStandardOption(this, \'' + qId + '\', \'' + opt.label + '\')">' + opt.label + '. ' + opt.text + '</button></li>';
                 });
                 html += '</ul>';
             } else if (type === '短文填空' || type === '回答问题') {
-                // Fill in
                 const placeholder = type === '回答问题' ? '请输入你的答案...' : '请输入答案...';
-                html += '<input type="text" class="fill-input" id="fill-' + qId + '" data-qid="' + qId + '" placeholder="' + placeholder + '" onchange="fillAnswer(this, \'' + qId + '\', \'' + type + '\')">';
+                html += '<input type="text" class="fill-input" id="fill-' + qId + '" data-qid="' + qId + '" placeholder="' + placeholder + '" onchange="fillStandardAnswer(this, \'' + qId + '\', \'' + type + '\')">';
                 if (type === '回答问题') {
                     html += '<button class="btn btn-outline" style="margin-left:0.5rem;padding:0.4rem 0.8rem;font-size:0.8rem;" onclick="toggleReference(\'ref-' + qId + '\')">📖 查看参考答案</button>';
                     html += '<div class="reference-answer" id="ref-' + qId + '">';
@@ -604,10 +1002,9 @@
                 }
             }
 
-            // Analysis
             if (q.analysis) {
                 html += '<div class="analysis-box" id="analysis-' + qId + '">';
-                html += '<span class="tip-icon">💡</span>' + applyKeywordStyles(q.analysis);
+                html += '<span class="tip-icon">💡</span>' + q.analysis;
                 html += '</div>';
             }
 
@@ -615,51 +1012,26 @@
             return html;
         }
 
-        function renderTemplate(tpl, tIdx) {
-            let html = '<div class="template-card">';
-            html += '<h3>📝 ' + tpl.title + '</h3>';
-            html += '<div class="template-suitable">📌 适用：' + tpl.suitable + '</div>';
-            html += '<div class="template-structure">' + applyKeywordStyles(tpl.structure) + '</div>';
-            if (tpl.example) {
-                html += '<div class="template-example">' + applyKeywordStyles(tpl.example) + '</div>';
-            }
-            html += '</div>';
-            return html;
-        }
-
-        function applyKeywordStyles(text) {
-            if (!text) return '';
-            // Already has span tags
-            return text;
-        }
-
-        // ==================== INTERACTION ====================
-        function selectOption(btn, qId, value, type) {
+        function selectStandardOption(btn, qId, value) {
             if (currentMode === 'review') return;
-
-            // Clear previous selection
             const card = document.getElementById('card-' + qId);
             card.querySelectorAll('.option-item').forEach(b => {
                 b.classList.remove('selected', 'correct-answer', 'wrong-answer');
             });
-
             btn.classList.add('selected');
             userAnswers[qId] = value;
-
-            // Auto-check
-            checkQuestion(qId);
+            checkStandardQuestion(qId);
         }
 
-        function fillAnswer(input, qId, type) {
+        function fillStandardAnswer(input, qId, type) {
             if (currentMode === 'review') return;
             userAnswers[qId] = input.value.trim();
-            // Don't auto-check for QA type
             if (type !== '回答问题') {
-                checkQuestion(qId);
+                checkStandardQuestion(qId);
             }
         }
 
-        function checkQuestion(qId) {
+        function checkStandardQuestion(qId) {
             const q = findQuestionById(qId);
             if (!q) return;
             const userAnswer = userAnswers[qId];
@@ -669,18 +1041,10 @@
             const analysisBox = document.getElementById('analysis-' + qId);
             const isCorrect = (userAnswer.toLowerCase() === q.answer.toLowerCase());
 
-            // Remove old classes
             card.classList.remove('correct', 'wrong');
+            card.classList.add(isCorrect ? 'correct' : 'wrong');
+            if (analysisBox) analysisBox.classList.add('show');
 
-            if (isCorrect) {
-                card.classList.add('correct');
-                if (analysisBox) analysisBox.classList.add('show');
-            } else {
-                card.classList.add('wrong');
-                if (analysisBox) analysisBox.classList.add('show');
-            }
-
-            // Highlight options for MC
             const optionBtns = card.querySelectorAll('.option-item');
             optionBtns.forEach(btn => {
                 const btnValue = btn.getAttribute('data-value');
@@ -688,7 +1052,6 @@
                 if (btnValue === userAnswer && !isCorrect) btn.classList.add('wrong-answer');
             });
 
-            // Highlight fill input
             const fillInput = card.querySelector('.fill-input');
             if (fillInput) {
                 fillInput.classList.remove('correct-fill', 'wrong-fill');
@@ -698,16 +1061,54 @@
             updateScoreBar();
         }
 
+        function renderTemplate(tpl, tIdx) {
+            let html = '<div class="template-card">';
+            html += '<h3>📝 ' + tpl.title + '</h3>';
+            html += '<div class="template-suitable">📌 适用：' + tpl.suitable + '</div>';
+            html += '<div class="template-structure">' + tpl.structure + '</div>';
+            if (tpl.example) {
+                html += '<div class="template-example">' + tpl.example + '</div>';
+            }
+            html += '</div>';
+            return html;
+        }
+
+        // ==================== COMMON ====================
+        function findQuestionById(qId) {
+            if (!allData) return null;
+            for (const mod of allData.modules) {
+                for (const part of mod.parts) {
+                    if (part.questions) {
+                        for (const q of part.questions) {
+                            if (q.id === qId) return q;
+                        }
+                    }
+                }
+            }
+            return null;
+        }
+
         function checkAll() {
-            // Collect all question IDs
-            const allCards = document.querySelectorAll('.question-card');
-            allCards.forEach(card => {
+            document.querySelectorAll('.question-card').forEach(card => {
                 const qId = card.id.replace('card-', '');
                 if (userAnswers[qId] !== undefined && userAnswers[qId] !== '') {
-                    checkQuestion(qId);
+                    checkStandardQuestion(qId);
                 }
             });
-            // Show score
+            // Also check cloze/reading steps
+            const mod = allData.modules.find(m => m.id === currentModuleId);
+            if (mod) {
+                mod.parts.forEach((part, pIdx) => {
+                    if ((part.type === '完形填空' || part.type === '阅读理解') && part.questions) {
+                        part.questions.forEach((q, qIdx) => {
+                            if (userAnswers[q.id] !== undefined && userAnswers[q.id] !== '') {
+                                checkStepQuestion(pIdx, qIdx, q);
+                            }
+                        });
+                        updateStepDisplay(pIdx);
+                    }
+                });
+            }
             updateScoreBar();
             document.getElementById('scoreBar').classList.add('show');
             document.getElementById('scoreBar').scrollIntoView({ behavior: 'smooth' });
@@ -715,6 +1116,7 @@
 
         function resetAll() {
             userAnswers = {};
+            stepStates = {};
             document.querySelectorAll('.question-card').forEach(card => {
                 card.classList.remove('correct', 'wrong');
             });
@@ -731,27 +1133,41 @@
             document.querySelectorAll('.reference-answer').forEach(ref => {
                 ref.classList.remove('show');
             });
+            document.querySelectorAll('.step-analysis').forEach(box => {
+                box.classList.remove('show');
+            });
+            document.querySelectorAll('.step-option-btn').forEach(btn => {
+                btn.classList.remove('selected', 'correct-show', 'wrong-show');
+            });
+            // Reset step states
+            const mod = allData.modules.find(m => m.id === currentModuleId);
+            if (mod) {
+                mod.parts.forEach((part, pIdx) => {
+                    if (part.type === '完形填空' || part.type === '阅读理解') {
+                        stepStates[pIdx] = 0;
+                        updateStepDisplay(pIdx);
+                    }
+                });
+            }
             document.getElementById('scoreBar').classList.remove('show');
         }
 
         function showAllAnalysis() {
-            document.querySelectorAll('.analysis-box').forEach(box => {
-                box.classList.add('show');
-            });
+            document.querySelectorAll('.analysis-box').forEach(box => box.classList.add('show'));
+            document.querySelectorAll('.step-analysis').forEach(box => box.classList.add('show'));
         }
 
         function revealAllAnswers() {
             document.querySelectorAll('.analysis-box').forEach(box => box.classList.add('show'));
             document.querySelectorAll('.reference-answer').forEach(ref => ref.classList.add('show'));
-            // Highlight correct answers
+            document.querySelectorAll('.step-analysis').forEach(box => box.classList.add('show'));
+
             document.querySelectorAll('.question-card').forEach(card => {
                 const qId = card.id.replace('card-', '');
                 const q = findQuestionById(qId);
                 if (!q) return;
                 card.querySelectorAll('.option-item').forEach(btn => {
-                    if (btn.getAttribute('data-value') === q.answer) {
-                        btn.classList.add('correct-answer');
-                    }
+                    if (btn.getAttribute('data-value') === q.answer) btn.classList.add('correct-answer');
                 });
                 const fillInput = card.querySelector('.fill-input');
                 if (fillInput && q.answer) {
@@ -759,6 +1175,23 @@
                     fillInput.classList.add('correct-fill');
                 }
             });
+
+            // Reveal cloze/reading
+            const mod = allData.modules.find(m => m.id === currentModuleId);
+            if (mod) {
+                mod.parts.forEach((part, pIdx) => {
+                    if ((part.type === '完形填空' || part.type === '阅读理解') && part.questions) {
+                        part.questions.forEach((q, qIdx) => {
+                            if (!userAnswers[q.id] || userAnswers[q.id] === '') {
+                                userAnswers[q.id] = q.answer;
+                            }
+                        });
+                        updateStepDisplay(pIdx);
+                        const analysisEl = document.getElementById('step-analysis-' + pIdx);
+                        if (analysisEl) analysisEl.classList.add('show');
+                    }
+                });
+            }
         }
 
         function toggleReference(refId) {
@@ -789,20 +1222,6 @@
             if (total > 0) document.getElementById('scoreBar').classList.add('show');
         }
 
-        function findQuestionById(qId) {
-            if (!allData) return null;
-            for (const mod of allData.modules) {
-                for (const part of mod.parts) {
-                    if (part.questions) {
-                        for (const q of part.questions) {
-                            if (q.id === qId) return q;
-                        }
-                    }
-                }
-            }
-            return null;
-        }
-
         function setMode(mode) {
             currentMode = mode;
             document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
@@ -814,7 +1233,6 @@
         }
 
         function goBack() {
-            // Try to go back to index
             if (document.referrer && document.referrer.includes(window.location.host)) {
                 window.history.back();
             } else {
@@ -822,7 +1240,6 @@
             }
         }
 
-        // ==================== START ====================
         document.addEventListener('DOMContentLoaded', init);
     </script>
 
