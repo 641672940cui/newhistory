@@ -1,45 +1,238 @@
-<!-- ==================== 英语科目区域 ==================== -->
-<div class="section-title">🇬🇧 英语</div>
+“主索引页面：<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes, viewport-fit=cover">
+    <title>东东题库 - 索引</title>
+    <style>
+        :root {
+            --bg: #f3f8fc;
+            --card: #ffffff;
+            --border: #d0e4f5;
+            --accent: #5b9bd5;
+            --accent-dark: #3d7ab8;
+            --shadow: 0 2px 12px rgba(60, 100, 160, 0.07);
+            --radius: 14px;
+            --font-main: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+            --font-serif: 'Noto Serif SC', 'STSong', 'SimSun', 'KaiTi', serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-main);
+            background: linear-gradient(180deg, #eef5fb 0%, #e3eff9 30%, #f5f9fd 100%);
+            min-height: 100vh;
+            color: #2c3e50;
+            line-height: 1.7;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .app-header {
+            background: linear-gradient(135deg, #5b9bd5 0%, #4a8bc2 40%, #3d7ab8 100%);
+            color: #fff;
+            padding: 1.8rem 1rem;
+            text-align: center;
+            box-shadow: 0 3px 16px rgba(60, 100, 160, 0.2);
+            border-bottom: 2px solid #7db9e8;
+            border-radius: 0 0 16px 16px;
+        }
+        .app-header h1 {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin: 0;
+        }
+        .app-header .subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+        .header-emoji {
+            font-size: 2.8rem;
+            display: block;
+            margin-bottom: 8px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        .main-content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 1.2rem 0.8rem 2rem;
+        }
+        .section-title {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #3d7ab8;
+            margin: 1.2rem 0 0.6rem;
+            padding-left: 0.3rem;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        .subject-card {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 1.2rem 1rem;
+            margin-bottom: 0.7rem;
+            cursor: pointer;
+            border: 2px solid #d0e4f5;
+            transition: all 0.2s;
+            user-select: none;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        .subject-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(60, 100, 160, 0.15);
+            border-color: #7db9e8;
+        }
+        .subject-card:active {
+            transform: scale(0.98);
+            border-color: #5b9bd5;
+            background: #f0f7fd;
+        }
+        .subject-card.coming-soon {
+            opacity: 0.55;
+            cursor: default;
+            pointer-events: none;
+        }
+        .subject-icon {
+            font-size: 2.4rem;
+            flex-shrink: 0;
+            width: 55px;
+            text-align: center;
+        }
+        .subject-info { flex: 1; }
+        .subject-name {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #2c3e50;
+            margin-bottom: 3px;
+        }
+        .subject-desc {
+            font-size: 0.78rem;
+            color: #8aabc8;
+            margin-bottom: 4px;
+        }
+        .subject-stats {
+            font-size: 0.72rem;
+            color: #6a9ab8;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .stat-item {
+            background: #e8f2fa;
+            padding: 0.2rem 0.6rem;
+            border-radius: 10px;
+            white-space: nowrap;
+        }
+        .badge-new {
+            background: #e74c3c;
+            color: #fff;
+            font-size: 0.65rem;
+            padding: 0.15rem 0.5rem;
+            border-radius: 12px;
+            margin-left: 0.5rem;
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem 1rem 1.5rem;
+            color: #8aabc8;
+            font-size: 0.78rem;
+            line-height: 1.8;
+        }
+        .footer a {
+            color: #3d7ab8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        @media (max-width: 360px) {
+            .subject-card { padding: 1rem 0.8rem; gap: 0.5rem; }
+            .subject-icon { font-size: 2rem; width: 45px; }
+            .subject-name { font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
 
-<!-- 语法专项入口 -->
-<div class="subject-card" onclick="location.href='english-engine.html'">
-    <div class="subject-icon">📝</div>
-    <div class="subject-info">
-        <div class="subject-name">语法专项训练 · 10个模块 <span class="badge-new">NEW</span></div>
-        <div class="subject-desc">代词 · 名词 · 时态 · 形副 · 介词 · 连词 · 祈使感叹 · 被动 · 非谓语</div>
-        <div class="subject-stats">
-            <span class="stat-item">语法选择</span>
-            <span class="stat-item">短文填空</span>
-            <span class="stat-item">详细解析</span>
+    <div class="app-header">
+        <span class="header-emoji">📚</span>
+        <h1>东东的题库</h1>
+        <div class="subtitle">广东中考 · 专项突破 · 材料映射法</div>
+    </div>
+
+    <div class="main-content">
+        
+        <!-- 历史科目：选择题 + 材料题 双入口 -->
+        <div class="section-title">📖 历史</div>
+        
+        <!-- 选择题入口 - 注意链接到 quiz-engine.html -->
+        <div class="subject-card" onclick="location.href='quiz-engine.html?subject=history'">
+            <div class="subject-icon">✅</div>
+            <div class="subject-info">
+                <div class="subject-name">选择题 · 8个分区</div>
+                <div class="subject-desc">中国古代史 · 近代史 · 现代史 · 世界史</div>
+                <div class="subject-stats">
+                    <span class="stat-item">160道选择题</span>
+                    <span class="stat-item">分区练习</span>
+                    <span class="stat-item">错题本</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 材料题入口 - 注意链接到 material-engine.html -->
+        <div class="subject-card" onclick="location.href='material-engine.html?subject=history'">
+            <div class="subject-icon">📜</div>
+            <div class="subject-info">
+                <div class="subject-name">材料大题 · 6道精选题 <span class="badge-new">NEW</span></div>
+                <div class="subject-desc">概括类 · 原因背景类 · 影响意义类 · 变化趋势类 · 比较类 · 启示认识类</div>
+                <div class="subject-stats">
+                    <span class="stat-item">6道大题</span>
+                    <span class="stat-item">四步解题法</span>
+                    <span class="stat-item">逐空批改</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title">🔜 即将上线</div>
+        
+        <div class="subject-card coming-soon">
+            <div class="subject-icon">🔬</div>
+            <div class="subject-info">
+                <div class="subject-name">物理（开发中）</div>
+                <div class="subject-desc">力学·电学·光学·实验题——敬请期待</div>
+            </div>
+        </div>
+        
+        <div class="subject-card coming-soon">
+            <div class="subject-icon">🧪</div>
+            <div class="subject-info">
+                <div class="subject-name">化学（开发中）</div>
+                <div class="subject-desc">元素周期·化学反应·实验推断——敬请期待</div>
+            </div>
+        </div>
+
+        <div class="subject-card coming-soon">
+            <div class="subject-icon">🌍</div>
+            <div class="subject-info">
+                <div class="subject-name">地理（开发中）</div>
+                <div class="subject-desc">中国地理·世界地理·读图分析——敬请期待</div>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- 综合训练入口 -->
-<div class="subject-card" onclick="location.href='english-engine.html?module=M11'">
-    <div class="subject-icon">📖</div>
-    <div class="subject-info">
-        <div class="subject-name">综合训练 · 完形+阅读+问答+写作</div>
-        <div class="subject-desc">完形填空 · 阅读理解 · 回答问题 · 写作模板</div>
-        <div class="subject-stats">
-            <span class="stat-item">2篇完形</span>
-            <span class="stat-item">1篇阅读</span>
-            <span class="stat-item">1篇问答</span>
-            <span class="stat-item">5套写作模板</span>
-        </div>
+    <div class="footer">
+        🚀 题库持续更新中 · 程序与数据完全分离 · AI可安全生成题库<br>
+        <a href="#" target="_blank">GitHub 开源</a>
     </div>
-</div>
 
-<!-- 单词突破入口 -->
-<div class="subject-card" onclick="location.href='english-engine.html?module=W1'">
-    <div class="subject-icon">🔤</div>
-    <div class="subject-info">
-        <div class="subject-name">单词突破 · 8个模块 <span class="badge-new">NEW</span></div>
-        <div class="subject-desc">易混动词 · 形副词 · 名词辨析 · 固定搭配 · 短语动词 · 词性转换 · 不规则动词/名词</div>
-        <div class="subject-stats">
-            <span class="stat-item">150道题</span>
-            <span class="stat-item">4选1+填空</span>
-            <span class="stat-item">错题本</span>
-        </div>
-    </div>
-</div>
+</body>
+</html>
