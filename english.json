@@ -90,5 +90,93 @@
         }
       ]
     }
-  ]
-}
+ ]
+},
+ {
+      "id": "M2",
+      "title": "名词复数（不规则变化）",
+      "knowledge": "变元音：man→men, woman→women, foot→feet, tooth→teeth；单复数同形：sheep, deer, Chinese；特殊：child→children, mouse→mice。",
+      "group": "语法专项",
+      "parts": [
+        {
+          "type": "语法选择",
+          "instructions": "从A、B、C三个选项中选出可以填入空白处的最佳选项。",
+          "questions": [
+            {
+              "id": "M2_G1",
+              "stem": "There are many <span class='keyword'>___</span> on the farm. They are so lovely.",
+              "options": [
+                {"label": "A", "text": "sheeps"},
+                {"label": "B", "text": "sheep"},
+                {"label": "C", "text": "sheepes"}
+              ],
+              "answer": "B",
+              "analysis": "many后面用复数，但sheep是单复数同形，不能加s，故选B。技巧：sheep、deer、Chinese单复数长一样，广东中考高频陷阱。"
+            },
+            {
+              "id": "M2_G2",
+              "stem": "Look at the two <span class='keyword'>___</span> over there. They are talking happily.",
+              "options": [
+                {"label": "A", "text": "woman"},
+                {"label": "B", "text": "women"},
+                {"label": "C", "text": "womens"}
+              ],
+              "answer": "B",
+              "analysis": "two后面用复数，woman的复数是不规则变化women（a变e）。技巧：man→men，woman→women。"
+            },
+            {
+              "id": "M2_G3",
+              "stem": "The two <span class='keyword'>___</span> are playing games in the park now.",
+              "options": [
+                {"label": "A", "text": "child"},
+                {"label": "B", "text": "childs"},
+                {"label": "C", "text": "children"}
+              ],
+              "answer": "C",
+              "analysis": "two后面用复数，child的复数是不规则变化children。技巧：child→children是广东中考必背。"
+            },
+            {
+              "id": "M2_G4",
+              "stem": "Brush your <span class='keyword'>___</span> every morning and evening.",
+              "options": [
+                {"label": "A", "text": "tooth"},
+                {"label": "B", "text": "tooths"},
+                {"label": "C", "text": "teeth"}
+              ],
+              "answer": "C",
+              "analysis": "不止一颗牙用复数，tooth的复数是teeth（oo变ee）。技巧：tooth→teeth，foot→feet。"
+            }
+          ]
+        },
+        {
+          "type": "短文填空",
+          "instructions": "用括号内单词的正确形式填空。",
+          "questions": [
+            {
+              "id": "M2_T1",
+              "stem": "There are many <span class='keyword'>___</span> (child) playing games in the park now.",
+              "answer": "children",
+              "analysis": "many后面加复数，child变children。技巧：看到many/some/数字，立刻想名词变复数。"
+            },
+            {
+              "id": "M2_T2",
+              "stem": "In the old days, some <span class='keyword'>___</span> (man) worked in the fields all day.",
+              "answer": "men",
+              "analysis": "some后面加复数，man变men（a变e）。技巧：man→men，woman→women。"
+            },
+            {
+              "id": "M2_T3",
+              "stem": "Look! Those <span class='keyword'>___</span> (sheep) are eating grass on the hill.",
+              "answer": "sheep",
+              "analysis": "sheep单复数同形，不用加s。技巧：sheep永远长这样，不管前面是many还是those。"
+            },
+            {
+              "id": "M2_T4",
+              "stem": "There are two <span class='keyword'>___</span> (mouse) in the corner. The cat is chasing them.",
+              "answer": "mice",
+              "analysis": "two后面用复数，mouse的复数是mice。技巧：mouse→mice，中考高频。"
+            }
+          ]
+        }
+      ]
+    }
