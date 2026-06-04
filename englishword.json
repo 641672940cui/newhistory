@@ -1,0 +1,868 @@
+{
+  "subject": "英语单词突破",
+  "description": "广东中考英语 · 单词专项训练 · 紧贴中考高频词",
+  "modules": [
+    {
+      "id": "W1",
+      "title": "易混动词辨析",
+      "knowledge": "look(看的过程)/see(看的结果)/watch(长时间观看)/read(阅读)；say(说内容)/speak(说语言)/tell(告诉)/talk(交谈)；bring(带来)/take(带走)/carry(搬运)；borrow(借入)/lend(借出)/keep(借多久)。",
+      "group": "单词突破",
+      "parts": [
+        {
+          "type": "词汇选择",
+          "instructions": "从A、B、C、D四个选项中选出可以填入空白处的最佳选项。",
+          "questions": [
+            {
+              "id": "W1_G1",
+              "stem": "Please <span class='keyword'>___</span> the blackboard carefully. Can you <span class='keyword'>___</span> the words clearly?",
+              "options": [
+                {"label": "A", "text": "look at; see"},
+                {"label": "B", "text": "see; look at"},
+                {"label": "C", "text": "watch; read"},
+                {"label": "D", "text": "read; watch"}
+              ],
+              "answer": "A",
+              "analysis": "look at强调动作，see强调结果。看黑板是动作用look at，看清字是结果用see。技巧：look at=看的过程，see=看的结果，watch=长时间观看，read=阅读文字。"
+            },
+            {
+              "id": "W1_G2",
+              "stem": "My grandfather often <span class='keyword'>___</span> me interesting stories before I go to bed.",
+              "options": [
+                {"label": "A", "text": "says"},
+                {"label": "B", "text": "speaks"},
+                {"label": "C", "text": "tells"},
+                {"label": "D", "text": "talks"}
+              ],
+              "answer": "C",
+              "analysis": "讲故事用tell stories，固定搭配。say强调内容，speak强调语言/演讲，talk强调交谈。技巧：tell a story/tell a lie/tell the truth。"
+            },
+            {
+              "id": "W1_G3",
+              "stem": "Can you <span class='keyword'>___</span> me your dictionary? I want to <span class='keyword'>___</span> it for a few days.",
+              "options": [
+                {"label": "A", "text": "borrow; lend"},
+                {"label": "B", "text": "lend; borrow"},
+                {"label": "C", "text": "lend; keep"},
+                {"label": "D", "text": "borrow; keep"}
+              ],
+              "answer": "C",
+              "analysis": "借给我用lend me；借几天不能用borrow（短暂动作），要用keep（延续性动词）。技巧：borrow=借入，lend=借出，keep=借多久。"
+            },
+            {
+              "id": "W1_G4",
+              "stem": "Please <span class='keyword'>___</span> your homework to school tomorrow. Don't <span class='keyword'>___</span> it at home.",
+              "options": [
+                {"label": "A", "text": "bring; leave"},
+                {"label": "B", "text": "take; leave"},
+                {"label": "C", "text": "bring; forget"},
+                {"label": "D", "text": "take; forget"}
+              ],
+              "answer": "A",
+              "analysis": "带来学校用bring（朝向说话人）；落在家里是leave sth. at home，不是forget。技巧：forget+东西=忘记某物，leave+东西+地点=把某物落在某地。"
+            },
+            {
+              "id": "W1_G5",
+              "stem": "<span class='keyword'>___</span>! Can you <span class='keyword'>___</span> someone singing in the next room?",
+              "options": [
+                {"label": "A", "text": "Hear; listen"},
+                {"label": "B", "text": "Listen; hear"},
+                {"label": "C", "text": "Listen; listen to"},
+                {"label": "D", "text": "Hear; hear"}
+              ],
+              "answer": "B",
+              "analysis": "Listen!是祈使句，表示听的动作；hear表示听到的结果。技巧：listen=听的过程（listen to），hear=听的结果。和look/see的区别一样。"
+            },
+            {
+              "id": "W1_G6",
+              "stem": "I <span class='keyword'>___</span> 100 yuan from my mother and <span class='keyword'>___</span> it to my friend.",
+              "options": [
+                {"label": "A", "text": "borrowed; lent"},
+                {"label": "B", "text": "lent; borrowed"},
+                {"label": "C", "text": "kept; lent"},
+                {"label": "D", "text": "borrowed; kept"}
+              ],
+              "answer": "A",
+              "analysis": "从妈妈那借入用borrowed；借出给朋友用lent。技巧：borrow from sb.（借入），lend to sb.（借出）。"
+            },
+            {
+              "id": "W1_G7",
+              "stem": "The box is too heavy. I can't <span class='keyword'>___</span> it to the third floor.",
+              "options": [
+                {"label": "A", "text": "bring"},
+                {"label": "B", "text": "take"},
+                {"label": "C", "text": "carry"},
+                {"label": "D", "text": "get"}
+              ],
+              "answer": "C",
+              "analysis": "搬运重物用carry，强调负重搬运。bring/take强调方向。技巧：carry=搬运（有重量感），bring=带来，take=带走。"
+            },
+            {
+              "id": "W1_G8",
+              "stem": "— What did he <span class='keyword'>___</span> at the meeting? — He <span class='keyword'>___</span> we should work harder.",
+              "options": [
+                {"label": "A", "text": "say; said"},
+                {"label": "B", "text": "speak; spoke"},
+                {"label": "C", "text": "tell; told"},
+                {"label": "D", "text": "talk; talked"}
+              ],
+              "answer": "A",
+              "analysis": "强调说的内容用say，后面接说话的内容。技巧：say+内容，speak+语言，tell+人，talk+about。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "W2",
+      "title": "易混形容词/副词辨析",
+      "knowledge": "hard(努力地/硬的)/hardly(几乎不)；late(晚)/lately(最近)；near(附近)/nearly(几乎)；good(形容词)/well(副词/身体好)；alone(独自)/lonely(孤独)；quite(相当)/quiet(安静)。",
+      "group": "单词突破",
+      "parts": [
+        {
+          "type": "词汇选择",
+          "instructions": "从A、B、C、D四个选项中选出可以填入空白处的最佳选项。",
+          "questions": [
+            {
+              "id": "W2_G1",
+              "stem": "He studied <span class='keyword'>___</span> for the exam, so he passed it easily.",
+              "options": [
+                {"label": "A", "text": "hard"},
+                {"label": "B", "text": "hardly"},
+                {"label": "C", "text": "harder"},
+                {"label": "D", "text": "hardest"}
+              ],
+              "answer": "A",
+              "analysis": "修饰study用副词，hard本身既是形容词也是副词，意为努力地。hardly意为几乎不，意思相反。技巧：hard=努力地，hardly=几乎不（否定含义）。中考最爱考这对。"
+            },
+            {
+              "id": "W2_G2",
+              "stem": "I could <span class='keyword'>___</span> believe my eyes when I saw the beautiful view.",
+              "options": [
+                {"label": "A", "text": "hard"},
+                {"label": "B", "text": "hardly"},
+                {"label": "C", "text": "nearly"},
+                {"label": "D", "text": "near"}
+              ],
+              "answer": "B",
+              "analysis": "句意为几乎不能相信，用hardly（几乎不）。技巧：hardly=almost not，本身含否定义。"
+            },
+            {
+              "id": "W2_G3",
+              "stem": "He lives <span class='keyword'>___</span>, but he never feels <span class='keyword'>___</span> because he has many friends.",
+              "options": [
+                {"label": "A", "text": "alone; lonely"},
+                {"label": "B", "text": "lonely; alone"},
+                {"label": "C", "text": "alone; alone"},
+                {"label": "D", "text": "lonely; lonely"}
+              ],
+              "answer": "A",
+              "analysis": "alone=独自一人（客观上），lonely=孤独（情感上）。他独居但不孤独。技巧：alone强调状态，lonely强调感受。"
+            },
+            {
+              "id": "W2_G4",
+              "stem": "The baby is <span class='keyword'>___</span>. Please keep <span class='keyword'>___</span>.",
+              "options": [
+                {"label": "A", "text": "asleep; quiet"},
+                {"label": "B", "text": "sleepy; quiet"},
+                {"label": "C", "text": "asleep; quite"},
+                {"label": "D", "text": "sleepy; quite"}
+              ],
+              "answer": "A",
+              "analysis": "asleep=睡着的（状态），sleepy=困的。keep quiet=保持安静，quite=相当。技巧：asleep是表语形容词，不能放名词前。quite和quiet拼写相近但意思完全不同。"
+            },
+            {
+              "id": "W2_G5",
+              "stem": "She is a <span class='keyword'>___</span> student. She does everything <span class='keyword'>___</span>.",
+              "options": [
+                {"label": "A", "text": "good; good"},
+                {"label": "B", "text": "well; good"},
+                {"label": "C", "text": "good; well"},
+                {"label": "D", "text": "well; well"}
+              ],
+              "answer": "C",
+              "analysis": "修饰名词student用good（形容词），修饰动词does用well（副词）。技巧：good=形容词，well=副词/形容词（身体好）。"
+            },
+            {
+              "id": "W2_G6",
+              "stem": "He arrived <span class='keyword'>___</span> for the meeting. He has been very busy <span class='keyword'>___</span>.",
+              "options": [
+                {"label": "A", "text": "late; lately"},
+                {"label": "B", "text": "lately; late"},
+                {"label": "C", "text": "late; late"},
+                {"label": "D", "text": "lately; lately"}
+              ],
+              "answer": "A",
+              "analysis": "arrive late=迟到（late副词），lately=最近（=recently）。技巧：late可作形容词也可作副词（晚），lately=最近。"
+            },
+            {
+              "id": "W2_G7",
+              "stem": "The park is very <span class='keyword'>___</span> my home. It's <span class='keyword'>___</span> five minutes' walk.",
+              "options": [
+                {"label": "A", "text": "near; nearly"},
+                {"label": "B", "text": "nearly; near"},
+                {"label": "C", "text": "near; near"},
+                {"label": "D", "text": "nearly; nearly"}
+              ],
+              "answer": "A",
+              "analysis": "near my home=在我家附近（near介词），nearly=几乎（=almost）。技巧：near=附近，nearly=几乎。拼写差一个字母，意思差很远。"
+            },
+            {
+              "id": "W2_G8",
+              "stem": "The <span class='keyword'>___</span> fish is still <span class='keyword'>___</span>. Don't touch it!",
+              "options": [
+                {"label": "A", "text": "living; alive"},
+                {"label": "B", "text": "alive; living"},
+                {"label": "C", "text": "lively; alive"},
+                {"label": "D", "text": "alive; lively"}
+              ],
+              "answer": "A",
+              "analysis": "living fish=活着的鱼（前置定语用living），still alive=仍然活着（表语用alive）。技巧：living可放名词前，alive只能放系动词后。lively=活泼的。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "W3",
+      "title": "易混名词辨析",
+      "knowledge": "family(家庭/家人)/home(家/归属感)/house(房子)；job(具体工作)/work(泛指工作)；problem(麻烦的问题)/question(寻求答案的问题)；voice(嗓音)/noise(噪音)/sound(声音)。",
+      "group": "单词突破",
+      "parts": [
+        {
+          "type": "词汇选择",
+          "instructions": "从A、B、C、D四个选项中选出可以填入空白处的最佳选项。",
+          "questions": [
+            {
+              "id": "W3_G1",
+              "stem": "I have a happy <span class='keyword'>___</span>. There are four people in my <span class='keyword'>___</span>.",
+              "options": [
+                {"label": "A", "text": "family; family"},
+                {"label": "B", "text": "home; family"},
+                {"label": "C", "text": "house; home"},
+                {"label": "D", "text": "family; home"}
+              ],
+              "answer": "A",
+              "analysis": "a happy family=一个幸福的家庭（指家人），in my family=在我家（指家庭成员）。技巧：family强调家人，home强调有归属感的地方，house强调建筑物。"
+            },
+            {
+              "id": "W3_G2",
+              "stem": "He found a new <span class='keyword'>___</span> in a bank. He has a lot of <span class='keyword'>___</span> to do every day.",
+              "options": [
+                {"label": "A", "text": "job; work"},
+                {"label": "B", "text": "work; job"},
+                {"label": "C", "text": "job; job"},
+                {"label": "D", "text": "work; work"}
+              ],
+              "answer": "A",
+              "analysis": "a new job=一份新工作（可数名词），a lot of work=很多工作（不可数名词）。技巧：job是可数名词（a job），work是不可数名词（不能加a）。"
+            },
+            {
+              "id": "W3_G3",
+              "stem": "The math <span class='keyword'>___</span> is too difficult. I can't work out this <span class='keyword'>___</span>.",
+              "options": [
+                {"label": "A", "text": "question; problem"},
+                {"label": "B", "text": "problem; question"},
+                {"label": "C", "text": "problem; problem"},
+                {"label": "D", "text": "question; question"}
+              ],
+              "answer": "C",
+              "analysis": "math problem=数学难题（需要解决的麻烦），work out this problem=解决这个问题。技巧：problem=麻烦/困难（solve a problem），question=疑问（answer a question）。"
+            },
+            {
+              "id": "W3_G4",
+              "stem": "Please speak in a low <span class='keyword'>___</span>. Don't make any <span class='keyword'>___</span> in the library.",
+              "options": [
+                {"label": "A", "text": "voice; noise"},
+                {"label": "B", "text": "noise; voice"},
+                {"label": "C", "text": "sound; voice"},
+                {"label": "D", "text": "voice; sound"}
+              ],
+              "answer": "A",
+              "analysis": "in a low voice=低声说话（人的嗓音），make noise=制造噪音。技巧：voice=人的嗓音，noise=噪音（不悦耳），sound=泛指一切声音。"
+            },
+            {
+              "id": "W3_G5",
+              "stem": "There are many <span class='keyword'>___</span> in the park. Some old <span class='keyword'>___</span> are playing chess.",
+              "options": [
+                {"label": "A", "text": "people; people"},
+                {"label": "B", "text": "persons; people"},
+                {"label": "C", "text": "people; persons"},
+                {"label": "D", "text": "persons; persons"}
+              ],
+              "answer": "A",
+              "analysis": "people本身是复数，表示人们；表示民族时才是可数名词。技巧：people=人们（本身就是复数），person=个人（可数，a person/two persons）。"
+            },
+            {
+              "id": "W3_G6",
+              "stem": "The <span class='keyword'>___</span> in this shop are very beautiful. I bought a new <span class='keyword'>___</span> yesterday.",
+              "options": [
+                {"label": "A", "text": "clothes; cloth"},
+                {"label": "B", "text": "cloth; clothes"},
+                {"label": "C", "text": "clothes; clothing"},
+                {"label": "D", "text": "clothing; cloth"}
+              ],
+              "answer": "C",
+              "analysis": "clothes=衣服（复数，不能加s），a piece of clothing=一件衣服。技巧：clothes永远复数，cloth=布料，clothing=衣着的统称（不可数）。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "W4",
+      "title": "高频固定搭配 & 介词短语",
+      "knowledge": "be good at(擅长), be proud of(为……自豪), look forward to(期待), pay attention to(注意), take care of(照顾), be interested in(对……感兴趣), be strict with(对……严格), be different from(与……不同)。",
+      "group": "单词突破",
+      "parts": [
+        {
+          "type": "词汇选择",
+          "instructions": "从A、B、C、D四个选项中选出可以填入空白处的最佳选项。",
+          "questions": [
+            {
+              "id": "W4_G1",
+              "stem": "My sister is very <span class='keyword'>___</span> playing the piano. She practices every day.",
+              "options": [
+                {"label": "A", "text": "good at"},
+                {"label": "B", "text": "good for"},
+                {"label": "C", "text": "good to"},
+                {"label": "D", "text": "good with"}
+              ],
+              "answer": "A",
+              "analysis": "擅长做某事：be good at doing sth.。be good for=对……有益，be good to=对……友好，be good with=善于应付……。技巧：at+doing是固定模式。"
+            },
+            {
+              "id": "W4_G2",
+              "stem": "All of us are <span class='keyword'>___</span> our motherland. It's becoming stronger and stronger.",
+              "options": [
+                {"label": "A", "text": "proud of"},
+                {"label": "B", "text": "afraid of"},
+                {"label": "C", "text": "tired of"},
+                {"label": "D", "text": "sure of"}
+              ],
+              "answer": "A",
+              "analysis": "为祖国自豪：be proud of。be afraid of=害怕，be tired of=厌倦，be sure of=确信。技巧：proud是形容词，of后面接令人自豪的对象。"
+            },
+            {
+              "id": "W4_G3",
+              "stem": "We are all <span class='keyword'>___</span> visiting the Great Wall next summer.",
+              "options": [
+                {"label": "A", "text": "looking forward to"},
+                {"label": "B", "text": "looking for"},
+                {"label": "C", "text": "looking after"},
+                {"label": "D", "text": "looking up"}
+              ],
+              "answer": "A",
+              "analysis": "期待做某事：look forward to+doing。注意to是介词！技巧：look forward to+doing是中考超级高频考点。"
+            },
+            {
+              "id": "W4_G4",
+              "stem": "Please <span class='keyword'>___</span> what the teacher says. It's very important.",
+              "options": [
+                {"label": "A", "text": "pay attention to"},
+                {"label": "B", "text": "look forward to"},
+                {"label": "C", "text": "get used to"},
+                {"label": "D", "text": "be used to"}
+              ],
+              "answer": "A",
+              "analysis": "注意老师说的话：pay attention to。to是介词，后接名词/doing。技巧：pay attention to+doing/n.，to同样是介词。"
+            },
+            {
+              "id": "W4_G5",
+              "stem": "My grandmother is ill. I need to <span class='keyword'>___</span> her at home.",
+              "options": [
+                {"label": "A", "text": "take care of"},
+                {"label": "B", "text": "take part in"},
+                {"label": "C", "text": "take pride in"},
+                {"label": "D", "text": "take place"}
+              ],
+              "answer": "A",
+              "analysis": "照顾奶奶：take care of。take part in=参加，take pride in=以……为傲，take place=发生。技巧：take care of=look after，两者同义。"
+            },
+            {
+              "id": "W4_G6",
+              "stem": "Tom is very <span class='keyword'>___</span> science. He wants to be a scientist in the future.",
+              "options": [
+                {"label": "A", "text": "interested in"},
+                {"label": "B", "text": "strict with"},
+                {"label": "C", "text": "different from"},
+                {"label": "D", "text": "famous for"}
+              ],
+              "answer": "A",
+              "analysis": "对科学感兴趣：be interested in。be strict with=对……严格，be different from=与……不同。技巧：interested in+doing/n.，interesting是令人感兴趣的（修饰物）。"
+            },
+            {
+              "id": "W4_G7",
+              "stem": "Our teacher is very <span class='keyword'>___</span> us. She never allows us to be late.",
+              "options": [
+                {"label": "A", "text": "strict with"},
+                {"label": "B", "text": "strict in"},
+                {"label": "C", "text": "strict about"},
+                {"label": "D", "text": "strict to"}
+              ],
+              "answer": "A",
+              "analysis": "对人严格用be strict with，对事严格用be strict in/about。技巧：strict with+人，strict in+事。广东中考易错点。"
+            },
+            {
+              "id": "W4_G8",
+              "stem": "Chinese culture is quite <span class='keyword'>___</span> Western culture in many ways.",
+              "options": [
+                {"label": "A", "text": "different from"},
+                {"label": "B", "text": "similar to"},
+                {"label": "C", "text": "the same as"},
+                {"label": "D", "text": "far from"}
+              ],
+              "answer": "A",
+              "analysis": "与……不同：be different from。similar to=相似，the same as=相同，far from=远离。技巧：different from是固定搭配，from不能换成with或to。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "W5",
+      "title": "中考高频短语动词",
+      "knowledge": "put on/off/up/away/out; turn on/off/up/down; get up/on/off/along/over; take off/away/care of/part in; give up/away/out; look after/for/up/through/forward to。",
+      "group": "单词突破",
+      "parts": [
+        {
+          "type": "词汇选择",
+          "instructions": "从A、B、C、D四个选项中选出可以填入空白处的最佳选项。",
+          "questions": [
+            {
+              "id": "W5_G1",
+              "stem": "It's cold outside. You'd better <span class='keyword'>___</span> your coat.",
+              "options": [
+                {"label": "A", "text": "put on"},
+                {"label": "B", "text": "put off"},
+                {"label": "C", "text": "put away"},
+                {"label": "D", "text": "put up"}
+              ],
+              "answer": "A",
+              "analysis": "穿上外套：put on。put off=推迟，put away=收起来，put up=张贴/搭建。技巧：put on=穿上（动作），wear=穿着（状态）。"
+            },
+            {
+              "id": "W5_G2",
+              "stem": "The sports meeting was <span class='keyword'>___</span> because of the heavy rain.",
+              "options": [
+                {"label": "A", "text": "put off"},
+                {"label": "B", "text": "put on"},
+                {"label": "C", "text": "put away"},
+                {"label": "D", "text": "put out"}
+              ],
+              "answer": "A",
+              "analysis": "运动会被推迟：put off。put out=扑灭。技巧：put off=postpone（推迟），off有离开/远离的含义。"
+            },
+            {
+              "id": "W5_G3",
+              "stem": "Please <span class='keyword'>___</span> the lights before you leave the room.",
+              "options": [
+                {"label": "A", "text": "turn off"},
+                {"label": "B", "text": "turn on"},
+                {"label": "C", "text": "turn up"},
+                {"label": "D", "text": "turn down"}
+              ],
+              "answer": "A",
+              "analysis": "关灯：turn off。turn on=打开，turn up=调大（音量），turn down=调小/拒绝。技巧：on=开，off=关，up=大，down=小。"
+            },
+            {
+              "id": "W5_G4",
+              "stem": "I can't hear the music clearly. Can you <span class='keyword'>___</span> the radio?",
+              "options": [
+                {"label": "A", "text": "turn up"},
+                {"label": "B", "text": "turn down"},
+                {"label": "C", "text": "turn on"},
+                {"label": "D", "text": "turn off"}
+              ],
+              "answer": "A",
+              "analysis": "听不清所以要调大音量：turn up。技巧：turn up=调大（音量/温度），也引申为出现。"
+            },
+            {
+              "id": "W5_G5",
+              "stem": "When you don't know a word, you can <span class='keyword'>___</span> it <span class='keyword'>___</span> in the dictionary.",
+              "options": [
+                {"label": "A", "text": "look; up"},
+                {"label": "B", "text": "look; for"},
+                {"label": "C", "text": "look; after"},
+                {"label": "D", "text": "look; through"}
+              ],
+              "answer": "A",
+              "analysis": "查字典：look up。look for=寻找，look after=照顾，look through=浏览。技巧：look up+单词（查字典），look up to+人（仰慕）。"
+            },
+            {
+              "id": "W5_G6",
+              "stem": "Smoking is bad for your health. You should <span class='keyword'>___</span> it <span class='keyword'>___</span>.",
+              "options": [
+                {"label": "A", "text": "give; up"},
+                {"label": "B", "text": "give; away"},
+                {"label": "C", "text": "give; out"},
+                {"label": "D", "text": "give; off"}
+              ],
+              "answer": "A",
+              "analysis": "戒烟：give up smoking。give away=赠送/泄露，give out=分发/耗尽。技巧：give up+doing，和stop doing类似。"
+            },
+            {
+              "id": "W5_G7",
+              "stem": "The plane will <span class='keyword'>___</span> at 10 o'clock. We need to hurry.",
+              "options": [
+                {"label": "A", "text": "take off"},
+                {"label": "B", "text": "take away"},
+                {"label": "C", "text": "take care of"},
+                {"label": "D", "text": "take part in"}
+              ],
+              "answer": "A",
+              "analysis": "飞机起飞：take off。take away=带走，take care of=照顾，take part in=参加。技巧：take off=起飞/脱下，两个意思都很常用。"
+            },
+            {
+              "id": "W5_G8",
+              "stem": "I don't <span class='keyword'>___</span> well with my new classmate. We often argue.",
+              "options": [
+                {"label": "A", "text": "get along"},
+                {"label": "B", "text": "get up"},
+                {"label": "C", "text": "get off"},
+                {"label": "D", "text": "get over"}
+              ],
+              "answer": "A",
+              "analysis": "与……相处融洽：get along (well) with sb.。get up=起床，get off=下车，get over=克服。技巧：get along with=get on with，两者同义。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "W6",
+      "title": "词性转换（词形变化）",
+      "knowledge": "success→successful→successfully；care→careful→carefully；health→healthy→healthily；important→importance；decide→decision；invite→invitation。",
+      "group": "单词突破",
+      "parts": [
+        {
+          "type": "词形填空",
+          "instructions": "用括号内单词的正确形式填空。",
+          "questions": [
+            {
+              "id": "W6_T1",
+              "stem": "He finally achieved <span class='keyword'>___</span> (succeed) after years of hard work.",
+              "answer": "success",
+              "analysis": "achieved后接名词作宾语，succeed的名词是success。技巧：动词(succeed)→名词(success)→形容词(successful)→副词(successfully)。"
+            },
+            {
+              "id": "W6_T2",
+              "stem": "You should read the instructions <span class='keyword'>___</span> (careful) before using it.",
+              "answer": "carefully",
+              "analysis": "修饰动词read用副词，careful变副词carefully（直接加ly）。技巧：形容词+ly=副词，happy→happily（y变i加ly）。"
+            },
+            {
+              "id": "W6_T3",
+              "stem": "Eating more vegetables is good for your <span class='keyword'>___</span> (healthy).",
+              "answer": "health",
+              "analysis": "your后面接名词，healthy是形容词，名词是health。技巧：名词(health)→形容词(healthy)→副词(healthily)。"
+            },
+            {
+              "id": "W6_T4",
+              "stem": "He made an important <span class='keyword'>___</span> (decide) at the meeting.",
+              "answer": "decision",
+              "analysis": "an important后面接名词，decide的名词是decision。技巧：动词以-de结尾变名词常为-sion（decide→decision）。"
+            },
+            {
+              "id": "W6_T5",
+              "stem": "Thank you for your <span class='keyword'>___</span> (invite). I'd love to come.",
+              "answer": "invitation",
+              "analysis": "your后面接名词，invite的名词是invitation。技巧：invite→invitation（去e加ation），和decide→decision变形不同。"
+            },
+            {
+              "id": "W6_T6",
+              "stem": "She sings very <span class='keyword'>___</span> (beautiful). Everyone enjoys her songs.",
+              "answer": "beautifully",
+              "analysis": "修饰动词sings用副词，beautiful变副词beautifully（直接加ly）。技巧：大部分形容词+ly变副词，但good→well是特例。"
+            },
+            {
+              "id": "W6_T7",
+              "stem": "The <span class='keyword'>___</span> (important) of learning English is clear to everyone.",
+              "answer": "importance",
+              "analysis": "The...of结构中用名词，important的名词是importance。技巧：形容词以-tant结尾常变名词为-tance。"
+            },
+            {
+              "id": "W6_T8",
+              "stem": "He is a <span class='keyword'>___</span> (help) person. He always gives others a hand.",
+              "answer": "helpful",
+              "analysis": "修饰person用形容词，help的形容词是helpful。技巧：名词+ful=形容词（help→helpful, care→careful, use→useful）。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "W7",
+      "title": "不规则动词（过去式/过去分词）",
+      "knowledge": "中考必背25组：go→went→gone, do→did→done, have→had→had, see→saw→seen, get→got→got, make→made→made, take→took→taken, come→came→come, know→knew→known, write→wrote→written等。",
+      "group": "单词突破",
+      "parts": [
+        {
+          "type": "词汇选择",
+          "instructions": "从A、B、C、D四个选项中选出可以填入空白处的最佳选项。",
+          "questions": [
+            {
+              "id": "W7_G1",
+              "stem": "I <span class='keyword'>___</span> a new bike from the shop <span class='keyword'>yesterday</span>.",
+              "options": [
+                {"label": "A", "text": "buyed"},
+                {"label": "B", "text": "bought"},
+                {"label": "C", "text": "buy"},
+                {"label": "D", "text": "buying"}
+              ],
+              "answer": "B",
+              "analysis": "yesterday是过去时标志，buy的过去式是bought。技巧：buy→bought，和bring→brought一起记，都是-ought结尾。"
+            },
+            {
+              "id": "W7_G2",
+              "stem": "Have you ever <span class='keyword'>___</span> to Beijing? I <span class='keyword'>___</span> there last summer.",
+              "options": [
+                {"label": "A", "text": "went; went"},
+                {"label": "B", "text": "gone; went"},
+                {"label": "C", "text": "been; went"},
+                {"label": "D", "text": "been; gone"}
+              ],
+              "answer": "C",
+              "analysis": "have been to=去过（已回），have gone to=去了（未回）。last summer过去时用went。技巧：been to=去过已回，gone to=去了未回。go→went→gone必背。"
+            },
+            {
+              "id": "W7_G3",
+              "stem": "She <span class='keyword'>___</span> a letter to her pen pal <span class='keyword'>last night</span>.",
+              "options": [
+                {"label": "A", "text": "writes"},
+                {"label": "B", "text": "is writing"},
+                {"label": "C", "text": "wrote"},
+                {"label": "D", "text": "written"}
+              ],
+              "answer": "C",
+              "analysis": "last night是过去时标志，write的过去式是wrote。技巧：write→wrote→written，注意过去式和过去分词不同。"
+            },
+            {
+              "id": "W7_G4",
+              "stem": "The cake was <span class='keyword'>___</span> by my mother. It's delicious!",
+              "options": [
+                {"label": "A", "text": "make"},
+                {"label": "B", "text": "made"},
+                {"label": "C", "text": "makes"},
+                {"label": "D", "text": "making"}
+              ],
+              "answer": "B",
+              "analysis": "被动语态was+done，make的过去分词是made。技巧：make→made→made（过去式和过去分词同形）。"
+            },
+            {
+              "id": "W7_G5",
+              "stem": "He <span class='keyword'>___</span> me a beautiful gift on my birthday.",
+              "options": [
+                {"label": "A", "text": "give"},
+                {"label": "B", "text": "gived"},
+                {"label": "C", "text": "gave"},
+                {"label": "D", "text": "given"}
+              ],
+              "answer": "C",
+              "analysis": "过去时用gave。give→gave→given。技巧：give的过去式gave，过去分词given。"
+            },
+            {
+              "id": "W7_G6",
+              "stem": "I have <span class='keyword'>___</span> English for three years.",
+              "options": [
+                {"label": "A", "text": "learn"},
+                {"label": "B", "text": "learned"},
+                {"label": "C", "text": "learnt"},
+                {"label": "D", "text": "learned或learnt都对"}
+              ],
+              "answer": "D",
+              "analysis": "have done现在完成时，learn的过去分词可以是learned或learnt。技巧：learn→learned/learnt，两种变形都对。"
+            },
+            {
+              "id": "W7_G7",
+              "stem": "He <span class='keyword'>___</span> his keys at home and couldn't get into the house.",
+              "options": [
+                {"label": "A", "text": "leaves"},
+                {"label": "B", "text": "leaved"},
+                {"label": "C", "text": "left"},
+                {"label": "D", "text": "leaving"}
+              ],
+              "answer": "C",
+              "analysis": "过去时用left。leave→left→left。技巧：leave→left和feel→felt一起记。"
+            },
+            {
+              "id": "W7_G8",
+              "stem": "The teacher <span class='keyword'>___</span> us how to solve the math problem.",
+              "options": [
+                {"label": "A", "text": "teachs"},
+                {"label": "B", "text": "teached"},
+                {"label": "C", "text": "taught"},
+                {"label": "D", "text": "teaches"}
+              ],
+              "answer": "C",
+              "analysis": "过去时用taught。teach→taught→taught。技巧：teach→taught和catch→caught一起记，都是-aught结尾。"
+            }
+          ]
+        },
+        {
+          "type": "词形填空",
+          "instructions": "用括号内单词的适当形式填空。",
+          "questions": [
+            {
+              "id": "W7_T1",
+              "stem": "He <span class='keyword'>___</span> (write) a letter to his friend <span class='keyword'>last night</span>.",
+              "answer": "wrote",
+              "analysis": "last night过去时，write的过去式是wrote。技巧：write→wrote→written。"
+            },
+            {
+              "id": "W7_T2",
+              "stem": "The bridge was <span class='keyword'>___</span> (build) in 2010.",
+              "answer": "built",
+              "analysis": "被动语态was+done，build的过去分词是built。技巧：build→built→built。"
+            },
+            {
+              "id": "W7_T3",
+              "stem": "She has <span class='keyword'>___</span> (speak) English since she was five.",
+              "answer": "spoken",
+              "analysis": "has done现在完成时，speak的过去分词是spoken。技巧：speak→spoke→spoken。"
+            },
+            {
+              "id": "W7_T4",
+              "stem": "He <span class='keyword'>___</span> (feel) very happy when he heard the good news.",
+              "answer": "felt",
+              "analysis": "过去时用felt。feel→felt→felt。技巧：feel→felt和keep→kept都是eel/eep变elt/ept型。"
+            },
+            {
+              "id": "W7_T5",
+              "stem": "I have <span class='keyword'>___</span> (eat) my lunch. I'm full now.",
+              "answer": "eaten",
+              "analysis": "have done现在完成时，eat的过去分词是eaten。技巧：eat→ate→eaten。注意过去式ate发音。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "W8",
+      "title": "不规则名词复数",
+      "knowledge": "child→children, foot→feet, tooth→teeth, mouse→mice, sheep→sheep(单复同形), deer→deer, Chinese→Chinese, man→men, woman→women, knife→knives, leaf→leaves。",
+      "group": "单词突破",
+      "parts": [
+        {
+          "type": "词汇选择",
+          "instructions": "从A、B、C、D四个选项中选出可以填入空白处的最佳选项。",
+          "questions": [
+            {
+              "id": "W8_G1",
+              "stem": "Look! There are two <span class='keyword'>___</span> playing in the garden.",
+              "options": [
+                {"label": "A", "text": "child"},
+                {"label": "B", "text": "childs"},
+                {"label": "C", "text": "children"},
+                {"label": "D", "text": "childrens"}
+              ],
+              "answer": "C",
+              "analysis": "two后面用复数，child的复数是children。技巧：child→children是广东中考最常考的不规则名词之一。"
+            },
+            {
+              "id": "W8_G2",
+              "stem": "I brush my <span class='keyword'>___</span> twice a day to keep them healthy.",
+              "options": [
+                {"label": "A", "text": "tooth"},
+                {"label": "B", "text": "tooths"},
+                {"label": "C", "text": "teeth"},
+                {"label": "D", "text": "teeths"}
+              ],
+              "answer": "C",
+              "analysis": "不止一颗牙用复数，tooth的复数是teeth。技巧：tooth→teeth，foot→feet，都是oo变ee。"
+            },
+            {
+              "id": "W8_G3",
+              "stem": "There are many <span class='keyword'>___</span> on the grassland. They look so cute.",
+              "options": [
+                {"label": "A", "text": "sheeps"},
+                {"label": "B", "text": "sheep"},
+                {"label": "C", "text": "sheepes"},
+                {"label": "D", "text": "sheepies"}
+              ],
+              "answer": "B",
+              "analysis": "sheep是单复数同形，不管前面有没有many，都不加s。技巧：sheep、deer、Chinese单复数长一样。"
+            },
+            {
+              "id": "W8_G4",
+              "stem": "There are three <span class='keyword'>___</span> and two <span class='keyword'>___</span> in the room.",
+              "options": [
+                {"label": "A", "text": "men; women"},
+                {"label": "B", "text": "mans; womans"},
+                {"label": "C", "text": "men; womans"},
+                {"label": "D", "text": "mans; women"}
+              ],
+              "answer": "A",
+              "analysis": "man的复数是men，woman的复数是women，都是a变e。技巧：注意发音也不同。"
+            },
+            {
+              "id": "W8_G5",
+              "stem": "Autumn is here. The <span class='keyword'>___</span> are turning yellow.",
+              "options": [
+                {"label": "A", "text": "leaf"},
+                {"label": "B", "text": "leafs"},
+                {"label": "C", "text": "leaves"},
+                {"label": "D", "text": "leafes"}
+              ],
+              "answer": "C",
+              "analysis": "leaf的复数是leaves（f变v加es）。技巧：以f/fe结尾的名词变复数常把f变v加es。"
+            },
+            {
+              "id": "W8_G6",
+              "stem": "There are two <span class='keyword'>___</span> in the kitchen. Be careful!",
+              "options": [
+                {"label": "A", "text": "knife"},
+                {"label": "B", "text": "knifes"},
+                {"label": "C", "text": "knives"},
+                {"label": "D", "text": "knive"}
+              ],
+              "answer": "C",
+              "analysis": "knife的复数是knives（f变v加es）。技巧：knife→knives，wife→wives，life→lives。"
+            },
+            {
+              "id": "W8_G7",
+              "stem": "We are all <span class='keyword'>___</span>. We love our country.",
+              "options": [
+                {"label": "A", "text": "Chinese"},
+                {"label": "B", "text": "Chineses"},
+                {"label": "C", "text": "Chinesemen"},
+                {"label": "D", "text": "Chinases"}
+              ],
+              "answer": "A",
+              "analysis": "Chinese单复数同形，不能加s。技巧：以-ese结尾的国籍词（Chinese, Japanese）单复数同形。"
+            },
+            {
+              "id": "W8_G8",
+              "stem": "Look! There are three <span class='keyword'>___</span> in the corner. The cat is very excited.",
+              "options": [
+                {"label": "A", "text": "mouse"},
+                {"label": "B", "text": "mouses"},
+                {"label": "C", "text": "mice"},
+                {"label": "D", "text": "mices"}
+              ],
+              "answer": "C",
+              "analysis": "mouse的复数是mice。技巧：mouse→mice，中考高频不规则变化。"
+            }
+          ]
+        },
+        {
+          "type": "词形填空",
+          "instructions": "用括号内单词的适当形式填空。",
+          "questions": [
+            {
+              "id": "W8_T1",
+              "stem": "There are many <span class='keyword'>___</span> (sheep) on the farm.",
+              "answer": "sheep",
+              "analysis": "sheep是单复数同形，不用变。技巧：sheep/deer/Chinese单复数同形。"
+            },
+            {
+              "id": "W8_T2",
+              "stem": "My <span class='keyword'>___</span> (foot) hurt after walking for so long.",
+              "answer": "feet",
+              "analysis": "两只脚用复数，foot的复数是feet。技巧：foot→feet（oo变ee）。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
