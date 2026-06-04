@@ -309,7 +309,7 @@
       ]
     },
     {
-      "id": "W4",
+     "id": "W4",
       "title": "高频固定搭配 & 介词短语",
       "knowledge": "be good at(擅长), be proud of(为……自豪), look forward to(期待), pay attention to(注意), take care of(照顾), be interested in(对……感兴趣), be strict with(对……严格), be different from(与……不同)。",
       "group": "单词突破",
@@ -334,84 +334,84 @@
               "id": "W4_G2",
               "stem": "All of us are <span class='keyword'>___</span> our motherland. It's becoming stronger and stronger.",
               "options": [
-                {"label": "A", "text": "proud of"},
-                {"label": "B", "text": "afraid of"},
+                {"label": "A", "text": "afraid of"},
+                {"label": "B", "text": "proud of"},
                 {"label": "C", "text": "tired of"},
                 {"label": "D", "text": "sure of"}
               ],
-              "answer": "A",
+              "answer": "B",
               "analysis": "为祖国自豪：be proud of。be afraid of=害怕，be tired of=厌倦，be sure of=确信。技巧：proud是形容词，of后面接令人自豪的对象。"
             },
             {
               "id": "W4_G3",
               "stem": "We are all <span class='keyword'>___</span> visiting the Great Wall next summer.",
               "options": [
-                {"label": "A", "text": "looking forward to"},
-                {"label": "B", "text": "looking for"},
-                {"label": "C", "text": "looking after"},
+                {"label": "A", "text": "looking for"},
+                {"label": "B", "text": "looking after"},
+                {"label": "C", "text": "looking forward to"},
                 {"label": "D", "text": "looking up"}
               ],
-              "answer": "A",
+              "answer": "C",
               "analysis": "期待做某事：look forward to+doing。注意to是介词！技巧：look forward to+doing是中考超级高频考点。"
             },
             {
               "id": "W4_G4",
               "stem": "Please <span class='keyword'>___</span> what the teacher says. It's very important.",
               "options": [
-                {"label": "A", "text": "pay attention to"},
-                {"label": "B", "text": "look forward to"},
-                {"label": "C", "text": "get used to"},
+                {"label": "A", "text": "get used to"},
+                {"label": "B", "text": "pay attention to"},
+                {"label": "C", "text": "look forward to"},
                 {"label": "D", "text": "be used to"}
               ],
-              "answer": "A",
+              "answer": "B",
               "analysis": "注意老师说的话：pay attention to。to是介词，后接名词/doing。技巧：pay attention to+doing/n.，to同样是介词。"
             },
             {
               "id": "W4_G5",
               "stem": "My grandmother is ill. I need to <span class='keyword'>___</span> her at home.",
               "options": [
-                {"label": "A", "text": "take care of"},
-                {"label": "B", "text": "take part in"},
-                {"label": "C", "text": "take pride in"},
+                {"label": "A", "text": "take part in"},
+                {"label": "B", "text": "take pride in"},
+                {"label": "C", "text": "take care of"},
                 {"label": "D", "text": "take place"}
               ],
-              "answer": "A",
+              "answer": "C",
               "analysis": "照顾奶奶：take care of。take part in=参加，take pride in=以……为傲，take place=发生。技巧：take care of=look after，两者同义。"
             },
             {
               "id": "W4_G6",
               "stem": "Tom is very <span class='keyword'>___</span> science. He wants to be a scientist in the future.",
               "options": [
-                {"label": "A", "text": "interested in"},
-                {"label": "B", "text": "strict with"},
+                {"label": "A", "text": "strict with"},
+                {"label": "B", "text": "interested in"},
                 {"label": "C", "text": "different from"},
                 {"label": "D", "text": "famous for"}
               ],
-              "answer": "A",
+              "answer": "B",
               "analysis": "对科学感兴趣：be interested in。be strict with=对……严格，be different from=与……不同。技巧：interested in+doing/n.，interesting是令人感兴趣的（修饰物）。"
             },
             {
               "id": "W4_G7",
               "stem": "Our teacher is very <span class='keyword'>___</span> us. She never allows us to be late.",
               "options": [
-                {"label": "A", "text": "strict with"},
-                {"label": "B", "text": "strict in"},
-                {"label": "C", "text": "strict about"},
-                {"label": "D", "text": "strict to"}
+                {"label": "A", "text": "strict in"},
+                {"label": "B", "text": "strict about"},
+                {"label": "C", "text": "strict to"},
+                {"label": "D", "text": "strict with"}
               ],
-              "answer": "A",
+              "answer": "D",
               "analysis": "对人严格用be strict with，对事严格用be strict in/about。技巧：strict with+人，strict in+事。广东中考易错点。"
             },
             {
               "id": "W4_G8",
               "stem": "Chinese culture is quite <span class='keyword'>___</span> Western culture in many ways.",
               "options": [
-                {"label": "A", "text": "different from"},
-                {"label": "B", "text": "similar to"},
-                {"label": "C", "text": "the same as"},
+                {"label": "A", "text": "similar to"},
+                {"label": "B", "text": "the same as"},
+                {"label": "C", "text": "different from"},
                 {"label": "D", "text": "far from"}
               ],
-              "answer": "A",
+              "answer": "C",
               "analysis": "与……不同：be different from。similar to=相似，the same as=相同，far from=远离。技巧：different from是固定搭配，from不能换成with或to。"
             }
           ]
@@ -419,7 +419,7 @@
       ]
     },
     {
-      "id": "W5",
+     "id": "W5",
       "title": "中考高频短语动词",
       "knowledge": "put on/off/up/away/out; turn on/off/up/down; get up/on/off/along/over; take off/away/care of/part in; give up/away/out; look after/for/up/through/forward to。",
       "group": "单词突破",
@@ -432,96 +432,96 @@
               "id": "W5_G1",
               "stem": "It's cold outside. You'd better <span class='keyword'>___</span> your coat.",
               "options": [
-                {"label": "A", "text": "put on"},
-                {"label": "B", "text": "put off"},
+                {"label": "A", "text": "put off"},
+                {"label": "B", "text": "put on"},
                 {"label": "C", "text": "put away"},
                 {"label": "D", "text": "put up"}
               ],
-              "answer": "A",
+              "answer": "B",
               "analysis": "穿上外套：put on。put off=推迟，put away=收起来，put up=张贴/搭建。技巧：put on=穿上（动作），wear=穿着（状态）。"
             },
             {
               "id": "W5_G2",
               "stem": "The sports meeting was <span class='keyword'>___</span> because of the heavy rain.",
               "options": [
-                {"label": "A", "text": "put off"},
-                {"label": "B", "text": "put on"},
-                {"label": "C", "text": "put away"},
+                {"label": "A", "text": "put away"},
+                {"label": "B", "text": "put off"},
+                {"label": "C", "text": "put on"},
                 {"label": "D", "text": "put out"}
               ],
-              "answer": "A",
+              "answer": "B",
               "analysis": "运动会被推迟：put off。put out=扑灭。技巧：put off=postpone（推迟），off有离开/远离的含义。"
             },
             {
               "id": "W5_G3",
               "stem": "Please <span class='keyword'>___</span> the lights before you leave the room.",
               "options": [
-                {"label": "A", "text": "turn off"},
-                {"label": "B", "text": "turn on"},
-                {"label": "C", "text": "turn up"},
+                {"label": "A", "text": "turn on"},
+                {"label": "B", "text": "turn up"},
+                {"label": "C", "text": "turn off"},
                 {"label": "D", "text": "turn down"}
               ],
-              "answer": "A",
+              "answer": "C",
               "analysis": "关灯：turn off。turn on=打开，turn up=调大（音量），turn down=调小/拒绝。技巧：on=开，off=关，up=大，down=小。"
             },
             {
               "id": "W5_G4",
               "stem": "I can't hear the music clearly. Can you <span class='keyword'>___</span> the radio?",
               "options": [
-                {"label": "A", "text": "turn up"},
-                {"label": "B", "text": "turn down"},
-                {"label": "C", "text": "turn on"},
-                {"label": "D", "text": "turn off"}
+                {"label": "A", "text": "turn down"},
+                {"label": "B", "text": "turn on"},
+                {"label": "C", "text": "turn off"},
+                {"label": "D", "text": "turn up"}
               ],
-              "answer": "A",
+              "answer": "D",
               "analysis": "听不清所以要调大音量：turn up。技巧：turn up=调大（音量/温度），也引申为出现。"
             },
             {
               "id": "W5_G5",
               "stem": "When you don't know a word, you can <span class='keyword'>___</span> it <span class='keyword'>___</span> in the dictionary.",
               "options": [
-                {"label": "A", "text": "look; up"},
-                {"label": "B", "text": "look; for"},
+                {"label": "A", "text": "look; for"},
+                {"label": "B", "text": "look; up"},
                 {"label": "C", "text": "look; after"},
                 {"label": "D", "text": "look; through"}
               ],
-              "answer": "A",
+              "answer": "B",
               "analysis": "查字典：look up。look for=寻找，look after=照顾，look through=浏览。技巧：look up+单词（查字典），look up to+人（仰慕）。"
             },
             {
               "id": "W5_G6",
               "stem": "Smoking is bad for your health. You should <span class='keyword'>___</span> it <span class='keyword'>___</span>.",
               "options": [
-                {"label": "A", "text": "give; up"},
-                {"label": "B", "text": "give; away"},
-                {"label": "C", "text": "give; out"},
+                {"label": "A", "text": "give; away"},
+                {"label": "B", "text": "give; out"},
+                {"label": "C", "text": "give; up"},
                 {"label": "D", "text": "give; off"}
               ],
-              "answer": "A",
+              "answer": "C",
               "analysis": "戒烟：give up smoking。give away=赠送/泄露，give out=分发/耗尽。技巧：give up+doing，和stop doing类似。"
             },
             {
               "id": "W5_G7",
               "stem": "The plane will <span class='keyword'>___</span> at 10 o'clock. We need to hurry.",
               "options": [
-                {"label": "A", "text": "take off"},
-                {"label": "B", "text": "take away"},
-                {"label": "C", "text": "take care of"},
+                {"label": "A", "text": "take away"},
+                {"label": "B", "text": "take care of"},
+                {"label": "C", "text": "take off"},
                 {"label": "D", "text": "take part in"}
               ],
-              "answer": "A",
+              "answer": "C",
               "analysis": "飞机起飞：take off。take away=带走，take care of=照顾，take part in=参加。技巧：take off=起飞/脱下，两个意思都很常用。"
             },
             {
               "id": "W5_G8",
               "stem": "I don't <span class='keyword'>___</span> well with my new classmate. We often argue.",
               "options": [
-                {"label": "A", "text": "get along"},
-                {"label": "B", "text": "get up"},
+                {"label": "A", "text": "get up"},
+                {"label": "B", "text": "get along"},
                 {"label": "C", "text": "get off"},
                 {"label": "D", "text": "get over"}
               ],
-              "answer": "A",
+              "answer": "B",
               "analysis": "与……相处融洽：get along (well) with sb.。get up=起床，get off=下车，get over=克服。技巧：get along with=get on with，两者同义。"
             }
           ]
